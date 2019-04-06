@@ -4,7 +4,7 @@
 A video of this process is coming soon. In the meantime this document contains all the instructions.  
 I have not finished writing this document yet.  
 
-Two computers are required if you want airgapped security to keep your seeds safe. One computer is airgapped. It never connects to the Internet nor to other devices. The other computer is connected to the Internet. Any computer that can run NodeJS (Linux,Mac,Windows) will work.  
+Two computers are required if you want airgapped security to keep your seeds safe. One computer is airgapped. It never connects to the Internet nor to other devices. This airgapped computer should not have any WiFi or BlueTooth capability. So a raspberry pi 2 would be appropriate but a raspberry pi 3 would not. The other computer is connected to the Internet. That said about security, any computer that can run NodeJS (Linux,Mac,Windows) will work.  
 
 I use the opensource www.PrivateKeyVault.com for my airgapped computer because it is built specifically to move signed bundles across the airgap without exposing your seeds to any other devices. QR-Codes are used to make the transfer. [This short clip](https://youtu.be/3MwJOj3t8cI) gives you an idea of how bundles are passed from one PrivateKeyVault to another. In this video you can see that qr-codes are being passed from a Vault to a phone but you can just as easily pass information directly from one Vault to another using this method.  
 
@@ -51,15 +51,19 @@ echo ${#myvar}
 In the example above the output will read **15** because there are 15 characters in "THISISMYSTRING9"
 Use the above commands to check that there are still 81 characters in your seed after you have substituted characters.  
 
-Seeds are secret.  
-They stay in the PrivateKeyVault behind the airgap so that no one can see them.  
-Seeds are used to sign transaction bundles.  
-Transaction bundles are encrypted commands for spending your IOTA.  
-Transaction bundles 
+The following are facts about IOTA that you will need to know:  
+* Seeds are secret.  
+* They stay in the PrivateKeyVault (or other secure device) behind the airgap so that no one can see them.  
+* Seeds are used to sign transaction bundles.  
+* Transaction bundles are encrypted commands for spending your IOTA.  
+* Transaction bundles are commands that which tell the computers running the Tangle to move your IOTA from one address to another.  
+* If the computers running the Tangle can decrypt your signed bundle, and if the decrypted message resolves to your spending address then they will know that you are in possesion of the seed which was used to create the spending address and that they are authorized to follow your spending instructions as specified in the bundle.  
+*  
+* Addresses are public.  
+* Addresses are like bank account numbers.  
+* Give your addresses to people so that they can pay you.  
 
-Seeds are used to make addresses.  
-Addresses are public.  
-Addresses are like bank account numbers.
+
 
 
 
