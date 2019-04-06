@@ -1,13 +1,16 @@
 # IOTA-Airgapped-NodeJS-Console-Wallet  
 ### Sign transaction bundles securely offline using an [airgapped computer](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md) then broadcast your bundles to the Tangle using an online computer.  
 
-Two computers are required if you want airgapped security to keep your seeds safe.  
+A video of this process is coming soon. In the meantime this document contains all the instructions.  
+I have not finished writing this document yet.  
 
-I use the opensource www.PrivateKeyVault.com for my airgapped computer because it is built specifically to move signed bundles across the airgap without exposing your seeds to any other devices.  
+Two computers are required if you want airgapped security to keep your seeds safe. One computer is airgapped. It never connects to the Internet nor to other devices. The other computer is connected to the Internet. Any computer that can run NodeJS (Linux,Mac,Windows) will work.  
 
- I use a second PrivateKeyVault which is connected to the Internet for receiving the signed bundles and then for broadcasting those bundles to the Tangle.  
- 
- [This short clip](https://youtu.be/3MwJOj3t8cI) gives you an idea of how bundles are passed from one PrivateKeyVault to another.  
+I use the opensource www.PrivateKeyVault.com for my airgapped computer because it is built specifically to move signed bundles across the airgap without exposing your seeds to any other devices. QR-Codes are used to make the transfer. [This short clip](https://youtu.be/3MwJOj3t8cI) gives you an idea of how bundles are passed from one PrivateKeyVault to another. In this video you can see that qr-codes are being passed from a Vault to a phone but you can just as easily pass information directly from one Vault to another using this method.  
+
+The second PrivateKeyVault which receives encrypted signed bundles is connected to the Internet for broadcasting those bundles to the Tangle. The two devices are never connected electrically nor by radio. Memory sticks are never used to pass information between the Vaults. Rather, the bundle is passed as a series of qr-codes as show in the video clip linked above.  
+
+If you want to see a full length video about how the open source PrivateKeyVault is used for GPG encrypted messaging then check out [this video](https://youtu.be/qUWWuHium30). Other wise, continue reading to see how to manage your IOTA using NodeJS and the BASH command line.  
 
 If you want to experiment with small amounts of IOTA then only one computer which is connected to the Internet is required. Just remember that it is super easy for criminals to see what is on your Internet connected devices **so expect to have your IOTA stolen if you create your seeds on an Internet connected computer**. That said, any computer that can run NodeJS will work if you just want to experiment with small amounts.  
 
@@ -20,7 +23,7 @@ If you want to experiment with small amounts of IOTA then only one computer whic
   * Pick a letter out of a Scrabble bag.  
   * Write down the letter.   
   * Put the letter back in the bag.  
-  * Repeat this process 80 more times untill you have 81 characters written down.  
+  * Repeat this process 80 more times until you have 81 characters written down.  
 * If your seed is not random then your IOTA will be stolen.  
   * A string consisting of words is not random.  
   * A string which has a pattern is not random.  
@@ -34,7 +37,7 @@ The following is my method for generating an IOTA seed
 Run the following line on an airgapped raspberry pi at the bash console (not the NodeJS console) to get a random seed for IOTA.  
 `sudo cat /dev/hwrng |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1`  
 This will produce an 81 character long string consisting of only UPPER CASE letters and the number **9**  
-Then change some output characters at random in case the generator has been compromised.  
+Then change some output characters at random in case the generator has been compromised by criminals.  
 When changing characters, only use UPPER CASE letters and the number **9**, and do not change the amount of characters.  
 There must be exactly 81 characters which can be UPPER CASE letters and the number **9** is also allowed.  
 The above method does not use a sudo random generator.  
@@ -52,6 +55,7 @@ Seeds are secret.
 They stay in the PrivateKeyVault behind the airgap so that no one can see them.  
 Seeds are used to sign transaction bundles.  
 Transaction bundles are encrypted commands for spending your IOTA.  
+Transaction bundles 
 
 Seeds are used to make addresses.  
 Addresses are public.  
