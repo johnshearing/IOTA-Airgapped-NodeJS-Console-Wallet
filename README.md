@@ -28,24 +28,17 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 * Do not generate your seeds by the following methods.  
   * Do not use online seed generators or your IOTAs will be stolen.  
   * Do not use pseudo-random number generators or your IOTAs will be stolen.  
-  * Do not generate random numbers on any machine that connects to the Internet or connects to other devices.  
-  * 
-The following is my method for generating an IOTA seed
-Run the following line on a raspberry pi at the bash console (not the NodeJS console) to get a random seed for IOTA.  
+  * Do not generate random numbers on any machine that connects to the Internet or connects to other devices.   
+  
+The following is my method for generating an IOTA seed  
+Run the following line on an airgapped raspberry pi at the bash console (not the NodeJS console) to get a random seed for IOTA.  
 `sudo cat /dev/hwrng |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1`  
 This will produce an 81 character long string consisting of only UPPER CASE letters and the number **9**  
 Then change some output characters at random in case the generator has been compromised.  
 When changing characters, only use UPPER CASE letters and the number **9**, and do not change the amount of characters.  
 There must be exactly 81 characters which can be UPPER CASE letters and the number **9** is also allowed.  
-
-Seeds are secret.  
-They stay in the PrivateKeyVault behind the airgap so that no one can see them.  
-Seeds are used to sign transaction bundles.  
-
-Seeds are used to make addresses.  
-Addresses are public.  
-Addresses are like bank account numbers.
-
+The above method does not use a sudo random generator.  
+The code fragment `/dev/hwrng` is specifying that a special piece of hardward on the raspberry pi which reads truely random electrical events is used to generate the seed.  
 
 The following commands executed at the bash console (not the NodeJS console) counts characters in the string surounded by quotes.  
 ```  
@@ -54,6 +47,18 @@ echo ${#myvar}
 ```   
 In the example above the output will read **15** because there are 15 characters in "THISISMYSTRING9"
 Use the above commands to check that there are still 81 characters in your seed after you have substituted characters.  
+
+Seeds are secret.  
+They stay in the PrivateKeyVault behind the airgap so that no one can see them.  
+Seeds are used to sign transaction bundles.  
+Transaction bundles are encrypted commands for spending your IOTA.  
+
+Seeds are used to make addresses.  
+Addresses are public.  
+Addresses are like bank account numbers.
+
+
+
 
 If you are using a PrivateKeyVault or really any raspberry pi, the following line sends a qr-code representation of **hello world** to the screen at the BASH console. You can put whatever message you want between the quotes to get a qr-code representation of that message.  
 `qrencode -t ANSIUTF8 "hello world"`  
