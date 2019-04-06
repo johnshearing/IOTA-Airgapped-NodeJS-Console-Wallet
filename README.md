@@ -1,5 +1,5 @@
 # IOTA-Airgapped-NodeJS-Console-Wallet  
-Sign bundles securely offline using an airgapped raspberry pi 2 and broadcast the bundles using a pi online  
+Sign transaction bundles securely offline using an [airgapped computer](https://github.com/johnshearing/PrivateKeyVault) then broadcast your bundles to the Tangle using an online computer.  
 
 Run the following line on a raspberry pi at the bash console (not the NodeJS console) to get a random seed for IOTA.  
 `sudo cat /dev/hwrng |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1`  
