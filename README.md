@@ -56,8 +56,16 @@ The following are facts about IOTA that you will need to know:
 * They stay in the PrivateKeyVault (or other secure device) behind the airgap so that no one can see them.  
 * Seeds are used to sign transaction bundles.  
 * Transaction bundles are encrypted commands for spending your IOTA.  
-* Transaction bundles are commands that which tell the computers running the Tangle to move your IOTA from one address to another.  
-* If the computers running the Tangle can decrypt your signed bundle, and if the decrypted message resolves to your spending address then they will know that you are in possesion of the seed which was used to create the spending address and that they are authorized to follow your spending instructions as specified in the bundle.  
+* Transaction bundles are encrypted commands which tell the computers running the Tangle to move your IOTA from one address to another.  
+* Seeds are used to make private keys and private keys are used to make addresses.  
+* Seeds can make and control an unlimited number of private keys.  
+* Private keys can make and control only one address.  
+* Ultimately, through the private keys, a seed can make and control an unlimited amount of addresses.  
+*  
+* If the computers running the Tangle can decrypt your signed bundle, and if the decrypted message resolves to your spending address then they will know that you are in possesion of the seed which was used to create the spending address even though they never actually see the seed. 
+
+
+and that they are authorized by you to follow your spending instructions as specified in the bundle.  
 *  
 * Addresses are public.  
 * Addresses are like bank account numbers.  
