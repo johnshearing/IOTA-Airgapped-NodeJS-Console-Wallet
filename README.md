@@ -103,10 +103,9 @@ Soon we are going to start doing things at the command line but first you will n
 * This might seem inconvenient but the people who made IOTA had a very good reason for doing this.  
 * In order to make your addresses invulnerable to quantum computers the Winternitz One-Time Signature is used to create addresses.  
 * So when quantum computers become more capable and can calculate the private key for any given address on other distributed ledgers, your IOTA's will be safe.  
-* The cost for this protection is the inconvenience of having to move your remaining balance to a new address as one of the transactions in your signed bundle.  
+* The cost for this protection is the inconvenience of having to inclued a transaction in your signed bundle which moves your remaining (unspent) balance to a new address.  
 
-### What Are You Going to Put In Your Signed Bundles?
-We are going to be making signed bundles at the command line so you will need an idea of what we will be putting in them.  
+### Lets Get Started 
 
 
 
