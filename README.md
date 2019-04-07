@@ -66,9 +66,9 @@ Use the above commands to check that there are still 81 characters in your seed 
   * A spending transaction that removes IOTAs from your spending address.  
     * The message field of this transaction will contain a signature.  
     * The signature is an encrypted message which must resolve to your spending address when decrypted.  
-    * If the message shows your spending address when decrypted the Tangle computers will execute the transfer of IOTAs as specified in the signed transaction bundle. 
+    * If the message shows your spending address when decrypted the Tangle computers are enabled to execute the transfer of IOTAs as specified in the signed transaction bundle. 
   * A second transaction is used to handle a larger signature if security level 2 is used.  
-    * Everyone seems to use security level 2.  
+    * Everyone seems to use security level 2. More about security levels will be covered as we proceed.  
   * A third unsigned transaction is used to specify the recipent's address and the amount to send.  
   * A fourth unsigned transaction is used to specify your new spending address where unspent IOTAs will be sent.  
 * Seeds are also used to make private keys and private keys are used to make spending addresses.  
