@@ -63,14 +63,14 @@ Use the above commands to check that there are still 81 characters in your seed 
 * We will cover the use of signed transaction bundles for spending IOTA.  
 * Signed transaction bundles are commands which tell the computers running the Tangle to move your IOTA from your spending address (your account) to another person's address (their account). Remaining (unspent) IOTAs are moved to a new spending address that you control for security reasons which will be explained as we proceed.  
 * There are typically 4 transactions in a signed transaction bundle.  
-  * 1. A spending transaction that removes IOTAs from your spending address.  
+  * A spending transaction that removes IOTAs from your spending address.  
     * The message field of this transaction will contain a signature.  
     * The signature is an encrypted message which must resolve to your spending address when decrypted.  
     * If the message shows your spending address when decrypted the Tangle computers will execute the transfer of IOTAs as specified in the signed transaction bundle. 
-  * 2. A second transaction is used to handle a larger signature if security level 2 is used.  
+  * A second transaction is used to handle a larger signature if security level 2 is used.  
     * Everyone seems to use security level 2.  
-  * 3. A third unsigned transaction is used to specify the recipent's address and the amount to send.  
-  * 4. A fourth unsigned transaction is used to specify your new spending address where unspent IOTAs will be sent.  
+  * A third unsigned transaction is used to specify the recipent's address and the amount to send.  
+  * A fourth unsigned transaction is used to specify your new spending address where unspent IOTAs will be sent.  
 * Seeds are also used to make private keys and private keys are used to make spending addresses.  
 * Seeds can make and control an unlimited number of private keys.  
 * Private keys can make and control only one address.  
