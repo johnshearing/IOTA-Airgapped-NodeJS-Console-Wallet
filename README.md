@@ -71,7 +71,8 @@ Use the above commands to check that there are still 81 characters in your seed 
     * Everyone seems to use security level 2. More about security levels will be covered as we proceed.  
   * A third unsigned transaction is used to specify the recipent's address and the amount to send.  
   * A fourth unsigned transaction is used to specify your new spending address where unspent IOTAs will be sent.  
-* Seeds do more than sign transaction bundles. They are also used to make private keys and private keys are used to make spending addresses.  
+* Seeds do more than sign transaction bundles. 
+* Seeds are also used to make private keys and private keys are used to make spending addresses.  
 * Seeds can make and control an unlimited number of private keys.  
 * Private keys can make and control only one address.  
 * Ultimately a seed, through the private keys it makes, can make and control an unlimited amount of addresses.  
