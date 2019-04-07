@@ -74,7 +74,7 @@ Use the above commands to check that there are still 81 characters in your seed 
 * Seeds do more than sign transaction bundles. 
 * Seeds are also used to make private keys and private keys are used to make spending addresses.  
 * Seeds can make and control an unlimited number of private keys.  
-* Private keys can make and control only one address.  
+* Private keys can make and control only one spending address.  
 * Ultimately a seed, through the private keys it makes, can make and control an unlimited amount of addresses.  
 * It is not possible for any man or machine to move money out of an address without having the seed which was used to create it.  
 * Only the person in possession the seed which was ultimately used to make an address is able to spend from that address.  
