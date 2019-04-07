@@ -56,16 +56,24 @@ The following are facts about IOTA that you will need to know:
 * They stay in the PrivateKeyVault (or other secure device) behind the airgap so that no one can see them.  
 * Seeds are used to sign transaction bundles.  
 * Transaction bundles are encrypted commands for spending your IOTA.  
-* Transaction bundles are encrypted commands which tell the computers running the Tangle to move your IOTA from one address to another.  
-* Seeds are used to make private keys and private keys are used to make addresses.  
+* Transaction bundles are encrypted commands which tell the computers running the Tangle to move your IOTA from your spending address (your account) to another person's address (their account).  
+* Seeds are also used to make private keys and private keys are used to make spending addresses.  
 * Seeds can make and control an unlimited number of private keys.  
 * Private keys can make and control only one address.  
 * Ultimately, through the private keys, a seed can make and control an unlimited amount of addresses.  
+* It is not possible for any man or machine to move money out of an address without having the seed which was used to create it.  
+* Only the person in posession the seed which was ultimately used to make an address is able to spend from that address.  
+* If the computers running the Tangle can decrypt your signed bundle, and if the decrypted message resolves to the spending address which is specified in your bundle, then this is mathmatical proof that you are in possesion of the seed which was used to create the private key which was ultimately used to create that spending address. This is how the Tangle computers are activated by you to follow your spending instructions as specified in the bundle.  
 *  
-* If the computers running the Tangle can decrypt your signed bundle, and if the decrypted message resolves to your spending address then they will know that you are in possesion of the seed which was used to create the spending address even though they never actually see the seed. 
+* **WOW! DID YOU GET THE SIGNIFICANTS THAT LAST STATEMENT?**.  
+* The Tangle computers know that you have the seed which controls the specifed spending address without having to see the seed itself.  
+* The seed is still in your sole posession.   
+* You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is now known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed bundle is decrypted and resolves to the specifed spending address and the only way to make such a bundle is by having the seed. **And only you have the seed**. Now the only way people or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of multisignature wallets (to be covered in another tutorial) these forceful methods will not work.  
+*  
+* **Holy Cow! What just happened?**  
+* **For the first time in human history each individual is in full control of his or her own money**  
 
 
-and that they are authorized by you to follow your spending instructions as specified in the bundle.  
 *  
 * Addresses are public.  
 * Addresses are like bank account numbers.  
