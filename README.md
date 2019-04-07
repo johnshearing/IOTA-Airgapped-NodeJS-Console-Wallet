@@ -4,13 +4,17 @@
 A video of this process is coming soon. In the meantime this document contains all the instructions.  
 I have not finished writing this document yet.  
 
+## The video script starts here.  
+The ultimate goal is to make two wallet applications that run in your browser.  
+An offline wallet application that signs transaction bundles on a computer which never connects to the Internet nor to any other device and online wallet application that runs on an Internet connected computer that broadcasts the bundles to the Tangle. This tutorial starts the project by showing you how to control the underlying code at the command line. This way, when you build your wallet along with me you will understand whats happening and you will know that your wallet is doing what you expect it to do.  
+
 Two computers are required if you want airgapped security to keep your seeds safe. One computer is airgapped. It never connects to the Internet nor to other devices. This airgapped computer should not have any WiFi or BlueTooth capability. So a raspberry pi 2 would be appropriate but a raspberry pi 3 would not. The other computer is connected to the Internet. That said about security, any computer that can run NodeJS (Linux,Mac,Windows) will work.  
 
 I use the opensource www.PrivateKeyVault.com for my airgapped computer because it is built specifically to move signed bundles across the airgap without exposing your seeds to any other devices. QR-Codes are used to make the transfer. [This short clip](https://youtu.be/3MwJOj3t8cI) gives you an idea of how bundles are passed from one PrivateKeyVault to another. In this video you can see that qr-codes are being passed from a Vault to a phone but you can just as easily pass information directly from one Vault to another using this method.  
 
 The second PrivateKeyVault which receives encrypted signed bundles is connected to the Internet for broadcasting those bundles to the Tangle. The two devices are never connected electrically nor by radio. Memory sticks are never used to pass information between the Vaults. Rather, the bundle is passed as a series of qr-codes as show in the video clip linked above.  
 
-If you want to see a full length video about how the open source PrivateKeyVault is used for GPG encrypted messaging then check out [this video](https://youtu.be/qUWWuHium30). Other wise, continue reading to see how to manage your IOTA using NodeJS and the BASH command line.  
+If you want to see a full length video about how the open source PrivateKeyVault is used for GPG encrypted messaging then check out [this video](https://youtu.be/qUWWuHium30). If you want to see how offline transactions are made on the Ethereum blockchain using the PrivateKeyVault then [check out this video](https://youtu.be/_vA4tTLdL2M). Otherwise, continue reading to see how to manage your IOTA using NodeJS at the BASH command line.  
 
 If you want to experiment with small amounts of IOTA then only one computer which is connected to the Internet is required. Just remember that it is super easy for criminals to see what is on your Internet connected devices **so expect to have your IOTA stolen if you create your seeds on an Internet connected computer**. That said, any computer that can run NodeJS will work if you just want to experiment with small amounts.  
 
@@ -34,7 +38,7 @@ If you want to experiment with small amounts of IOTA then only one computer whic
   * Do not generate random numbers on any machine that connects to the Internet or connects to other devices.   
   
 The following is my method for generating an IOTA seed  
-Run the following line on an airgapped raspberry pi at the bash console (not the NodeJS console) to get a random seed for IOTA.  
+Run the following line on an airgapped raspberry pi at the BASH console (not the NodeJS console) to get a random seed for IOTA.  
 `sudo cat /dev/hwrng |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1`  
 This will produce an 81 character long string consisting of only UPPER CASE letters and the number **9**  
 Then change some output characters at random in case the generator has been compromised by criminals.  
@@ -71,11 +75,14 @@ The following are facts about IOTA that you will need to know:
 * **Holy Cow! What just happened?**  
 * **For the first time in human history each individual is in full control of his or her own money**  
 
-
-*  
+### About Addresses and Defending Your IOTA From Quantum Computers
+Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
 * Addresses are public.  
 * Addresses are like bank account numbers.  
 * Give your addresses to people so that they can pay you.  
+*  
+* In order to make your addresses invulnerable to quantum computers the Winternitz One-Time Signature is used to create addresses.  
+* While you now have protect
 
 
 
