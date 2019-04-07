@@ -10,9 +10,9 @@ An offline wallet application that signs transaction bundles on a computer which
 
 Two computers are required if you want airgapped security to keep your seeds safe. One computer is airgapped. It never connects to the Internet nor to other devices. This airgapped computer should not have any WiFi or BlueTooth capability. So a raspberry pi 2 would be appropriate but a raspberry pi 3 would not. The other computer is connected to the Internet. That said about security, any computer that can run NodeJS (Linux,Mac,Windows) will work.  
 
-I use the opensource www.PrivateKeyVault.com for my airgapped computer because it is built specifically to move signed bundles across the airgap without exposing your seeds to any other devices. QR-Codes are used to make the transfer. [This short clip](https://youtu.be/3MwJOj3t8cI) gives you an idea of how bundles are passed from one PrivateKeyVault to another. In this video you can see that qr-codes are being passed from a Vault to a phone but you can just as easily pass information directly from one Vault to another using this method.  
+I use the opensource www.PrivateKeyVault.com for my airgapped computer because it is built specifically to move signed transaction bundles across the airgap without exposing your seeds to any other devices. QR-Codes are used to make the transfer. [This short clip](https://youtu.be/3MwJOj3t8cI) gives you an idea of how signed transaction bundles are passed from one PrivateKeyVault to another. In this video you can see that qr-codes are being passed from a Vault to a phone but you can just as easily pass information directly from one Vault to another using this method.  
 
-The second PrivateKeyVault which receives encrypted signed bundles is connected to the Internet for broadcasting those bundles to the Tangle. The two devices are never connected electrically nor by radio. Memory sticks are never used to pass information between the Vaults. Rather, the bundle is passed as a series of qr-codes as show in the video clip linked above.  
+The second PrivateKeyVault which receives encrypted signed transaction bundles is connected to the Internet for broadcasting those bundles to the Tangle. The two devices are never connected electrically nor by radio. Memory sticks are never used to pass information between the Vaults. Rather, the bundle is passed as a series of qr-codes as show in the video clip linked above.  
 
 If you want to see a full length video about how the open source PrivateKeyVault is used for GPG encrypted messaging then check out [this video](https://youtu.be/qUWWuHium30). If you want to see how offline transactions are made on the Ethereum blockchain using the PrivateKeyVault then [check out this video](https://youtu.be/_vA4tTLdL2M). Otherwise, continue reading to see how to manage your IOTA using NodeJS at the BASH command line.  
 
@@ -55,7 +55,7 @@ echo ${#myvar}
 In the example above the output will read **15** because there are 15 characters in "THISISMYSTRING9"
 Use the above commands to check that there are still 81 characters in your seed after you have substituted characters.  
 
-The following are facts about IOTA that you will need to know:  
+### The following are facts about IOTA that you will need to know:  
 * Seeds are secret.  
 * They stay in the PrivateKeyVault (or other secure device) behind the airgap so that no one can see them.  
 * Seeds are used to sign transaction bundles.  
@@ -75,23 +75,26 @@ The following are facts about IOTA that you will need to know:
 * **Holy Cow! What just happened?**  
 * **For the first time in human history each individual is in full control of his or her own money**  
 
-### About Addresses and Defending Your IOTA From Quantum Computers
+### About Addresses IOTA's Defence Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
 * Addresses are public.  
 * Addresses are like bank account numbers.  
 * Give your addresses to people so that they can pay you.  
-* Anyone can send IOTAs to an address but only someone with it's associated private key can spend from that address.  
+* Anyone can send IOTAs to an address but only someone with an address's associated private key can spend from that address.  
 * And as mentioned before, only the someone in possession of the seed which made the private key can possibly have the private key which made it's associated spending address.  
 * **!!Very Important Information Is Comming**  
 * There is one way criminals can get the private key for it's associated spending address.  
-* Every time you spend from and address a small portion of the private key is revealed.  
-* Nothing is revealed about the seed which made the private key is revealed when spending, only a piece of the private key is revealed.  
+* Every time you spend from an address a small portion of the private key is revealed.  
+* Nothing is revealed about the seed which made the private key when spending, only a piece of the private key is revealed.  
 * So when you spend from an address you always move any remaining IOTAs to a new address which is under your control.  
-* 
+* Usually, you move the remaining balance to another address which is ultimately controlled by the same seed as the spending address but you could move the remaining balance to an address which is ultimately controlled by a different seed.  
 * This might seem inconvenient but the people who made IOTA had a very good reason for doing this.  
 * In order to make your addresses invulnerable to quantum computers the Winternitz One-Time Signature is used to create addresses.  
-* While you now have protect
+* So when quantum computers become more capable and can calculate the private key for any given address on other distributed ledgers, your IOTA's will be safe.  
+* The cost for this protection is the inconvenience of having to move your remaining balance to a new address as one of the transactions in your signed bundle.  
 
+### What Are You Going to Put In Your Signed Bundles?
+We are going to be making signed bundles at the command line so you will need an idea of what we will be putting in them.  
 
 
 
