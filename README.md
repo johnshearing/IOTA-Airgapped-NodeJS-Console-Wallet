@@ -1,22 +1,22 @@
 # IOTA-Airgapped-NodeJS-Console-Wallet  
-### Sign transaction bundles securely offline using an [airgapped computer](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md) then broadcast your bundles to the Tangle using an online computer.  
+### Create and sign transaction bundles securely offline using an [airgapped computer](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md) then broadcast your signed transaction bundles to the Tangle using an online computer.  
 
-A video of this process is coming soon. In the meantime this document contains all the instructions.  
+A video of this process is coming soon. In the meantime this document will contain all the instructions you need to use this repository.    
 I have not finished writing this document yet.  
 
 ## The video script starts here.  
 The ultimate goal is to make two wallet applications that run in your browser.  
-An offline wallet application that signs transaction bundles on a computer which never connects to the Internet nor to any other device and online wallet application that runs on an Internet connected computer that broadcasts the bundles to the Tangle. This tutorial starts the project by showing you how to control the underlying code at the command line. This way, when you build your wallet along with me you will understand whats happening and you will know that your wallet is doing what you expect it to do.  
+An offline wallet application that creates and signs transaction bundles on a computer which never connects to the Internet nor to any other device and online wallet application that runs on an Internet connected computer that broadcasts the bundles to the Tangle. This tutorial starts the project by showing you how to control the underlying code at the command line. This way, when you build your wallet along with me you will understand what's happening and you will know that your wallet is doing what you expect it to do.  
 
 Two computers are required if you want airgapped security to keep your seeds safe. One computer is airgapped. It never connects to the Internet nor to other devices. This airgapped computer should not have any WiFi or BlueTooth capability. So a raspberry pi 2 would be appropriate but a raspberry pi 3 would not. The other computer is connected to the Internet. That said about security, any computer that can run NodeJS (Linux,Mac,Windows) will work.  
 
 I use the opensource www.PrivateKeyVault.com for my airgapped computer because it is built specifically to move signed transaction bundles across the airgap without exposing your seeds to any other devices. QR-Codes are used to make the transfer. [This short clip](https://youtu.be/3MwJOj3t8cI) gives you an idea of how signed transaction bundles are passed from one PrivateKeyVault to another. In this video you can see that qr-codes are being passed from a Vault to a phone but you can just as easily pass information directly from one Vault to another using this method.  
 
-The second PrivateKeyVault which receives encrypted signed transaction bundles is connected to the Internet for broadcasting those bundles to the Tangle. The two devices are never connected electrically nor by radio. Memory sticks are never used to pass information between the Vaults. Rather, the bundle is passed as a series of qr-codes as show in the video clip linked above.  
+The second PrivateKeyVault which receives signed transaction bundles is connected to the Internet for broadcasting those bundles to the Tangle. The two devices are never connected electrically nor by radio. Memory sticks are never used to pass information between the Vaults. Rather, the bundle is passed as a series of qr-codes as show in the video clip linked above.  
 
-If you want to see a full length video about how the open source PrivateKeyVault is used for GPG encrypted messaging then check out [this video](https://youtu.be/qUWWuHium30). If you want to see how offline transactions are made on the Ethereum blockchain using the PrivateKeyVault then [check out this video](https://youtu.be/_vA4tTLdL2M). Otherwise, continue reading to see how to manage your IOTA using NodeJS at the BASH command line.  
+If you want to see a full length video about how the open source PrivateKeyVault is used for GPG encrypted messaging then check out [this video](https://youtu.be/qUWWuHium30). It will give you a very good overall understanding of how the Vault works. If you want to see how offline transactions are made on the Ethereum blockchain using the PrivateKeyVault then [check out this video](https://youtu.be/_vA4tTLdL2M). It will give you a very good idea of what we are about to accomplish with IOTA. Otherwise, continue reading to see how to manage your IOTA using NodeJS at the BASH command line.  
 
-If you want to experiment with small amounts of IOTA then only one computer which is connected to the Internet is required. Just remember that it is super easy for criminals to see what is on your Internet connected devices **so expect to have your IOTA stolen if you create your seeds on an Internet connected computer**. That said, any computer that can run NodeJS will work if you just want to experiment with small amounts.  
+If you want to experiment with small amounts of IOTA then only one computer which is connected to the Internet is required. Any computer will do. Just remember that it is super easy for criminals to see what is on your Internet connected devices **so expect to have your IOTA stolen if you create your seeds on an Internet connected computer**. That said, any computer that can run NodeJS will work if you just want to experiment with small amounts.  
 
 
 ### Create Your Seeds for this experiment  
@@ -59,21 +59,32 @@ Use the above commands to check that there are still 81 characters in your seed 
 * Seeds are secret.  
 * They stay in the PrivateKeyVault (or other secure device) behind the airgap so that no one can see them.  
 * Seeds are used to sign transaction bundles.  
-* Transaction bundles are encrypted commands for spending your IOTA.  
-* Transaction bundles are encrypted commands which tell the computers running the Tangle to move your IOTA from your spending address (your account) to another person's address (their account).  
+* Signed transaction bundles are commands for spending your IOTA or for sending messages.  
+* We will cover the use of signed transaction bundles for spending IOTA.  
+* Signed transaction bundles are commands which tell the computers running the Tangle to move your IOTA from your spending address (your account) to another person's address (their account). Remaining (unspent) IOTAs are moved to a new spending address that you control for security reasons which will be explained as we proceed.  
+* There are typically 4 transactions in a signed transaction bundle.  
+  * 1. A spending transaction that removes IOTAs from your spending address.  
+    * The message field of this transaction will contain a signature.  
+    * The signature is an encrypted message which must resolve to your spending address when decrypted.  
+    * If the message shows your spending address when decrypted the Tangle computers will execute the transfer of IOTAs as specified in the signed transaction bundle. 
+  * 2. A second transaction is used to handle a larger signature if security level 2 is used.  
+    * Everyone seems to use security level 2.  
+  * 3. A third unsigned transaction is used to specify the recipent's address and the amount to send.  
+  * 4. A fourth unsigned transaction is used to specify your new spending address where unspent IOTAs will be sent.  
 * Seeds are also used to make private keys and private keys are used to make spending addresses.  
 * Seeds can make and control an unlimited number of private keys.  
 * Private keys can make and control only one address.  
 * Ultimately a seed, through the private keys it makes, can make and control an unlimited amount of addresses.  
 * It is not possible for any man or machine to move money out of an address without having the seed which was used to create it.  
 * Only the person in possession the seed which was ultimately used to make an address is able to spend from that address.  
-* If the computers running the Tangle can decrypt your signed bundle, and if the decrypted message resolves to the spending address which is specified in your bundle, then this is mathematical proof that you are in possesion of the seed which was used to create the private key which was ultimately used to create that spending address. This is how the Tangle computers are activated by you to follow your spending instructions as specified in the bundle.  
+* If the computers running the Tangle can decrypt your signed transaction bundle, and if the decrypted message resolves to the spending address which is specified in your signed transaction bundle, then this is mathematical proof that you are in possesion of the seed which was used to create the private key which was ultimately used to create that spending address. This is how the Tangle computers are activated by you to follow your spending instructions as specified in your signed transaction bundle.  
 * **WOW! DID YOU GET THE SIGNIFICANTS THAT LAST STATEMENT?**.  
 * The Tangle computers know that you have the seed which controls the specified spending address without having to see the seed itself.  
 * The seed is still in your sole possession.   
-* You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is now known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed bundle is decrypted and resolves to the specifed spending address and the only way to make such a bundle is by having the seed. **And only you have the seed**. So now, the only way people or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of multi-signature wallets (to be covered in another tutorial) these forceful methods will not work either.  
+* You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is now known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed transaction bundle is decrypted and resolves to the specifed spending address and the only way to make such a bundle is by having the seed. **And only you have the seed**. So now, the only way people or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of multi-signature wallets (to be covered in another tutorial) these forceful methods will not work either.  
 * **Holy Cow! What just happened?**  
 * **For the first time in human history each individual is in full control of his or her own money**  
+* **Individuals now have a seat at the bargining table with government and large corperations and the banks which control them.**
 
 ### About Addresses IOTA's Defence Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
