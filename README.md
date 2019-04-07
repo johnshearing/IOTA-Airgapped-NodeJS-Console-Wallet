@@ -80,7 +80,15 @@ Soon we are going to start doing things at the command line but first you will n
 * Addresses are public.  
 * Addresses are like bank account numbers.  
 * Give your addresses to people so that they can pay you.  
-*  
+* Anyone can send IOTAs to an address but only someone with it's associated private key can spend from that address.  
+* And as mentioned before, only the someone in possession of the seed which made the private key can possibly have the private key which made it's associated spending address.  
+* **!!Very Important Information Is Comming**  
+* There is one way criminals can get the private key for it's associated spending address.  
+* Every time you spend from and address a small portion of the private key is revealed.  
+* Nothing is revealed about the seed which made the private key is revealed when spending, only a piece of the private key is revealed.  
+* So when you spend from an address you always move any remaining IOTAs to a new address which is under your control.  
+* 
+* This might seem inconvenient but the people who made IOTA had a very good reason for doing this.  
 * In order to make your addresses invulnerable to quantum computers the Winternitz One-Time Signature is used to create addresses.  
 * While you now have protect
 
@@ -89,9 +97,9 @@ Soon we are going to start doing things at the command line but first you will n
 
 
 
-If you are using a PrivateKeyVault or really any raspberry pi, the following line sends a qr-code representation of **hello world** to the screen at the BASH console. You can put whatever message you want between the quotes to get a qr-code representation of that message.  
+If you are using a PrivateKeyVault or really any Linux device, the following line sends a qr-code representation of **hello world** to the screen at the BASH console. You can put whatever message you want between the quotes to get a qr-code representation of that message.  
 `qrencode -t ANSIUTF8 "hello world"`  
-This is good for passing addresses (not seeds) out of the vault.  
+This is good for passing addresses (not seeds) out of the vault without the need to connect to other devices.    
 
 
 
