@@ -94,7 +94,7 @@ Soon we are going to start doing things at the command line but first you will n
 * Give your addresses to people so that they can pay you.  
 * Anyone can send IOTAs to an address but only someone with an address's associated private key can spend from that address.  
 * And as mentioned before, only the someone in possession of the seed which made the private key can possibly have the private key which made it's associated spending address.  
-* **!!Very Important Information Is Comming**  
+* **!!Very Important Information Is Coming!!**  
 * There is one way criminals can get the private key for it's associated spending address.  
 * Every time you spend from an address a small portion of the private key is revealed.  
 * Nothing is revealed about the seed which made the private key when spending, only a piece of the private key is revealed.  
