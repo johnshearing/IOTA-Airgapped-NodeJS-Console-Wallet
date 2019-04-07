@@ -60,7 +60,7 @@ The following are facts about IOTA that you will need to know:
 * Seeds are also used to make private keys and private keys are used to make spending addresses.  
 * Seeds can make and control an unlimited number of private keys.  
 * Private keys can make and control only one address.  
-* Ultimately, through the private keys it makes, a seed can make and control an unlimited amount of addresses.  
+* Ultimately a seed, through the private keys it makes, can make and control an unlimited amount of addresses.  
 * It is not possible for any man or machine to move money out of an address without having the seed which was used to create it.  
 * Only the person in posession the seed which was ultimately used to make an address is able to spend from that address.  
 * If the computers running the Tangle can decrypt your signed bundle, and if the decrypted message resolves to the spending address which is specified in your bundle, then this is mathmatical proof that you are in possesion of the seed which was used to create the private key which was ultimately used to create that spending address. This is how the Tangle computers are activated by you to follow your spending instructions as specified in the bundle.  
