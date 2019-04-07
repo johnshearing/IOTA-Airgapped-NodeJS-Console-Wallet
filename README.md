@@ -85,7 +85,7 @@ Use the above commands to check that there are still 81 characters in your seed 
 * You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they already have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed transaction bundle is decrypted and resolves to the specifed spending address and the only way to make such a bundle is by having the seed. **And only you have the seed**. So now, the only way people or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of smart contracts and multi-signature wallets (to be covered in other tutorials) these forceful methods will not work either.  
 **Holy Cow! What just happened?**  
 **For the first time in human history each individual is in full control of his or her own money**  
-**Finally citizens have a seat at the bargining table with the banks that control government and corporations.**
+**Finally citizens have a seat at the bargining table with the banks controlling government and corporations.**
 
 ### About Addresses IOTA's Defence Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
