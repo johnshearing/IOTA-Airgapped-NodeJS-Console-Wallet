@@ -31,7 +31,7 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 * If your seed is not random then your IOTA will be stolen.  
   * A string consisting of words is not random.  
   * A string which has a pattern is not random.  
-  * A string generated or which can be determined by any mathmatical formula is not random.  
+  * A string generated or which can be determined by any mathematical formula is not random.  
 * Do not generate your seeds by the following methods.  
   * Do not use online seed generators or your IOTAs will be stolen.  
   * Do not use pseudo-random number generators or your IOTAs will be stolen.  
@@ -45,9 +45,9 @@ Then change some output characters at random in case the generator has been comp
 When changing characters, only use UPPER CASE letters and the number **9**, and do not change the amount of characters.  
 There must be exactly 81 characters which can be UPPER CASE letters and the number **9** is also allowed.  
 The above method does not use a sudo random generator.  
-The code fragment `/dev/hwrng` is specifying that a special piece of hardward on the raspberry pi which reads truely random electrical events is used to generate the seed.  
+The code fragment `/dev/hwrng` is specifying that a special piece of hardware on the raspberry pi which reads truly random electrical events is used to generate the seed.  
 
-The following commands executed at the bash console (not the NodeJS console) counts characters in the string surounded by quotes.  
+The following commands executed at the bash console (not the NodeJS console) counts characters in the string surrounded by quotes.  
 ```  
 myvar="THISISMYSTRING9"  
 echo ${#myvar}  
@@ -66,12 +66,12 @@ The following are facts about IOTA that you will need to know:
 * Private keys can make and control only one address.  
 * Ultimately a seed, through the private keys it makes, can make and control an unlimited amount of addresses.  
 * It is not possible for any man or machine to move money out of an address without having the seed which was used to create it.  
-* Only the person in posession the seed which was ultimately used to make an address is able to spend from that address.  
-* If the computers running the Tangle can decrypt your signed bundle, and if the decrypted message resolves to the spending address which is specified in your bundle, then this is mathmatical proof that you are in possesion of the seed which was used to create the private key which was ultimately used to create that spending address. This is how the Tangle computers are activated by you to follow your spending instructions as specified in the bundle.  
+* Only the person in possession the seed which was ultimately used to make an address is able to spend from that address.  
+* If the computers running the Tangle can decrypt your signed bundle, and if the decrypted message resolves to the spending address which is specified in your bundle, then this is mathematical proof that you are in possesion of the seed which was used to create the private key which was ultimately used to create that spending address. This is how the Tangle computers are activated by you to follow your spending instructions as specified in the bundle.  
 * **WOW! DID YOU GET THE SIGNIFICANTS THAT LAST STATEMENT?**.  
-* The Tangle computers know that you have the seed which controls the specifed spending address without having to see the seed itself.  
-* The seed is still in your sole posession.   
-* You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is now known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed bundle is decrypted and resolves to the specifed spending address and the only way to make such a bundle is by having the seed. **And only you have the seed**. So now, the only way people or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of multisignature wallets (to be covered in another tutorial) these forceful methods will not work either.  
+* The Tangle computers know that you have the seed which controls the specified spending address without having to see the seed itself.  
+* The seed is still in your sole possession.   
+* You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is now known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed bundle is decrypted and resolves to the specifed spending address and the only way to make such a bundle is by having the seed. **And only you have the seed**. So now, the only way people or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of multi-signature wallets (to be covered in another tutorial) these forceful methods will not work either.  
 * **Holy Cow! What just happened?**  
 * **For the first time in human history each individual is in full control of his or her own money**  
 
