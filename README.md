@@ -77,7 +77,7 @@ Use the above commands to check that there are still 81 characters in your seed 
 * Private keys can make and control only one spending address.  
 * Ultimately a seed, through the private keys it makes, can make and control an unlimited amount of addresses.  
 * It is not possible for any man or machine to move money out of an address without having the seed which was used to create it.  
-* Only the person in possession the seed which was ultimately used to make an address is able to spend from that address.  
+* Only the person in possession of the seed which was ultimately used to make an address is able to spend from that address.  
 * If the computers running the Tangle can decrypt your signed transaction bundle, and if the decrypted message resolves to the spending address which is specified in your signed transaction bundle, then this is mathematical proof that you are in possesion of the seed which was used to create the private key which was ultimately used to create that spending address. This is how the Tangle computers are activated by you to follow your spending instructions as specified in your signed transaction bundle.  
 * **WOW! DID YOU GET THE SIGNIFICANTS THAT LAST STATEMENT?**.  
 * The Tangle computers know that you have the seed which controls the specified spending address without having to see the seed itself.  
