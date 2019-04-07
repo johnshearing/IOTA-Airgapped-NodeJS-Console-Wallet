@@ -98,7 +98,7 @@ Soon we are going to start doing things at the command line but first you will n
 * There is one way criminals can get the private key for it's associated spending address.  
 * Every time you spend from an address a small portion of the private key is revealed.  
 * Nothing is revealed about the seed which made the private key when spending, only a piece of the private key is revealed.  
-* So when you spend from an address you always move any remaining IOTAs to a new address which is under your control.  
+* **So when you spend from an address you always move any remaining IOTAs to a new address which is under your control.**  
 * Usually, you move the remaining balance to another address which is ultimately controlled by the same seed as the spending address but you could move the remaining balance to an address which is ultimately controlled by a different seed.  
 * This might seem inconvenient but the people who made IOTA had a very good reason for doing this.  
 * In order to make your addresses invulnerable to quantum computers the Winternitz One-Time Signature is used to create addresses.  
