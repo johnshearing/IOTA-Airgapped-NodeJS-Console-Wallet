@@ -87,7 +87,7 @@ Use the above commands to check that there are still 81 characters in your seed 
 **For the first time in human history each individual is in full control of his or her own money**  
 **Finally citizens have a seat at the bargining table with the banks controlling government and corporations.**
 
-### About Addresses IOTA's Defence Against Quantum Computers
+### About Addresses and IOTA's Defence Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
 * Addresses are public.  
 * Addresses are like bank account numbers.  
