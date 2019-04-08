@@ -128,6 +128,7 @@ Soon we are going to start doing things at the command line but first you will n
 * A short tutorial of how to make addresses for your two different seeds will go here.  
 * A short tutorial of how to back up your seeds will go here.  
 * A short tutorial of how to send IOTAs from binance to your new address will go here.  
+* A short tutorial of how to find a healthy node will go here.  
 * A short tutorial of how to check your balance will go here.  
 * A short tutorial of how to make a transaction bundle will go here.  
 * A short tutorial of how to sign a transaction bundle will go here.  
