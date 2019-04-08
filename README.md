@@ -89,8 +89,10 @@ Use the above commands to check that there are still 81 characters in your seed 
 **Most people do not realize that the Federal Reserve is not a government institution any more then Federal Express.**  
 **The Federal Reserve is a bank cartel. It is not one of our government agencies dispite the misleading name.**  
 **When IOTA achives mass-adoption banks will no longer be able to devalue our currency by issuing new money.**  
-**And with money that is no longer tied to a country, governments will have to compete for citizens by providing the best service at the least cost.**  
-**Soon citizens are about to get a seat at the bargining table along with the banks, and government.**  
+**Boom and bust cycles fueled by inflation will be a thing of the past.**  
+**Governments will not be able to print money to finance wars that kill millions just to make the military industrial complex rich**
+**And with money no longer tied to a country, governments will have to compete for citizens by providing the best service at the least cost.**  
+**Citizens are about to get a seat at the bargining table and the nonsense is about to end**  
 
 ### About Addresses, Safe Spending, and IOTA's Defence Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
