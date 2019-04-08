@@ -86,12 +86,14 @@ Use the above commands to check that there are still 81 characters in your seed 
 * **Holy Cow! What just happened?**  
 * **For the first time in human history citizens can take full control of their own money.**  
 * **When they do, money will not be controlled by banks and it will not be tied to any government.**  
-* **Most people do not realize that the Federal Reserve is not a government institution any more then Federal Express.**  
+* **Most people do not realize that the Federal Reserve is not a government institution any more than Federal Express.**  
 * **The Federal Reserve is a bank cartel. It is not one of our government agencies dispite the misleading name.**  
 * **When IOTA achives mass-adoption banks will no longer be able to devalue our currency by issuing new money.**  
 * **Boom and bust cycles fueled by inflation will be a thing of the past.**  
 * **Governments will not be able to print money to finance wars that kill millions just to make the weapons industry rich. And with money no longer tied to a country, governments will have to compete for citizens by providing the best place to live at the least cost.**  
-* **Citizens are about to get a seat at the bargining table and the nonsense is about to end**  
+* **Citizens are about to get a seat at the bargining table and the nonsense is about to end.**  
+* **We can bring on this change by making IOTA a more convenient and better service to use than banks.**  
+* **That's what we will need to do in order to start the mass migration to IOTA**  
 * **Let's get to work**
 
 ### About Addresses, Safe Spending, and IOTA's Defence Against Quantum Computers
