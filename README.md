@@ -6,7 +6,7 @@ I have not finished writing this document yet.
 
 ## The video script starts here.  
 The ultimate goal is to make two wallet applications that run in your browser.  
-An offline wallet application that creates and signs transaction bundles on a computer which never connects to the Internet nor to any other device and online wallet application that runs on an Internet connected computer that broadcasts the bundles to the Tangle. This tutorial starts the project by showing you how to control the underlying code at the command line. This way, when you build your wallet along with me you will understand what's happening and you will know that your wallet is doing what you expect it to do.  
+An offline wallet application that creates and signs transaction bundles on a computer which never connects to the Internet nor to any other device and online wallet application that runs on an Internet connected computer that broadcasts the bundles to the Tangle. This tutorial starts the project by showing you how to control the underlying code and move IOTAs at the command line. This way, when you build your wallet along with me you will understand what's happening and you will know that your wallet is doing what you expect it to do. After the wallets are working we will be adding database functionality so that the two wallets can stay in sync without the need to connect your offline device with the online device. After that we build multi-signature capability into the wallets and finally we will be exploring how smart contracts can be used with the IOTA family of products.  
 
 Two computers are required if you want airgapped security to keep your seeds safe. One computer is airgapped. It never connects to the Internet nor to other devices. This airgapped computer should not have any WiFi or BlueTooth capability. So a raspberry pi 2 would be appropriate but a raspberry pi 3 would not. The other computer is connected to the Internet. That said about security, any computer that can run NodeJS (Linux,Mac,Windows) will work.  
 
@@ -104,17 +104,24 @@ Soon we are going to start doing things at the command line but first you will n
 * Anyone can send IOTAs to an address but only someone with an address's associated private key can spend from that address.  
 * And as mentioned before, only the someone in possession of the seed which made the private key can possibly have the private key which made it's associated spending address.  
 * **!!Very Important Information Is Coming!!**  
-* There is one way criminals can get the private key for it's associated spending address.  
-* Every time you spend from an address a small portion of the private key is revealed.  
-* Nothing is revealed about the seed which made the private key when spending, only a piece of the private key is revealed.  
+* There is a way criminals can get the private key for it's associated spending address.  
+* Every time you spend from an address a half of the private key is revealed.  
+* This is not a flaw in the system. There is a very good reason for this which I will explain in a minute.  
+* Nothing is revealed about the seed which made the private key when spending, only a portion of the private key is revealed.  
 * **So when you spend from an address you must move any unspent IOTAs to a new address.**  
-* Usually, you move the remaining balance to another address which is ultimately controlled by the same seed as the spending address but you could move the remaining balance to an address which is ultimately controlled by a different seed.  
-* This might seem inconvenient but the people who made IOTA had a very good reason for doing this.  
+* That's why we include a transaction in the signed transaction bundle to move unspent IOTAs to a new address.  
+* Usually, you move the remaining balance to another address which is ultimately controlled by the same seed as the spending address.  
+* This way you only have to keep track of one seed.  
+* But you could move the remaining balance to an address which is ultimately controlled by a different seed if you wish.  
+* All this might seem inconvenient but the people who made IOTA had a very good reason for building the system this way.  
 * In order to make your addresses invulnerable to quantum computers the Winternitz One-Time Signature is used to create addresses.  
 * So when quantum computers become more capable and can calculate the private key for any given address on other distributed ledgers, your IOTA's will be safe.  
 * The cost for this protection is the inconvenience of having to inclued a transaction in your signed bundle which moves your remaining (unspent) balance to a new address.  
 
-### Lets Get Started 
+### Lets Make a Signed Transaction Bundle  
+* A short tutorial of how to install [NodeJS](https://nodejs.org) will go here.  
+* A short tutorial of how to install [iota.js](https://github.com/iotaledger/iota.js) will go here.  
+* A short tutorial of how to install [IOTA-Airgapped-NodeJS-Console-Wallet](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet) will go here.  
 
 
 
