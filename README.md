@@ -142,7 +142,7 @@ Soon we are going to start doing things at the command line but first you will n
 
 
 
-Pay not attention to the stuff below. It's for things I have yet to address in the tutorial.  
+Pay no attention to the stuff below. It's for things I have yet to address in the tutorial.  
 
 If you are using a PrivateKeyVault or really any Linux device, the following line sends a qr-code representation of **hello world** to the screen at the BASH console. You can put whatever message you want between the quotes to get a qr-code representation of that message.  
 `qrencode -t ANSIUTF8 "hello world"`  
