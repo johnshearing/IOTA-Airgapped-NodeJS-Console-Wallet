@@ -89,10 +89,10 @@ Generate two seeds for this tutorial and paste them into a text document for use
 * **For the first time in human history citizens can take full control of their own money.**  
 * **When they do, money will not be controlled by banks and it will not be tied to any government.**     
 * **When IOTA achives mass-adoption banks will no longer be able to devalue our currency by issuing new money.**  
-* **Governments will not be able to print money to finance wars that kill millions just to make industry rich.**  
-* **And with money no longer tied to a country, governments will have to compete for citizens and their money by providing the best place to live at the least cost.**  
+* **And governments will not be able to print money to finance wars that it's people do not want.**  
+* **So with money no longer tied to a country, governments will have to compete for citizens (really their money) by providing the best place to live at the least cost.**  
 * **Citizens are about to get a seat at the bargining table and the nonsense is about to end.**  
-* **We can bring on this change by making IOTA a better service and more convenient to use than banks.**  
+* **We can bring on this change by helping to make IOTA a better service than banks and more convenient to use.**  
 * **That's what we will need to do in order to start the mass migration to IOTA**  
 * **Let's get to work**
 
