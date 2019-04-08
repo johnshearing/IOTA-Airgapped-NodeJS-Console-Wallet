@@ -55,6 +55,8 @@ echo ${#myvar}
 In the example above the output will read **15** because there are 15 characters in "THISISMYSTRING9"
 Use the above commands to check that there are still 81 characters in your seed after you have substituted characters.  
 
+Generate two seeds for this tutorial and paste them into a text document for use later.  
+
 ### The following are facts about IOTA that you will need to know:  
 * Seeds are secret.  
 * They stay in the PrivateKeyVault (or other secure device) behind the airgap so that no one can see them.  
@@ -122,21 +124,30 @@ Soon we are going to start doing things at the command line but first you will n
 * A short tutorial of how to install [NodeJS](https://nodejs.org) will go here.  
 * A short tutorial of how to install [iota.js](https://github.com/iotaledger/iota.js) will go here.  
 * A short tutorial of how to install [IOTA-Airgapped-NodeJS-Console-Wallet](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet) will go here.  
+* A short tutorial of how to buy IOTAs on [binance](https://www.binance.com/en) will go here.  
+* A short tutorial of how to make addresses for your two different seeds will go here.  
+* A short tutorial of how to back up your seeds will go here.  
+* A short tutorial of how to send IOTAs from binance to your new address will go here.  
+* A short tutorial of how to check your balance will go here.  
+* A short tutorial of how to make a transaction bundle will go here.  
+* A short tutorial of how to sign a transaction bundle will go here.  
+* A discussion of why your should keep a copy of all the scripts you execute will go here.  
+* A short tutorial of how to encrypt a signed transaction bundle will go here.  
+* A short tutorial of how to pass the signed transaction bundle from the offline machine to the online machine will go here.  
+* A short tutorial of how to decrypt the bundle will go here.  
+* A short tutorial of how to broadcast the bundle will go here.  
+* A short tutorial of how to check your balances again will go here.  
+* A short tutorial of how to keep your records updated and an archive of all your scripts will go here.  
 
 
 
 
+Pay not attention to the stuff below. It's for things I have yet to address in the tutorial.  
 
 If you are using a PrivateKeyVault or really any Linux device, the following line sends a qr-code representation of **hello world** to the screen at the BASH console. You can put whatever message you want between the quotes to get a qr-code representation of that message.  
 `qrencode -t ANSIUTF8 "hello world"`  
 This is good for passing addresses (not seeds) out of the vault without the need to connect to other devices.    
 
-
-
-cd /home/pi/iota/iota-workshop/code
-cd /home/pi/iota/iota-workshop/molw
-cd /home/pi/iota/iota-workshop
-cd /home/pi/iota/iota.js/node-wallet
 
 Lookup healthy nodes at https://iota.dance/	
 
