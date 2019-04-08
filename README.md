@@ -83,16 +83,16 @@ Use the above commands to check that there are still 81 characters in your seed 
 * The Tangle computers know that you have the seed which controls the specified spending address without having to see the seed itself.  
 * The seed is still in your sole possession.   
 * You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they already have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed transaction bundle is decrypted and resolves to the specifed spending address. And the only way to make such a bundle is by having the seed. **And only you have the seed for your accounts**. So now, the only way banks or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of smart contracts and multi-signature wallets (to be covered in other tutorials) these forceful methods will cost more to implement then they will produce so no one will use them.  
-**Holy Cow! What just happened?**  
-**For the first time in human history citizens can take full control of their own money.**  
-**When they do, money will not be controlled by banks and it will not be tied to any government.**  
-**Most people do not realize that the Federal Reserve is not a government institution any more then Federal Express.**  
-**The Federal Reserve is a bank cartel. It is not one of our government agencies dispite the misleading name.**  
-**When IOTA achives mass-adoption banks will no longer be able to devalue our currency by issuing new money.**  
-**Boom and bust cycles fueled by inflation will be a thing of the past.**  
-**Governments will not be able to print money to finance wars that kill millions just to make the weapons industry rich. And with money no longer tied to a country, governments will have to compete for citizens by providing the best place to live at the least cost.**  
-**Citizens are about to get a seat at the bargining table and the nonsense is about to end**  
-**Let's get to work**
+* **Holy Cow! What just happened?**  
+* **For the first time in human history citizens can take full control of their own money.**  
+* **When they do, money will not be controlled by banks and it will not be tied to any government.**  
+* **Most people do not realize that the Federal Reserve is not a government institution any more then Federal Express.**  
+* **The Federal Reserve is a bank cartel. It is not one of our government agencies dispite the misleading name.**  
+* **When IOTA achives mass-adoption banks will no longer be able to devalue our currency by issuing new money.**  
+* **Boom and bust cycles fueled by inflation will be a thing of the past.**  
+* **Governments will not be able to print money to finance wars that kill millions just to make the weapons industry rich. And with money no longer tied to a country, governments will have to compete for citizens by providing the best place to live at the least cost.**  
+* **Citizens are about to get a seat at the bargining table and the nonsense is about to end**  
+* **Let's get to work**
 
 ### About Addresses, Safe Spending, and IOTA's Defence Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
