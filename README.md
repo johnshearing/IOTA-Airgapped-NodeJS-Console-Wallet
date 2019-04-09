@@ -55,7 +55,10 @@ echo ${#myvar}
 In the example above the output will read **15** because there are 15 characters in "THISISMYSTRING9"
 Use the above commands to check that there are still 81 characters in your seed after you have substituted characters.  
 
-Generate two seeds for this tutorial and paste them into a text document for use later.  
+* Generate two seeds for this tutorial.  
+* **The seeds should be generated and stored on your airgapped machine so that no one will ever see them.**  
+* You can use my method shown above or something else which is truly random like the scrabble method also shown above.  
+* Paste your seeds into a text document on your airgapped machine for use later.  
 
 ### The following are facts about IOTA that you will need to know:  
 * Seeds are secret.  
@@ -119,9 +122,19 @@ Soon we are going to start doing things at the command line but first you will n
 * The cost for this protection is the inconvenience of having to inclued a transaction in your signed bundle which moves your remaining (unspent) balance to a new address.  
 
 ### Lets Make a Signed Transaction Bundle  
-* A short tutorial of how to install [NodeJS](https://nodejs.org) will go here.  
+
+#### Install NodeJS on your airgapped machine and your online machine as well.  
+* If you are using a PrivateKeyVault or a raspberry pi 2 then NodeJS installation instructions are [here](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm).  
+* Othewise download NodeJS for your system [here](https://nodejs.org/en/download/).  
+* The following are two great video playlists which show you how to install and use NodeJS:  
+  * [Node JS Tutorial for Beginners](https://youtu.be/w-7RQ46RgxU)  
+  * [Node.js & Express From Scratch](https://youtu.be/k_0ZzvHbNBQ)  
+
 * A short tutorial of how to install [iota.js](https://github.com/iotaledger/iota.js) will go here.  
 * A short tutorial of how to install [IOTA-Airgapped-NodeJS-Console-Wallet](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet) will go here.  
+
+If you have been following along then you already have two seeds in a text file waiting to be used on your airgapped machine.  
+
 * A short tutorial of how to buy IOTAs on [binance](https://www.binance.com/en) will go here.  
 * A short tutorial of how to make addresses for your two different seeds will go here.  
 * A short tutorial of how to back up your seeds will go here.  
