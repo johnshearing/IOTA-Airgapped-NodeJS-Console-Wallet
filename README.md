@@ -129,8 +129,22 @@ Soon we are going to start doing things at the command line but first you will n
 * The following are two great video playlists which show you how to install and use NodeJS:  
   * [Node JS Tutorial for Beginners](https://youtu.be/w-7RQ46RgxU)  
   * [Node.js & Express From Scratch](https://youtu.be/k_0ZzvHbNBQ)  
+ * You interact with NodeJS using JavaScript.  
+   * I liked [this JavaScript tutorial](https://youtu.be/Bv_5Zv5c-Ts) but there are lots of great ones to choose from.  
 
-* A short tutorial of how to install [iota.js](https://github.com/iotaledger/iota.js) will go here.  
+#### Install iota.js  
+* [Check out the documentation - found here](https://github.com/iotaledger/iota.js/blob/next/api_reference.md)  
+* [The iota.js library and install instructions are found here](https://github.com/iotaledger/iota.js).  
+* To install:  
+  * Make a new directory. Call it **icw** if you want which is short for IOTA Console Wallet.  
+  * At the bash console, cd into the directory.  
+  * Execute the following command and the bash console to create a package.json file.  
+  * The package.json file is used to manage your project.  
+  * `npm init`  Accept all the defaults.  
+  * Next install the iota.js library by executing the following command at the bash console.  
+  * `npm install @iota/core` 
+
+
 * A short tutorial of how to install [IOTA-Airgapped-NodeJS-Console-Wallet](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet) will go here.  
 
 If you have been following along then you already have two seeds in a text file waiting to be used on your airgapped machine.  
