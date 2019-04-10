@@ -129,7 +129,7 @@ Soon we are going to start doing things at the command line but first you will n
 
 #### Reference Materials  
 * The following are reference materials for HTML, CSS, JavaScript, NodeJS, MongoDB, and REST-API.  
-* You will not need them to follow this tutorial but it will help when you want to change this material and start following your own ideas.  
+* You will not need them to follow this tutorial but it will help when you want to start following your own ideas.  
 * You interact with NodeJS using JavaScript.  
   * [Pickup some understanding of HTML, CSS, and JavaScript here](https://www.w3schools.com/).    
   * [This is a beginers JavaScript Tutorial by NetNinja](https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET&index=1)  
