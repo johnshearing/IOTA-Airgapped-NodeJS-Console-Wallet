@@ -126,8 +126,10 @@ Soon we are going to start doing things at the command line but first you will n
 #### Install NodeJS on your airgapped machine and your online machine as well.  
 * If you are using a PrivateKeyVault or a raspberry pi 2 then NodeJS installation instructions are [here](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm).  
 * Othewise download NodeJS for your system [here](https://nodejs.org/en/download/).  
+
+#### Reference Materials  
 * The following are reference materials for HTML, CSS, JavaScript, NodeJS, MongoDB, and REST-API.  
-* You will not need them to follow this tutorial but I will help when you want to change this material and start following your own ideas.  
+* You will not need them to follow this tutorial but it will help when you want to change this material and start following your own ideas.  
 * You interact with NodeJS using JavaScript.  
   * [Pickup some understanding of HTML, CSS, and JavaScript here](https://www.w3schools.com/). Then you will be ready for more advanced tutorials.  
   * [This is a beginers JavaScript Tutorial by NetNinja](https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET&index=1)  
