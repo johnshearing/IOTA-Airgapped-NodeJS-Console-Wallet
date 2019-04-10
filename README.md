@@ -126,12 +126,18 @@ Soon we are going to start doing things at the command line but first you will n
 #### Install NodeJS on your airgapped machine and your online machine as well.  
 * If you are using a PrivateKeyVault or a raspberry pi 2 then NodeJS installation instructions are [here](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm).  
 * Othewise download NodeJS for your system [here](https://nodejs.org/en/download/).  
+* You interact with NodeJS using JavaScript.  
+  * [This is a beginers JavaScript Tutorial by NetNinja](https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET&index=1)  
+  * [Here NetNinja covers new features of Javascript](https://www.youtube.com/watch?v=0Mp2kwE8xY0&list=PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml)  
+  * [Here NetNinja covers object oriented JavaScript](https://www.youtube.com/watch?v=4l3bTDlT6ZI&list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7)  
+  * I liked [this JavaScript tutorial](https://youtu.be/Bv_5Zv5c-Ts) by Tony Alicea. 
+    * The first 3 hours are free. The rest is worth the money.  
 * The following are two great video playlists which show you how to install and use NodeJS:  
-  * [Node JS Tutorial for Beginners](https://youtu.be/w-7RQ46RgxU)  
-  * [Node.js & Express From Scratch](https://youtu.be/k_0ZzvHbNBQ)  
- * You interact with NodeJS using JavaScript.  
-   * I liked [this JavaScript tutorial](https://youtu.be/Bv_5Zv5c-Ts) but there are lots of great ones to choose from.  
-
+  * [Node JS Tutorial for Beginners by NetNinja](https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp)  
+  * [Node.js & Express From Scratch by Traversy Media](https://www.youtube.com/watch?v=k_0ZzvHbNBQ&list=PLillGF-RfqbYRpji8t4SxUkMxfowG4Kqp)  
+  * [MongoDB is covered by NetNinja here](https://www.youtube.com/watch?v=9OPP_1eAENg&list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u)  
+  * [NetNinja covers NodeJS with REST API here](https://www.youtube.com/watch?v=BRdcRFvuqsE&list=PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8)  
+   
 #### Install iota.js  
 * [Check out the documentation - found here](https://github.com/iotaledger/iota.js/blob/next/api_reference.md)  
 * [The iota.js library and install instructions are found here](https://github.com/iotaledger/iota.js).  
