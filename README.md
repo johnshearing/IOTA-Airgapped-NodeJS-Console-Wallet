@@ -127,7 +127,7 @@ Soon we are going to start doing things at the command line but first you will n
 * If you are using a PrivateKeyVault or a raspberry pi 2 then NodeJS installation instructions are [here](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm).  
 * Othewise download NodeJS for your system [here](https://nodejs.org/en/download/).  
 * You interact with NodeJS using JavaScript.  
-  * [Before learning JavaScript, pickup some understanding of HTML and CSS here](https://www.w3schools.com/)  
+  * [Pickup some understanding of HTML, CSS, and JavaScript here](https://www.w3schools.com/). Then you will be ready for more advanced tutorials.  
   * [This is a beginers JavaScript Tutorial by NetNinja](https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET&index=1)  
   * [Here NetNinja covers new features of Javascript](https://www.youtube.com/watch?v=0Mp2kwE8xY0&list=PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml)  
   * [Here NetNinja covers object oriented JavaScript](https://www.youtube.com/watch?v=4l3bTDlT6ZI&list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7)  
