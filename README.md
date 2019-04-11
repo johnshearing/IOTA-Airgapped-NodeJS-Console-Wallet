@@ -166,7 +166,29 @@ If you have been following along then you already have two seeds in a text file 
 * A short tutorial of how to make addresses for your two different seeds will go here.  
 * A short tutorial of how to back up your seeds will go here.  
 * A short tutorial of how to send IOTAs from binance to your new address will go here.  
-* A short tutorial of how to find a healthy node will go here.  
+
+#### Find a Healthy Computer on the Tangle To Use For Checking the Balance of Your New Address  
+* There are computers all over the planet which maintain a record of all the addresses and their balances on the IOTA Tangle.  
+* They all talk to each other to ensuring that they all have the same information and that the information is correct.  
+* Anyone can setup one or more of these computers but that is outside the scope of this tutorial.  
+* We just need to find a healthy one to use for checking the balance of your new address.  
+* Open the browser of your of your online computer.  
+* Paste the following URL into the browser's address field.  
+* `https://iota.dance/`  
+* You will see a webpage listing the healthiest nodes near the top.  
+* Pick an node that:  
+  * Has a health index of **10**  
+  * Has lots of neighbors  
+  * Is using the latest version  
+  * Is on the most recent milestone  
+  * Is not heavily loaded  
+  * Allows proof of work  
+  * And uses the Secure Socket Layer Protocol (https)  
+* Just click on the one you want and the URL will be copied to the clipboard. 
+
+
+
+* A short tutorial of how to see if you can connect to a node will go here.  
 * A short tutorial of how to check your balance will go here.  
 * A short tutorial of how to make a transaction bundle will go here.  
 * A short tutorial of how to sign a transaction bundle will go here.  
