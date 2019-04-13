@@ -99,7 +99,16 @@ Use the above commands to check that there are still 81 characters in your seed 
 * **That's what we will need to do in order to start the mass migration to IOTA**  
 * **Let's get to work**  
 
-### About Addresses, Safe Spending, and IOTA's Defence Against Quantum Computers
+### A Word On Privacy  
+* The IOTA Tangle is a public ledger.  
+* Every Transaction on the IOTA Tangle is public information.  
+* [Every Transaction can viewed here.](https://thetangle.org/)  
+* That means that everyone can see how many IOTAs everybody else has in their addresses and everyone can see to what addresses IOTAs move when they are spent. 
+* That means that you can not use the IOTA Tangle to hide your money from the government nor anybody else and you can not hide the purchases you make either. I mention this because it is a common misconception that cryptocurrency can be used for money laundering. Maybe this is possible with some cryptocurrencies, but not with IOTA because you can see where every IOTA is and how every IOTA got there.  
+* So why, you may be wondering, do they call it cryptocurrency if it's not secret. It's because cryptography is used to protect your seeds while you use them to control your accounts.  
+
+
+### About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
 * Addresses are public.  
 * Addresses are like bank account numbers.  
@@ -166,22 +175,27 @@ Soon we are going to start doing things at the command line but first you will n
 * Then execute the following command at the BASH console.   
 * git clone https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet.git`  
 * Now the Console Wallet is installed in a new directory called **IOTA-Airgapped-NodeJS-Console-Wallet**  
-* You can change the name to something shorter if you want.  
-* At the BASH console, CD into this new directory and look at the scripts with your favorite text editor.  
-* You will be using these scripts at the node console to securely store and spend your IOTAs.  
+* Change the name of the directory to something shorter. Call it **Console-Wallet**  
+* At the BASH console, CD into the **Console-Wallet** directory and look at the scripts with your favorite text editor.  
+* You will be using these scripts at the BASH console to securely store and spend your IOTAs.  
 
 #### Move Your Seeds Into the Console Wallet directory.  
 * If you have been following along then you already have two experimental seeds in a text file waiting to be used on your airgapped machine.  
-* Move the text file containing your experimental seeds into the Console-Wallet directory.  
+* Move the text file containing your experimental seeds into the **Console-Wallet** directory.  
 * Your seeds are very important. 
 * If you lose your seeds then you will lose all the IOTAs they control.  
 * Copy your experimental seeds by writing them down on a piece of paper and check 3 times that you have written them down correctly.  
 * Then put these pieces of paper somewhere safe.  
-* If you are using a PrivateKeyVault then there is different method for backing up your seed [which is found here.](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi)  
+* If you are using a PrivateKeyVault then there is different method for backing up your seeds [which is found here.](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi)  
+
+#### Make Addresses From Your Seeds To Store IOTAs  
+* Your BASH Console should be open and you should be in the **Console-Wallet** directory.  
+
+
+
 
 * A short tutorial of how to buy IOTAs on [binance](https://www.binance.com/en) will go here.  
-* A short tutorial of how to make addresses for your two different seeds will go here.  
-* A short tutorial of how to back up your seeds will go here.  
+
 * A short tutorial of how to send IOTAs from binance to your new address will go here.  
 
 #### Find a Healthy Computer on the Tangle To Use For Checking the Balance of Your New Address  
