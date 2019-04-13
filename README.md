@@ -92,7 +92,7 @@ Use the above commands to check that there are still 81 characters in your seed 
 * **For the first time in human history citizens can take full control of their own money.**  
 * **When they do, money will not be controlled by banks and it will not be tied to any government.**     
 * **When IOTA achives mass-adoption banks will no longer be able to devalue our currency by issuing new money.**  
-* **And governments will not be able to print money to finance wars that it's people do not want.**  
+* **And governments will not be able to just print money to finance wars that it's people do not want.**  
 * **So with money no longer tied to a country, governments will have to compete for citizens (really their money) by providing the best places to live at the least cost. The new freedom to leave and take your money with you, will be a stablizing force causing opressive governments to change while keeping honest well run governments on the right track.** 
 * **Citizens are about to get a seat at the bargining table and the nonsense is about to end.**  
 * **We can bring on this change by helping to make IOTA a better service than banks, more secure, and more convenient to use.**  
@@ -125,8 +125,9 @@ Soon we are going to start doing things at the command line but first you will n
 
 #### Install NodeJS on your airgapped machine and your online machine as well.  
 * You are probably wondering, how am I supposed to install software on an airgapped machine that does not connect to the Internet?  
-* Well your airgapped machine is not airgapped untill you say it's airgapped so for right now it's ok to connect to the Internet.  
-* When all the software is installed and you are ready to sign transactions then you simply pull the plug on the Internet and never connnect to it again. Then you will create new seeds and addresses from behind the airgap and use these instead of the ones you are playing with now.  
+* Well your airgapped machine is not airgapped until you say it's airgapped so for right now it's ok to connect to the Internet.  
+* When all the software is installed and you are ready to sign transactions, then you simply pull the plug on the Internet and never connnect to it again.  4
+* Then you will create new seeds and new addresses from behind the airgap and use these instead of the experimental ones you are playing with now.  
 * If you are using a PrivateKeyVault or a raspberry pi 2 then NodeJS installation instructions are [here](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm).  
 * Othewise download NodeJS for your system [here](https://nodejs.org/en/download/).  
 
@@ -152,7 +153,7 @@ Soon we are going to start doing things at the command line but first you will n
 * [Check out the documentation - found here](https://github.com/iotaledger/iota.js/blob/next/api_reference.md)  
 * [The iota.js library and install instructions are found here](https://github.com/iotaledger/iota.js).  
 * To install:  
-  * Make a new directory. Call it **iotajs** if you want which is short for IOTA Console Wallet.  
+  * Make a new directory on each machine. Call it **iotajs**.  
   * At the bash console, cd into the directory.  
   * Execute the following command and the bash console to create a package.json file.  
   * The package.json file is used to manage your project.  
@@ -167,8 +168,16 @@ Soon we are going to start doing things at the command line but first you will n
 * Now the Console Wallet is installed in a new directory called **IOTA-Airgapped-NodeJS-Console-Wallet**  
 * You can change the name to something shorter if you want.  
 * At the BASH console, CD into this new directory and look at the scripts with your favorite text editor.  
+* You will be using these scripts at the node console to securely store and spend your IOTAs.  
 
-If you have been following along then you already have two seeds in a text file waiting to be used on your airgapped machine.  
+#### Move Your Seeds Into the Console Wallet directory.  
+* If you have been following along then you already have two experimental seeds in a text file waiting to be used on your airgapped machine.  
+* Move the text file containing your experimental seeds into the Console-Wallet directory.  
+* Your seeds are very important. 
+* If you lose your seeds then you will lose all the IOTAs they control.  
+* Copy your experimental seeds by writing them down on a piece of paper and check 3 times that you have written them down correctly.  
+* Then put these pieces of paper somewhere safe.  
+* If you are using a PrivateKeyVault then there is different method for backing up your seed [which is found here.](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi)  
 
 * A short tutorial of how to buy IOTAs on [binance](https://www.binance.com/en) will go here.  
 * A short tutorial of how to make addresses for your two different seeds will go here.  
