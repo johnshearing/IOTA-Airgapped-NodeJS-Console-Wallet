@@ -142,7 +142,7 @@ Soon we are going to start doing things at the command line but first you will n
 #### Install NodeJS on your airgapped machine and your online machine as well.  
 * You are probably wondering, how am I supposed to install software on an airgapped machine that does not connect to the Internet?  
 * Well your airgapped machine is not airgapped until you say it's airgapped so for right now it's ok to connect to the Internet.  
-* When all the software is installed and you are ready to sign transactions, then you simply pull the plug on the Internet and never connnect to it again.  4
+* When all the software is installed and you are ready to sign transactions, then you simply pull the plug on the Internet and never connnect to it again.  
 * Then you will create new seeds and new addresses from behind the airgap and use these instead of the experimental ones you are playing with now.  
 * If you are using a PrivateKeyVault or a raspberry pi 2 then NodeJS installation instructions are [here](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm).  
 * Othewise download NodeJS for your system [here](https://nodejs.org/en/download/).  
