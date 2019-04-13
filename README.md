@@ -124,6 +124,9 @@ Soon we are going to start doing things at the command line but first you will n
 ### Lets Make a Signed Transaction Bundle  
 
 #### Install NodeJS on your airgapped machine and your online machine as well.  
+* You are probably wondering, how am I supposed to install software on an airgapped machine that does not connect to the Internet?  
+* Well your airgapped machine is not airgapped untill you say it's airgapped so for right now it's ok to connect to the Internet.  
+* When all the software is installed and you are ready to sign transactions then you simply pull the plug on the Internet and never connnect to it again. Then you will create new seeds and addresses from behind the airgap and use these instead of the ones you are playing with now.  
 * If you are using a PrivateKeyVault or a raspberry pi 2 then NodeJS installation instructions are [here](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm).  
 * Othewise download NodeJS for your system [here](https://nodejs.org/en/download/).  
 
@@ -149,7 +152,7 @@ Soon we are going to start doing things at the command line but first you will n
 * [Check out the documentation - found here](https://github.com/iotaledger/iota.js/blob/next/api_reference.md)  
 * [The iota.js library and install instructions are found here](https://github.com/iotaledger/iota.js).  
 * To install:  
-  * Make a new directory. Call it **icw** if you want which is short for IOTA Console Wallet.  
+  * Make a new directory. Call it **iotajs** if you want which is short for IOTA Console Wallet.  
   * At the bash console, cd into the directory.  
   * Execute the following command and the bash console to create a package.json file.  
   * The package.json file is used to manage your project.  
@@ -157,8 +160,13 @@ Soon we are going to start doing things at the command line but first you will n
   * Next install the iota.js library by executing the following command at the bash console.  
   * `npm install @iota/core` 
 
-
-* A short tutorial of how to install [IOTA-Airgapped-NodeJS-Console-Wallet](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet) will go here.  
+#### Install the IOTA-Airgapped-NodeJS-Console-Wallet repository  
+* At the BASH command line, cd into the **iotajs** directory you just made.  
+* Then execute the following command at the BASH console.   
+* git clone https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet.git`  
+* Now the Console Wallet is installed in a new directory called **IOTA-Airgapped-NodeJS-Console-Wallet**  
+* You can change the name to something shorter if you want.  
+* At the BASH console, CD into this new directory and look at the scripts with your favorite text editor.  
 
 If you have been following along then you already have two seeds in a text file waiting to be used on your airgapped machine.  
 
