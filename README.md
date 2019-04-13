@@ -104,7 +104,7 @@ Use the above commands to check that there are still 81 characters in your seed 
 * Every Transaction on the IOTA Tangle is public information.  
 * [Every Transaction can viewed here.](https://thetangle.org/)  
 * That means that everyone can see how many IOTAs everybody else has in their addresses and everyone can see to what addresses IOTAs move when they are spent. 
-* That means that you can not use the IOTA Tangle to hide your money from the government nor anybody else and you can not hide the purchases you make either. I mention this because it is a common misconception that IOTA can be used for money laundering and other illegal activities. This is not possible with IOTA because you can see where every IOTA is and how every IOTA got there.
+* That means that you can not use the IOTA Tangle to hide your money from the government nor anybody else and you can not hide the purchases you make either. I mention this because it is a common misconception that IOTA can be used for money laundering and other illegal activities. This is not possible with IOTA because you can see where every IOTA is and how every IOTA got there. Infact, [the government uses distributed public ledgers like IOTA to catch criminals](https://youtu.be/507wn9VcSAE).    
 * This is not the case with cash and it is not the case with banks.  
 * If you use cash, no one can see how much you have, where it came from, or where you spend it.    
 * The same is true of bank accounts especially the secret offshore accounts used by criminals and tax evaders.  
@@ -211,6 +211,11 @@ Soon we are going to start doing things at the command line but first you will n
 const iotaLibrary = require('@iota/core')
 
 const iota = iotaLibrary.composeAPI({})
+
+// Your seed should look something like the following:
+// FATTCNIQXGTTCSKIUVPRQXNRAGSHDGTGGGTOHQPMDBXHSDCNHPYQRCNI9AXDLIVCCA9KATTHSOSZZOIDV
+// Don't use the seed above. Use your own seed.  
+// Paste your seed between the quotes below.  
 
 const seed =
   'Paste-Your-Seed-Between-These-Quotes'
