@@ -104,8 +104,15 @@ Use the above commands to check that there are still 81 characters in your seed 
 * Every Transaction on the IOTA Tangle is public information.  
 * [Every Transaction can viewed here.](https://thetangle.org/)  
 * That means that everyone can see how many IOTAs everybody else has in their addresses and everyone can see to what addresses IOTAs move when they are spent. 
-* That means that you can not use the IOTA Tangle to hide your money from the government nor anybody else and you can not hide the purchases you make either. I mention this because it is a common misconception that cryptocurrency can be used for money laundering. Maybe this is possible with some cryptocurrencies, but not with IOTA because you can see where every IOTA is and how every IOTA got there.  
-* So why, you may be wondering, do they call it cryptocurrency if it's not secret. It's because cryptography is used to protect your seeds while you use them to control your accounts.  
+* That means that you can not use the IOTA Tangle to hide your money from the government nor anybody else and you can not hide the purchases you make either. I mention this because it is a common misconception that IOTA can be used for money laundering and other illegal activities. This is not possible with IOTA because you can see where every IOTA is and how every IOTA got there.
+* This is not the case with cash and it is not the case with banks.  
+* If you use cash, no one can see how much you have, where it came from, or where you spend it.    
+* The same is true of bank accounts especially the secret offshore accounts used by criminals and tax evaders.  
+* Cash it the currency of choice for the common criminal.  
+* Banks are the financial instruments of choice for sophisticated criminals.  
+* So why, you may be wondering, do they call it cryptocurrency if it's not secret. 
+* It's because cryptography is used to protect the seeds you use to control your accounts.  
+* In any case, the purpose of IOTA is to give citizens full control of their money not to hide it.  
 
 
 ### About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers
