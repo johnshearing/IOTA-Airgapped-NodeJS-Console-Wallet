@@ -103,20 +103,19 @@ Use the above commands to check that there are still 81 characters in your seed 
 * The IOTA Tangle is a public ledger.  
 * Every Transaction on the IOTA Tangle is public information.  
 * [Every Transaction can viewed here.](https://thetangle.org/)  
-* That means that everyone can see how many IOTAs everybody else has in their addresses and everyone can see to what addresses IOTAs move when they are spent. 
-* That means that you can not use the IOTA Tangle to hide your money from the government nor anybody else and you can not hide the purchases you make either. 
-* I mention this because it is a common misconception that IOTA can be used for money laundering and other illegal activities. 
-* This is not possible with IOTA because you can see where every IOTA is and how every IOTA got there. 
-* Infact, [the government uses distributed public ledgers like IOTA to catch criminals](https://youtu.be/507wn9VcSAE).    
-* This is not the case with cash and it is not the case with banks.  
-* If you use cash, no one can see how much you have, where it came from, or where you spend it.    
+* Everyone can see how many IOTAs are in each addresses and everyone can see to what addresses IOTAs move when they are spent. 
+* That means that you can not use the IOTA Tangle to hide your money from the government and you can not hide the purchases you make.  
+* It is a common misconception that IOTA can be used for money laundering and other illegal activities.  
+* This is not possible with IOTA because you can see where every IOTA is and how every IOTA got there.  
+* [The government uses distributed public ledgers like IOTA to catch criminals](https://youtu.be/507wn9VcSAE).  
+* Using cash, no one can see how much you have, where it came from, or where you spend it.    
 * The same is true of bank accounts especially the secret offshore accounts used by criminals and tax evaders.  
 * Cash it the currency of choice for the common criminal.  
 * Banks are used by sophisticated criminals and bankers themselves [to commit colossal crimes](https://theweek.com/articles/729052/brief-history-crime-corruption-malfeasance-american-banks).  
 * The original cryptocurrency (BitCoin) was invented [to end the misery banks cause humanity](https://bitcoinmagazine.com/articles/ten-years-later-reflection-bitcoins-genesis-and-satoshis-timing/)  
 * So why, you may be wondering, do they call it cryptocurrency if it's not secret. 
 * It's because cryptography is used to protect the seeds you use to control your accounts.  
-* In any case, the purpose of IOTA is to give citizens full control of their money not to hide it.  
+* In any case, the purpose of IOTA is to give citizens full control of their money not to hide it the way you can with cash and offshore bank accounts.  
 
 ### About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
