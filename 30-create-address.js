@@ -17,23 +17,3 @@ iota
   .catch(err => {
     console.log(err)
   })
-
-// The following is the output:
-// Seed - 
-
-// Addresss 0 -  
-// Addresss 1 - 
-// Addresss 2 - 
-// Addresss 3 - 
-// Addresss 4 - 
-
-
-
-
-
-
-
-
-
-
-
