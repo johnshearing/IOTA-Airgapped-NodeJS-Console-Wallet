@@ -12,8 +12,13 @@ const iota = iotaLibrary.composeAPI({
   provider: 'https://nodes.thetangle.org:443'
 })
 
+// Your address should look something like the following:
+// DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
+// Don't use the address above. Use your own address.  
+// Paste your address between the quotes below.  
+
 const address = 
-  'DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA'
+  'Paste-Your-Address-Between-These-Quotes'
 
 iota
   .getBalances([address], 100)
