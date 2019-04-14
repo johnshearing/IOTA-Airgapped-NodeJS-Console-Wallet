@@ -182,7 +182,7 @@ Soon we are going to start doing things at the command line but first you will n
 #### Install the IOTA-Airgapped-NodeJS-Console-Wallet repository  
 * At the BASH command line, cd into the **iotajs** directory you just made.  
 * Then execute the following command at the BASH console.   
-* git clone https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet.git`  
+* `git clone https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet.git`  
 * Now the Console Wallet is installed in a new directory called **IOTA-Airgapped-NodeJS-Console-Wallet**  
 * Change the name of the directory to something shorter. Call it **Console-Wallet**  
 * At the BASH console, CD into the **Console-Wallet** directory and look at the scripts with your favorite text editor.  
