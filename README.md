@@ -141,7 +141,15 @@ Soon we are going to start doing things at the command line but first you will n
 
 #### Reference Materials  
 * The best IOTA Playlist ever [is found here](https://www.youtube.com/playlist?list=PLmL13yqb6OxdIf6CQMHf7hUcDZBbxHyza)  
-* [This webseminar](https://youtu.be/Z-NN0rRcwY0?t=178) was my first introduction to moving IOTA using NodeJS scripts.  
+* [This web seminar](https://youtu.be/Z-NN0rRcwY0?t=178) was my first introduction to moving IOTA using NodeJS scripts.  
+  * The code [is found here](https://github.com/iota-community/iota-workshop) if you want to follow along with the examples.  
+  * This is well worth your time as a introduction.  
+  * My tutorial that you are reading now is largely based on this.  
+  * After viewing the web seminar, return here for very specific examples on how to move IOTA with NodeJS.  
+* Official IOTA developer documentation [is found here](https://docs.iota.org/).  
+* Unofficial IOTA foundation documentation that seems to be used internally [is found here](https://domschiener.gitbooks.io/iota-guide/)  
+* The IOTA JavaScript Library [is found here](https://github.com/iotaledger/iota.js).  
+* The API Reference for using the above library [is found here](https://github.com/iotaledger/iota.js/blob/next/api_reference.md).  
 * The following are reference materials for HTML, CSS, JavaScript, NodeJS, MongoDB, and REST-API.  
 * You will not need them to follow this tutorial but it will help when you want to start following your own ideas.  
 * You interact with NodeJS using JavaScript.  
@@ -157,6 +165,7 @@ Soon we are going to start doing things at the command line but first you will n
 * More advanced NodeJS topics are covered here.  
   * [MongoDB is covered by NetNinja here](https://www.youtube.com/watch?v=9OPP_1eAENg&list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u)  
   * [NetNinja covers NodeJS with REST API here](https://www.youtube.com/watch?v=BRdcRFvuqsE&list=PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8)  
+* For another great producer of relevant tutorials [click here](https://www.youtube.com/user/TechGuyWeb/playlists)  
 
 ### Lets Make a Signed Transaction Bundle  
 
