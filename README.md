@@ -248,8 +248,12 @@ Notice the line of code which reads as follows:
   * In this example we have specifed that the NodeJS script will start generating addresses at index 0.  
 * **About **checksum**  
   * A checksum is 9 characters appended to an address.  
-  * The checksum is used to ensure that 
-  * If you wish to wish to move IOTAs on the Tangle, the address must include a checksum
+  * The checksum is used to ensure that:  
+    * The address is of the correct length.  
+    * The address has not been changed since the checksum was created.  
+    * So if you create a checksum at the time you create the address then you will know if the address has been changed.  
+  * If you wish to wish to move IOTAs on the Tangle, the address must include a checksum.  
+  * For all these reasons always set the checksum parameter to true.  
 
 
 
