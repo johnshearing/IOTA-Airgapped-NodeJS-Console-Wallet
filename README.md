@@ -140,6 +140,8 @@ Soon we are going to start doing things at the command line but first you will n
 * The cost for this protection is the inconvenience of having to inclued a transaction in your signed bundle which moves your remaining (unspent) balance to a new address.  
 
 #### Reference Materials  
+* The best IOTA Playlist ever [is found here](https://www.youtube.com/playlist?list=PLmL13yqb6OxdIf6CQMHf7hUcDZBbxHyza)  
+* [This webseminar](https://youtu.be/Z-NN0rRcwY0?t=178) was my first introduction to moving IOTA using NodeJS scripts.  
 * The following are reference materials for HTML, CSS, JavaScript, NodeJS, MongoDB, and REST-API.  
 * You will not need them to follow this tutorial but it will help when you want to start following your own ideas.  
 * You interact with NodeJS using JavaScript.  
@@ -252,10 +254,10 @@ Notice the line of code which reads as follows:
     * The address has not been changed since the checksum was created.  
   * So if you create a checksum at the time you create the address then you will know if the address has been changed.  
   * If you wish to wish to move IOTAs on the Tangle, the address must include a checksum.  
-  * For all these reasons always set the checksum parameter to true.  
+  * For all these reasons always set the checksum parameter to **true**.  
 * There also exists an optional security level parameter.  
   * We did not specify a security level parameter with the other options in the script above.  
-  * The default when no security level is specified is 2.  
+  * The default when no security level is specified is **2**.  
   * So in our example, the script will generate addresses that have a security level of 2.  
   * Security level 1 is used for passing messages and small amounts of IOTA where speed of the transaction is the primary consideration.  
   * Security level 2 is considered a very good compromise between security and speed of transactions.  
