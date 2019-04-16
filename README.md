@@ -56,6 +56,7 @@ In the example above the output will read **15** because there are 15 characters
 Use the above commands to check that there are still 81 characters in your seed after you have substituted characters.  
 
 * Generate two seeds for this tutorial.  
+* The first seed we will call **seed a** and the second seed we will call **seed b**  
 * **The seeds should be generated and stored on your airgapped machine so that no one will ever see them.**  
 * You can use my method shown above or something else which is truly random like the scrabble method also shown above.  
 * Paste your seeds into a text document on your airgapped machine for use later.  
@@ -212,7 +213,7 @@ Soon we are going to start doing things at the command line but first you will n
 * Be sure no one can see this document. 
 * If anyone manages to record your seeds then they have all the IOTA controlled by those seeds.  
 * If your text editor has a read only mode it would be best to open the document in read only mode.  
-* It would be a tragedy if you accidently changed your seeds after you have created the addresses because then you would lose control over those addresses and all the IOTAs they contain. If you don't have read only mode in your text editor don't worry to much - you backed up your seeds. You did back up your seeds - right?  
+* It would be a tragedy if you accidently changed your seeds after you have created the addresses because then you would lose control over those addresses and all the IOTAs they contain. If you don't have read only mode in your text editor don't worry too much - you backed up your seeds. You did back up your seeds - right?  
 * Now open a second instance of your favorite text editor and open the script named **30-create-address.js** in the **Console-Wallet** repository.  
 * The script should look much like the script seen below.  
 ```
@@ -241,11 +242,15 @@ iota
     console.log(err)
   })
 ```  
+* Before changing the script, save it as **a-create-address.js**  
+Now you still have the original script unchanged for future use and you have the current script to make addresses for **seed a**  
 
-Copy and paste one of your seeds into the script where it says:  
+* Copy and paste the first of your two seeds (seed a) into the script where it says:  
 `'Paste-Your-Seed-Between-These-Quotes'`  
+* Now save the change you made to the script.  
 
-Notice the line of code which reads as follows:  
+
+* Notice the line of code which reads as follows:  
 `.getNewAddress(seed, { index: 0, total: 5, checksum: true })`  
 * About **total**:  
   * **total** specifes the amount of addresses that will be generated.  
@@ -273,19 +278,25 @@ Notice the line of code which reads as follows:
   * Security level 3 is used for full blown quantum resistance where very large amounts of IOTA are being moved.  
 * More documentation about the **getNewAddress** function [is found here](https://github.com/iotaledger/iota.js/blob/next/api_reference.md#coregetnewaddressseed-options-callback)  
 * A very good video explaining technical details of addresses [can be found here](https://youtu.be/YdYjJA-NFcE)  
+*  
+* Next we are going to run the script at the BASH console.  
+* Open the BASH console and navigate to the **Console-Wallet** directory using the `cd` command.  
+* Then execute the `ls` command if you are using linux.  
+* Or execute the `dir` command if using Windows to see the files in the directory.   
+* Now execute the following command to run the script:  
+* `node a-create-address.js`  
+* The script will produce output similar to the following but not exactly the same.
+```  
+`GetNewAddressOptions`: 5,true options are deprecated and will be removed in v.2.0.0. 
 
-
-
-
-
-
+Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA,AMECMIEELJKYZPQLBVSMJLSVPQFDSDZHTIWGORVJD9OUDGYINMOABRINKLW9HFVSFAKUQSWTJGCGSILS9MGNBSOAIA,AYKJNRHMHA9CHSLREPDJBRMYLPOBJRGYPFYYNDSVBJYWEIEVCEQPRBQSEHXSFKLCBQJADSZSYJLUKBCGWKDHOCYROD,BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB,UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9
+```  
 
 
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
 
-* Your BASH Console should be open and you should be in the **Console-Wallet** directory.  
 
 * A short tutorial of how to buy IOTAs on [binance](https://www.binance.com/en) will go here.  
 * A short tutorial of how to send IOTAs from binance to your new address will go here.  
