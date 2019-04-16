@@ -283,13 +283,14 @@ Now you still have the original script unchanged for future use and you have the
 * Or execute the `dir` command if using Windows to see the files in the directory.   
 * Now execute the following command to run the script:  
 * `node a-create-address.js`  
+* Be patient as your computer works.  
 * The script will produce output similar to the following but not exactly the same.
 ```  
 `GetNewAddressOptions`: 5,true options are deprecated and will be removed in v.2.0.0. 
 
 Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA,AMECMIEELJKYZPQLBVSMJLSVPQFDSDZHTIWGORVJD9OUDGYINMOABRINKLW9HFVSFAKUQSWTJGCGSILS9MGNBSOAIA,AYKJNRHMHA9CHSLREPDJBRMYLPOBJRGYPFYYNDSVBJYWEIEVCEQPRBQSEHXSFKLCBQJADSZSYJLUKBCGWKDHOCYROD,BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB,UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9
 ```  
-* The output shown above is 5 different addresses each of which is separtated from the others with a comma.  
+* The output shown above is 5 different addresses each of which is separated from the others with a comma.  
 * Organize the addresses so they look as follows:
 ```  
 Addresses for seed a
