@@ -343,6 +343,18 @@ Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLK
 * **If everything checks out then make a backup copy of the script `a-create-address.js` and keep is somewhere safe**.  
 * Do not miss this opportunity to back up your seed - you will be very glad if you do and very sad if you do not.  
 
+#### Buy Ethereum To Buy IOTAs  
+* There is no place where you can buy IOTAs with US Dollars at the time of this writing.  
+* You can however buy Ethereum with dollars and use your Ethereum to purchase IOTAs.  
+* I use https://www.kraken.com/ to purchase Eth.  
+* Then I send my Eth to https://www.binance.com/en where I exchange them for IOTAs.  
+* A video showing how to buy Eth on kraken using Dollars [is found here]()
+* A video showing how to buy IOTAs on Binance using Eth [is found here](https://www.youtube.com/watch?v=GEd1G9Mw4Fc)
+
+
+#### Buy IOTAs on Binance  
+[](https://www.youtube.com/watch?v=GEd1G9Mw4Fc)
+
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
 
