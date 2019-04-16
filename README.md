@@ -111,7 +111,7 @@ Use the above commands to check that there are still 81 characters in your seed 
 * [The government uses distributed public ledgers like IOTA to catch criminals](https://youtu.be/507wn9VcSAE).  
 * Using cash, no one can see how much you have, where it came from, or where you spend it.    
 * The same is true of bank accounts especially the secret offshore accounts used by criminals and tax evaders.  
-* Cash it the currency of choice for the common criminal.  
+* Cash is the currency of choice for the common criminal.  
 * Banks are used by sophisticated criminals and bankers themselves [to commit colossal crimes](https://theweek.com/articles/729052/brief-history-crime-corruption-malfeasance-american-banks).  
 * The original cryptocurrency (BitCoin) was invented [to end the misery banks cause humanity](https://bitcoinmagazine.com/articles/ten-years-later-reflection-bitcoins-genesis-and-satoshis-timing/)  
 * So why, you may be wondering, do they call it cryptocurrency if it's completely transparent.  
