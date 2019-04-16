@@ -248,8 +248,6 @@ Now you still have the original script unchanged for future use and you have the
 * Copy and paste the first of your two seeds (seed a) into the script where it says:  
 `'Paste-Your-Seed-Between-These-Quotes'`  
 * Now save the change you made to the script.  
-
-
 * Notice the line of code which reads as follows:  
 `.getNewAddress(seed, { index: 0, total: 5, checksum: true })`  
 * About **total**:  
@@ -291,8 +289,58 @@ Now you still have the original script unchanged for future use and you have the
 
 Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA,AMECMIEELJKYZPQLBVSMJLSVPQFDSDZHTIWGORVJD9OUDGYINMOABRINKLW9HFVSFAKUQSWTJGCGSILS9MGNBSOAIA,AYKJNRHMHA9CHSLREPDJBRMYLPOBJRGYPFYYNDSVBJYWEIEVCEQPRBQSEHXSFKLCBQJADSZSYJLUKBCGWKDHOCYROD,BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB,UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9
 ```  
+* The output shown above is 5 different addresses each of which is separtated from the others with a comma.  
+* Organize the addresses so they look as follows:
+```  
+Addresses for seed a
+Address at index 0 - DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
+Address at index 1 - AMECMIEELJKYZPQLBVSMJLSVPQFDSDZHTIWGORVJD9OUDGYINMOABRINKLW9HFVSFAKUQSWTJGCGSILS9MGNBSOAIA
+Address at index 2 - AYKJNRHMHA9CHSLREPDJBRMYLPOBJRGYPFYYNDSVBJYWEIEVCEQPRBQSEHXSFKLCBQJADSZSYJLUKBCGWKDHOCYROD
+Address at index 3 - BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB
+Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9
+```  
+* Now paste your organized addresses into the script you used to create them.  
+* In other words, paste the addresses into script **a-create-address.js** near the bottom so the script now looks as follows.  
 
+```
+///////////////////////////////
+// Create addresses for seed a
+///////////////////////////////
 
+const iotaLibrary = require('@iota/core')
+
+const iota = iotaLibrary.composeAPI({})
+
+const seed =
+  'FATTCNIQXGTTCSKIUVPRQXNRAGSHDGTGGGTOHQPMDBXHSDCNHPYQRCNI9AXDLIVCCA9KATTHSOSZZOIDV'
+
+iota
+  .getNewAddress(seed, { index: 0, total: 5, checksum: true })
+  .then(address => {
+    console.log('Your address is: ' + address)
+  })
+  .catch(err => {
+    console.log(err)
+  })
+  
+Addresses for seed a
+Address at index 0 - DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
+Address at index 1 - AMECMIEELJKYZPQLBVSMJLSVPQFDSDZHTIWGORVJD9OUDGYINMOABRINKLW9HFVSFAKUQSWTJGCGSILS9MGNBSOAIA
+Address at index 2 - AYKJNRHMHA9CHSLREPDJBRMYLPOBJRGYPFYYNDSVBJYWEIEVCEQPRBQSEHXSFKLCBQJADSZSYJLUKBCGWKDHOCYROD
+Address at index 3 - BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB
+Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9  
+```    
+* As you can see:
+  * I changed the line at the very top to read `// Create addresses for seed a`.  
+  * I got rid of the unnecessary comments.  
+  * I appended the organized addresses to the bottom of the script.  
+*  
+* You should now run the script again at the BASH console using the same command we used before which is given again below:  
+* `node a-create-address.js`  
+* Check the output of the script and make sure it is producing the same addresses.  
+* This is your last opportunity to make sure your seed controls the addresses where you will be sending your IOTAs.  
+* **If everything checks out then make a backup copy of the script `a-create-address.js` and keep is somewhere safe**.  
+* Do not miss this opportunity to back up your seed - you will be very glad if you do and very sad if you do not.  
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
