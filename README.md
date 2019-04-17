@@ -346,14 +346,14 @@ Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLK
 #### Buy Ethereum To Buy IOTAs  
 * There is no place where you can buy IOTAs with US Dollars at the time of this writing.  
 * You can however buy Ethereum with dollars and use your Ethereum to purchase IOTAs.  
-* I use https://www.kraken.com/ to purchase Eth.  
-* Then I send my Eth to https://www.binance.com/en where I exchange them for IOTAs.  
-* A video showing how to buy Eth on kraken using Dollars [is found here]()
-* A video showing how to buy IOTAs on Binance using Eth [is found here](https://www.youtube.com/watch?v=GEd1G9Mw4Fc)
-
-
-#### Buy IOTAs on Binance  
-[](https://www.youtube.com/watch?v=GEd1G9Mw4Fc)
+* Use https://www.kraken.com/ to purchase Eth.  
+* Then send Eth to https://www.binance.com/en and exchange them for IOTAs.  
+* A written tutorial showing how to buy Eth on Kraken using Dollars [is found here](https://etherbasics.com/the-tutorials/buy-ether-on-kraken/)  
+* A video showing how to buy IOTAs on Binance using Eth [is found here](https://www.youtube.com/watch?v=GEd1G9Mw4Fc)  
+* You don't even need a tutorial because customer support is very good with both companies.  
+* Once you I have purchased IOTAs on binance, you can send them to your to the address at index 0 which was made with **seed a**.  
+* Lets call this **address a0**  
+* First send a very small amount of IOTA to **address a0**  
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
