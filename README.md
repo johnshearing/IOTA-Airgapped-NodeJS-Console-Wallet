@@ -421,7 +421,7 @@ iota
   })
 ```  
 * Paste the URL you copied from **https://iota.dance/** between the quote marks in the script where it says:  
-`Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes`  
+`'Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes'`  
 
 
 #### This is as far as I have worked so far.  
