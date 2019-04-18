@@ -9,7 +9,7 @@ const iota = iotaLibrary.composeAPI({
   //Lookup healthy nodes at https://iota.dance/
   //provider: 'https://nodes.devnet.thetangle.org:443'
   //provider: 'https://nodes.thetangle.org:443'
-  provider: 'Paste-The-URL-Of-A-Health-Node-Here'
+  provider: 'Paste-The-URL-Of-A-Healthy-Node-Here'
 })
 
 // Your address should look something like the following:
