@@ -341,7 +341,12 @@ Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLK
 * Check the output of the script and make sure it is producing the same addresses.  
 * This is your last opportunity to make sure your seed controls the addresses where you will be sending your IOTAs.  
 * **If everything checks out then make a backup copy of the script `a-create-address.js` and keep is somewhere safe**.  
-* Do not miss this opportunity to back up your seed - you will be very glad if you do and very sad if you do not.  
+* Do not miss this opportunity to backup your seed - you will be very glad if you do and very sad if you do not.  
+
+#### Make Addresses for Seed b  
+* Ok, so you have five addresses which you can control with **seed a**  
+* Follow the steps above using the other seed you made (call it **seed b**).  
+* Then you will be able to practice sending IOTAs between addresses controlled with two different seeds.  
 
 #### Buy Ethereum To Buy IOTAs  
 * There is no place where you can buy IOTAs with US Dollars at the time of this writing.  
@@ -351,16 +356,27 @@ Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLK
 * A written tutorial showing how to buy Eth on Kraken using Dollars [is found here](https://etherbasics.com/the-tutorials/buy-ether-on-kraken/)  
 * A video showing how to buy IOTAs on Binance using Eth [is found here](https://www.youtube.com/watch?v=GEd1G9Mw4Fc)  
 * You don't even need a tutorial because customer support is very good with both companies.  
-* Once you I have purchased IOTAs on binance, you can send them to your to the address at index 0 which was made with **seed a**.  
+
+#### Send IOTAs to address a  
+* Once you have purchased IOTAs on binance, send them to your address at index 0 which was made with **seed a**.  
 * Lets call this **address a0**  
 * First send a very small amount of IOTA to **address a0**  
-
-#### This is as far as I have worked so far.  
-#### The stuff below is unorganized material for the tutorial.  
-
-
-* A short tutorial of how to buy IOTAs on [binance](https://www.binance.com/en) will go here.  
-* A short tutorial of how to send IOTAs from binance to your new address will go here.  
+* Follow the directions on Binance to accomplish this.  
+* You could just leave your IOTAs in your Binance account    
+* In that case, your IOTAs are in an address controlled by a seed which is in the posession of Binance.  
+* All you have is a password to your account and a promise that you can have your IOTAs went you ask for them.  
+* The are risks as follows:  
+  * If Binance gets hacked you loose your IOTAs.  
+  * If Binance mismanages your account you loose your IOTAs.  
+  * If Binance steals your account you loose your IOTAs.  
+  * If the goverment forces Binance to confiscate your account you loose your IOTAs.  
+* Also, at the time of this writing, Binance charges .5 MIOTAs for each outgoing transaction whereas outgoing transactions are free when you send them from an account that you control.  
+* Once your IOTAs are in an address that you control, you can start to do interesting things like:  
+  * Buy and sell goods and services from humans and machines.  
+  * Buy and sell computing power, and information on the Internet of Things,  
+  * Use smart contracts to automate your business,  
+  * Use multisignature wallets for an added layer of security,  
+  
 #### Find a Healthy Computer on the Tangle To Use For Checking the Balance of Your New Address  
 * There are computers all over the planet which maintain a record of all the addresses and their balances on the IOTA Tangle.  
 * They all talk to each other to ensuring that they all have the same information and that the information is correct.  
@@ -380,9 +396,47 @@ Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLK
   * And uses the Secure Socket Layer Protocol (https)  
 * Just click on the one you want and the URL will be copied to the clipboard. 
 
+#### Check That You Can Connect to the Tangle  
+* Using your favorite text editor, open the following script in the **Console-Wallet** directory.  
+* `40-check-balance.js`  
+* The contents of the file will be as follows:  
+```  
+///////////////////////////////
+// Fetch balance of an address
+///////////////////////////////
+
+const iotaLibrary = require('@iota/core')
+
+const iota = iotaLibrary.composeAPI({
+	
+  //Lookup healthy nodes at https://iota.dance/	
+	
+  //provider: 'https://nodes.devnet.thetangle.org:443'
+  provider: 'https://nodes.thetangle.org:443'
+})
+
+// Your address should look something like the following:
+// DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
+// Don't use the address above. Use your own address.  
+// Paste your address between the quotes below.  
+
+const address = 
+  'Paste-Your-Address-Between-These-Quotes'
+
+iota
+  .getBalances([address], 100)
+  .then(({ balances }) => {
+    console.log(balances)
+  })
+  .catch(err => {
+    console.error(err)
+  })
+```  
+
+#### This is as far as I have worked so far.  
+#### The stuff below is unorganized material for the tutorial.  
 
 
-* A short tutorial of how to see if you can connect to a node will go here.  
 * A short tutorial of how to check your balance will go here.  
 * A short tutorial of how to make a transaction bundle will go here.  
 * A short tutorial of how to sign a transaction bundle will go here.  
