@@ -398,40 +398,31 @@ Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLK
 
 #### Check That You Can Connect to the Tangle  
 * Using your favorite text editor, open the following script in the **Console-Wallet** directory.  
-* `40-check-balance.js`  
+* Open the file called `20-check-node-health.js`  
 * The contents of the file will be as follows:  
 ```  
 ///////////////////////////////
-// Fetch balance of an address
-///////////////////////////////
+// Environment Check
+///////////////////////////////	
 
 const iotaLibrary = require('@iota/core')
 
 const iota = iotaLibrary.composeAPI({
-	
-  //Lookup healthy nodes at https://iota.dance/	
-	
-  //provider: 'https://nodes.devnet.thetangle.org:443'
-  provider: 'https://nodes.thetangle.org:443'
+  //Lookup healthy nodes at https://iota.dance/
+  //provider: 'https://nodes.thetangle.org:443'
+  provider: 'Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes'
 })
 
-// Your address should look something like the following:
-// DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
-// Don't use the address above. Use your own address.  
-// Paste your address between the quotes below.  
-
-const address = 
-  'Paste-Your-Address-Between-These-Quotes'
-
 iota
-  .getBalances([address], 100)
-  .then(({ balances }) => {
-    console.log(balances)
-  })
+  .getNodeInfo()
+  .then(response => console.log(response))
   .catch(err => {
     console.error(err)
   })
 ```  
+* Paste the URL you copied from **https://iota.dance/** between the quote marks in the script where it says:  
+`Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes`  
+
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
