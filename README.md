@@ -507,18 +507,22 @@ iota
 ```  
 * Paste the address you copied onto the clipboard between the quote marks in the script where it says:  
 * `'Paste-Your-Address-Between-These-Quotes'`  
-* Now save the file.  
+* Now save the script.  
 *  
 * Next we are going to run the script.  
 * Open the BASH console and navigate to the **Console-Wallet** directory using the `cd` command.   
 * Now execute the following command to run the script:  
 * `node 40-check-balance.js`  
 * The script outputs a number.  
-* That number is your balance.  
+* That number is your balance in IOTAs.  
+*  
 * This should be the amount of IOTAs you sent to this address from Binance.  
 * You may be surprised to see 6 unexpected zeros in your balance.  
-* That's because you purchase and send MIOTAs from Binance which stands for Million IOTAs while the NodeJS API works in IOTAs.  
+* That's because you bought and sent MIOTAs (Million IOTAs) from Binance while the NodeJS API works with individual IOTAs.  
+* In the same way 1 dollar is the same as 100 cents, 1 MIOTA is the same as 1000000 IOTAs.  
 * The monetary value is the same - it just looks different.  
+*  
+* If you want to send IOTAs from a particular address you will need to provide the balance to the API in coming steps so for now record your balance in the script named 
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
