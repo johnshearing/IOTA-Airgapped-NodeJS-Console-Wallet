@@ -1,6 +1,10 @@
 # IOTA-Airgapped-NodeJS-Console-Wallet  
 ### Create and sign transaction bundles securely offline using an [airgapped computer](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md) then broadcast your signed transaction bundles to the Tangle using an online computer.  
 
+### This is for instructional purposes only.  
+### Use these instructions to move only small amounts of IOTA that you are prepared to loose.  
+### The intention of these notes is to help you become familar with the NodeJS API for moving IOTAs between accounts.  
+
 A video of this process is coming soon. In the meantime this document will contain all the instructions you need to use this repository.    
 I have not finished writing this document yet.  
 
@@ -355,25 +359,25 @@ Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLK
 * A video showing how to buy IOTAs on Binance using Eth [is found here](https://www.youtube.com/watch?v=GEd1G9Mw4Fc)  
 * You don't even need a tutorial because customer support is very good with both companies.  
 
-#### Send IOTAs to address a  
+#### Send IOTAs to address a0  
 * Once you have purchased IOTAs on binance, send them to your address at index 0 which was made with **seed a**.  
 * Lets call this **address a0**  
 * First send a very small amount of IOTA to **address a0**  
 * Follow the directions on Binance to accomplish this.  
-* You could just leave your IOTAs in your Binance account    
+* You could just leave your IOTAs in your Binance account.    
 * In that case, your IOTAs are in an address controlled by a seed which is in the posession of Binance.  
 * All you have is a password to your account and a promise that you can have your IOTAs went you ask for them.  
 * The are risks as follows:  
   * If Binance gets hacked you loose your IOTAs.  
   * If Binance mismanages your account you loose your IOTAs.  
   * If Binance steals your account you loose your IOTAs.  
-  * If the goverment forces Binance to confiscate your account you loose your IOTAs.  
+  * If a goverment forces Binance to confiscate your account you loose your IOTAs.  
 * Also, at the time of this writing, Binance charges .5 MIOTAs for each outgoing transaction whereas outgoing transactions are free when you send them from an account that you control.  
 * Once your IOTAs are in an address that you control, you can start to do interesting things like:  
   * Buy and sell goods and services from humans and machines.  
   * Buy and sell computing power, and information on the Internet of Things,  
   * Use smart contracts to automate your business,  
-  * Use multisignature wallets for an added layer of security,  
+  * Use multisignature wallets for even greater security.
   
 #### Find a Healthy Computer on the Tangle To Use For Checking the Balance of Your New Address  
 * There are computers all over the planet which maintain a record of all the addresses and their balances on the IOTA Tangle.  
@@ -392,7 +396,7 @@ Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLK
   * Is not heavily loaded  
   * Allows proof of work  
   * And uses the Secure Socket Layer Protocol (https)  
-* Just click on the one you want and the URL will be copied to the clipboard. 
+* Just click on the one you want and the URL will be copied to the clipboard.  
 
 #### Check That You Can Connect to the Tangle  
 * Using your favorite text editor, open the script called `20-check-node-health.js` in the **Console-Wallet** directory.  
@@ -421,7 +425,7 @@ iota
 * `'Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes'`  
 * Now save the file.  
 *  
-* Next we are going to run the script at the BASH console.  
+* Next we are going to run the script to see if we can connect to the Tangle via the healthy node you found at **https://iota.dance/**
 * Open the BASH console and navigate to the **Console-Wallet** directory using the `cd` command.  
 * Now execute the following command to run the script:  
 * `node 20-check-node-health.js`  
@@ -452,8 +456,55 @@ iota
    'EQSAUZXULTTYZCLNJNTXQTQHOMOFZERHTCGTXOLTVAHKSA9OGAZDEKECURBRIXIJWNPFCQIOVFVVXJVD9',
   duration: 0 }
 ```  
-* If the console out put looks like the above then you are able to query the Tangle.  
+* If the console output looks much like the above then you are able to connect with the Tangle through healthy node you found.  
 
+#### Check Your Balance at address a0  
+* Lets see if the IOTAs you sent from your Binance account to address a0 was actually transfered to your account.  
+* Using your favorite text editor, open the script called `20-check-node-health.js` in the **Console-Wallet** directory.  
+* The contents of the file will be as follows:  
+```  
+///////////////////////////////
+// Fetch balance of an address
+///////////////////////////////
+
+const iotaLibrary = require('@iota/core')
+
+const iota = iotaLibrary.composeAPI({
+	
+  //Lookup healthy nodes at https://iota.dance/
+  //provider: 'https://nodes.devnet.thetangle.org:443'
+  //provider: 'https://nodes.thetangle.org:443'
+  provider: 'Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes'
+})
+
+// Your address should look something like the following:
+// DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
+// Don't use the address above. Use your own address.  
+// Paste your address between the quotes below.  
+
+const address = 
+  'Paste-Your-Address-Between-These-Quotes'
+
+iota
+  .getBalances([address], 100)
+  .then(({ balances }) => {
+    console.log(balances)
+  })
+  .catch(err => {
+    console.error(err)
+  })
+
+```  
+
+* Paste the URL you copied from **https://iota.dance/** between the quote marks in the script where it says:  
+* `'Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes'`  
+* Now save the file.  
+*  
+* Next we are going to run the script to see if we can connect to the Tangle via the healthy node you found at **https://iota.dance/**
+* Open the BASH console and navigate to the **Console-Wallet** directory using the `cd` command.  
+* Now execute the following command to run the script:  
+* `node 20-check-node-health.js`  
+* The script will produce output similar to the following but not exactly the same.  
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
