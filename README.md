@@ -425,8 +425,34 @@ iota
 * Open the BASH console and navigate to the **Console-Wallet** directory using the `cd` command.  
 * Now execute the following command to run the script:  
 * `node 20-check-node-health.js`  
-* Be patient as your computer works.  
 * The script will produce output similar to the following but not exactly the same.  
+```  
+{ appName: 'IRI',
+  appVersion: '1.7.0-RELEASE',
+  jreAvailableProcessors: 16,
+  jreFreeMemory: 1564574175,
+  jreVersion: '1.8.0_191',
+  jreMaxMemory: 20997734400,
+  jreTotalMemory: 3747132179,
+  latestMilestone:
+   'OIRE9NRFXSCAWUSZQRPATVJJNJHMGQTIBMWSCYDNQOHGIKCVEQYT9DLVBPJAIRTGTHACWSJKVWIYZ9999',
+  latestMilestoneIndex: 1054755,
+  latestSolidSubtangleMilestone:
+   'OIRE9NRFXSCAWUSZQRPATVJJNJHMGQTIBMWSCYDNQOHGIKCVEQYT9DLVBPJAIRTGTHACWSJKVWIYZ9999',
+  latestSolidSubtangleMilestoneIndex: 1054755,
+  milestoneStartIndex: 1050001,
+  lastSnapshottedMilestoneIndex: 1054653,
+  neighbors: 24,
+  packetsQueueSize: 0,
+  time: 1555647553652,
+  tips: 8336,
+  transactionsToRequest: 0,
+  features: [ 'loadBalancer', 'snapshotPruning', 'RemotePOW' ],
+  coordinatorAddress:
+   'EQSAUZXULTTYZCLNJNTXQTQHOMOFZERHTCGTXOLTVAHKSA9OGAZDEKECURBRIXIJWNPFCQIOVFVVXJVD9',
+  duration: 0 }
+```  
+* If the console out put looks like the above then you are able to query the Tangle.  
 
 
 #### This is as far as I have worked so far.  
