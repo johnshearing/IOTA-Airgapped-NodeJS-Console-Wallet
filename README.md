@@ -279,12 +279,10 @@ Now you still have the original script unchanged for future use and you have the
 *  
 * Next we are going to run the script at the BASH console.  
 * Open the BASH console and navigate to the **Console-Wallet** directory using the `cd` command.  
-* Then execute the `ls` command if you are using linux.  
-* Or execute the `dir` command if using Windows to see the files in the directory.   
 * Now execute the following command to run the script:  
 * `node a-create-address.js`  
 * Be patient as your computer works.  
-* The script will produce output similar to the following but not exactly the same.
+* The script will produce output similar to the following but not exactly the same.  
 ```  
 `GetNewAddressOptions`: 5,true options are deprecated and will be removed in v.2.0.0. 
 
@@ -397,8 +395,7 @@ Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLK
 * Just click on the one you want and the URL will be copied to the clipboard. 
 
 #### Check That You Can Connect to the Tangle  
-* Using your favorite text editor, open the following script in the **Console-Wallet** directory.  
-* Open the file called `20-check-node-health.js`  
+* Using your favorite text editor, open the script called `20-check-node-health.js` in the **Console-Wallet** directory.  
 * The contents of the file will be as follows:  
 ```  
 ///////////////////////////////
@@ -421,7 +418,15 @@ iota
   })
 ```  
 * Paste the URL you copied from **https://iota.dance/** between the quote marks in the script where it says:  
-`'Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes'`  
+* `'Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes'`  
+* Now save the file.  
+*  
+* Next we are going to run the script at the BASH console.  
+* Open the BASH console and navigate to the **Console-Wallet** directory using the `cd` command.  
+* Now execute the following command to run the script:  
+* `node 20-check-node-health.js`  
+* Be patient as your computer works.  
+* The script will produce output similar to the following but not exactly the same.  
 
 
 #### This is as far as I have worked so far.  
