@@ -213,6 +213,8 @@ Soon we are going to start doing things at the command line but first you will n
 * If you are using a PrivateKeyVault then there is different method for backing up your seeds [which is found here.](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi)  
 
 #### Make Addresses From Your Seeds To Store IOTAs  
+* If you are using two computers then the following steps will be performed on you offline computer.  
+* That's the computer that does not connect to the Internet nor to other devices.  
 * Open your favorite text editor and use it to open the document that contains your two seeds.  
 * Be sure no one can see this document. 
 * If anyone manages to record your seeds then they have all the IOTA controlled by those seeds.  
@@ -293,7 +295,8 @@ Now you still have the original script unchanged for future use and you have the
 Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA,AMECMIEELJKYZPQLBVSMJLSVPQFDSDZHTIWGORVJD9OUDGYINMOABRINKLW9HFVSFAKUQSWTJGCGSILS9MGNBSOAIA,AYKJNRHMHA9CHSLREPDJBRMYLPOBJRGYPFYYNDSVBJYWEIEVCEQPRBQSEHXSFKLCBQJADSZSYJLUKBCGWKDHOCYROD,BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB,UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9
 ```  
 * The output shown above is 5 different addresses each of which is separated from the others with a comma.  
-* Organize the addresses so they look as follows:
+* Organize the addresses so they look as follows:  
+* The two back slashes at the beginning of each line are important. You will see why in the next step.  
 ```  
 // Addresses for seed a
 // Address at index 0 - DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
@@ -304,7 +307,7 @@ Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHO
 ```  
 * Now paste your organized addresses into the script you used to create them.  
 * In other words, paste the addresses into script **a-create-address.js** near the bottom so the script now looks as follows.  
-
+* The two back slashes at the begining of each address line tell NodeJS that these are comments and not code to be executed.  
 ```
 ///////////////////////////////
 // Create addresses for seed a
@@ -345,6 +348,13 @@ iota
 * **If everything checks out then make a backup copy of the script `a-create-address.js` and keep is somewhere safe**.  
 * Do not miss this opportunity to backup your seed - you will be very glad if you do and very sad if you do not.  
 
+#### Transfer Your Addresses but not the Seeds To Your Online Computer.  
+* If you are using two computers for this exercise then you must find a safe way to transfer your addresses to your online computer.  
+* **Do not transfer your seeds to the online computer. Your seeds are secret.**  
+* The [PrivateKeyVault](https://youtu.be/3MwJOj3t8cI) is built for the purpose of transfering selected documents between online and offline devices without exposing anything to other devices except for the document you intend to transfer.  
+* If you are not using a PrivateKeyVault, then there are other secure methods to make the transfer.  
+* If you are using only one computer for these exercizes then of course there is no need to transfer addresses.  
+
 #### Make Addresses for Seed b  
 * Ok, so you have five addresses which you can control with **seed a**  
 * Follow the steps above using the other seed you made (call it **seed b**).  
@@ -366,7 +376,7 @@ iota
 * Follow the directions on Binance to accomplish this.  
 * You could just leave your IOTAs in your Binance account.    
 * In that case, your IOTAs are in an address controlled by a seed which is in the posession of Binance.  
-* All you have is a password to your account and a promise that you can have your IOTAs went you ask for them.  
+* All you have is a password to your Binance account and a promise that you can have your IOTAs went you ask for them.  
 * The are risks as follows:  
   * If Binance gets hacked you loose your IOTAs.  
   * If Binance mismanages your account you loose your IOTAs.  
@@ -377,7 +387,7 @@ iota
   * Buy and sell goods and services from humans and machines.  
   * Buy and sell computing power, and information on the Internet of Things,  
   * Use smart contracts to automate your business,  
-  * Use multisignature wallets for even greater security.
+  * Use multisignature wallets for even greater security.  
   
 #### Find a Healthy Computer on the Tangle To Use For Checking the Balance of Your New Address  
 * There are computers all over the planet which maintain a record of all the addresses and their balances on the IOTA Tangle.  
@@ -385,6 +395,7 @@ iota
 * Anyone can setup one or more of these computers but that is outside the scope of this tutorial.  
 * We just need to find a healthy one to use for checking the balance of your new address.  
 * Open the browser of your of your online computer.  
+* Using your online computer of course:
 * Paste the following URL into the browser's address field.  
 * `https://iota.dance/`  
 * You will see a webpage listing the healthiest nodes near the top.  
@@ -399,6 +410,7 @@ iota
 * Just click on the one you want and the URL will be copied to the clipboard.  
 
 #### Check That You Can Connect to the Tangle  
+* Using your online computer again: 
 * Using your favorite text editor, open the script called `20-check-node-health.js` in the **Console-Wallet** directory.  
 * The contents of the file will be as follows:  
 ```  
@@ -517,13 +529,14 @@ iota
 * That number is your balance in IOTAs.  
 *  
 * This should be the amount of IOTAs you sent to this address from Binance.  
-* You may be surprised to see 6 unexpected zeros in your balance.  
+* You may be surprised to see 6 unexpected zeros at the end of your balance.  
 * That's because you bought and sent MIOTAs (Million IOTAs) from Binance while the NodeJS API works with individual IOTAs.  
 * In the same way 1 dollar is the same as 100 cents, 1 MIOTA is the same as 1000000 IOTAs.  
 * The monetary value is the same - it just looks different.  
 *  
 * In order to send IOTAs from an address you will need to provide the balance of that address to a script in coming steps.  
 * So for now, record your balance in the script named `a-create-address.js`  
+* Make sure you have this file backed up before making your changes.  
 * You already have a list of addresses for **seed a** at the bottom of this script.  
 * Just record the balance for the address at index 0 as shown below.  
 * Your balance may be different and you address will surely be different but the example below shows what to do.  
@@ -535,13 +548,16 @@ iota
 // Address at index 3 - BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB
 // Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9  
 ```  
+* Be very careful not to change the seed or any of the addresses or you will loose your IOTAs.  
+* You did back up this file - right?  
+
+#### Make A Signed Transaction Bundle  
+
 
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
 
-
-* A short tutorial of how to check your balance will go here.  
 * A short tutorial of how to make a transaction bundle will go here.  
 * A short tutorial of how to sign a transaction bundle will go here.  
 * A discussion of why your should keep a copy of all the scripts you execute will go here.  
