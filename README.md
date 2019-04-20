@@ -295,8 +295,9 @@ Now you still have the original script unchanged for future use and you have the
 Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA,AMECMIEELJKYZPQLBVSMJLSVPQFDSDZHTIWGORVJD9OUDGYINMOABRINKLW9HFVSFAKUQSWTJGCGSILS9MGNBSOAIA,AYKJNRHMHA9CHSLREPDJBRMYLPOBJRGYPFYYNDSVBJYWEIEVCEQPRBQSEHXSFKLCBQJADSZSYJLUKBCGWKDHOCYROD,BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB,UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9
 ```  
 * The output shown above is 5 different addresses each of which is separated from the others with a comma.  
-* Organize the addresses so they look as follows:  
-* The two back slashes at the beginning of each line are important. You will see why in the next step.  
+* Using your favorite text editor, organize the addresses so they look as follows:  
+* The two back slashes at the beginning of each line are important. You will see why shortly.  
+* Save this document as `addresses-for-seed-a`
 ```  
 // Addresses for seed a
 // Address at index 0 - DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
@@ -305,9 +306,18 @@ Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHO
 // Address at index 3 - BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB
 // Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9
 ```  
+#### Transfer Your Addresses but not the Seeds To Your Online Computer.  
+* If you are using only one computer for these exercizes then of course there is no need to transfer addresses.  
+* If you are using two computers for this exercise then you must find a safe way to transfer your addresses to your online computer.  
+* **Do not transfer your seeds to the online computer. Your seeds are secret. Keep your seeds on your offline computer only.**  
+* The [PrivateKeyVault](https://youtu.be/3MwJOj3t8cI) is built for the purpose of transfering selected documents between online and offline devices without exposing anything to online devices except for the document you intend to transfer.  
+* If you are not using a PrivateKeyVault, then there are other secure methods to make the transfer.  
+
+#### Put Your Addresses In The Script That Made Them.  
 * Now paste your organized addresses into the script you used to create them.  
 * In other words, paste the addresses into script **a-create-address.js** near the bottom so the script now looks as follows.  
 * The two back slashes at the begining of each address line tell NodeJS that these are comments and not code to be executed.  
+* **This script should only exist on your offline (isolated) computer because the script contains your seed.**  
 ```
 ///////////////////////////////
 // Create addresses for seed a
@@ -347,13 +357,6 @@ iota
 * This is your last opportunity to make sure your seed controls the addresses where you will be sending your IOTAs.  
 * **If everything checks out then make a backup copy of the script `a-create-address.js` and keep is somewhere safe**.  
 * Do not miss this opportunity to backup your seed - you will be very glad if you do and very sad if you do not.  
-
-#### Transfer Your Addresses but not the Seeds To Your Online Computer.  
-* If you are using two computers for this exercise then you must find a safe way to transfer your addresses to your online computer.  
-* **Do not transfer your seeds to the online computer. Your seeds are secret.**  
-* The [PrivateKeyVault](https://youtu.be/3MwJOj3t8cI) is built for the purpose of transfering selected documents between online and offline devices without exposing anything to other devices except for the document you intend to transfer.  
-* If you are not using a PrivateKeyVault, then there are other secure methods to make the transfer.  
-* If you are using only one computer for these exercizes then of course there is no need to transfer addresses.  
 
 #### Make Addresses for Seed b  
 * Ok, so you have five addresses which you can control with **seed a**  
@@ -535,11 +538,12 @@ iota
 * The monetary value is the same - it just looks different.  
 *  
 * In order to send IOTAs from an address you will need to provide the balance of that address to a script in coming steps.  
-* So for now, record your balance in the script named `a-create-address.js`  
+* So for now, record your balance in the script named `addresses-for-seed-a` which exists on your online computer.   
+* Also record your balance in the script named `a-create-address.js` which exists on your offline (isolated) computer.  
 * Make sure you have this file backed up before making your changes.  
-* You already have a list of addresses for **seed a** at the bottom of this script.  
+* You already have a list of addresses for **seed a** in these scripts.  
 * Just record the balance for the address at index 0 as shown below.  
-* Your balance may be different and you address will surely be different but the example below shows what to do.  
+* Your balance is likely different and you address will surely be different but the example below shows what to do.  
 ```  
 // Addresses for seed a
 // Address at index 0 - Balance is 10000000 IOTAs - DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
@@ -549,7 +553,7 @@ iota
 // Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9  
 ```  
 * Be very careful not to change the seed or any of the addresses or you will loose your IOTAs.  
-* You did back up this file - right?  
+* You did back up these files - right?  
 
 #### Make A Signed Transaction Bundle  
 
