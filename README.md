@@ -246,7 +246,7 @@ iota
     console.log(err)
   })
 ```  
-* Before changing the script, save it as **a-create-address.js**  
+* Before changing the script, save it as `a-create-address.js`  
 Now you still have the original script unchanged for future use and you have the current script to make addresses for **seed a**  
 
 * Copy and paste the first of your two seeds (seed a) into the script where it says:  
@@ -522,7 +522,18 @@ iota
 * In the same way 1 dollar is the same as 100 cents, 1 MIOTA is the same as 1000000 IOTAs.  
 * The monetary value is the same - it just looks different.  
 *  
-* If you want to send IOTAs from a particular address you will need to provide the balance to the API in coming steps so for now record your balance in the script named 
+* In order to send IOTAs from an address you will need to provide the balance of that address to a script in coming steps.  
+* So for now, record your balance in the script named `a-create-address.js` where you already have a list of addresses.  
+* Do it as follows:  
+```  
+// Addresses for seed a
+// Address at index 0 - Balance is 10000000 IOTAs - DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
+// Address at index 1 - AMECMIEELJKYZPQLBVSMJLSVPQFDSDZHTIWGORVJD9OUDGYINMOABRINKLW9HFVSFAKUQSWTJGCGSILS9MGNBSOAIA
+// Address at index 2 - AYKJNRHMHA9CHSLREPDJBRMYLPOBJRGYPFYYNDSVBJYWEIEVCEQPRBQSEHXSFKLCBQJADSZSYJLUKBCGWKDHOCYROD
+// Address at index 3 - BOHZADRVGVCTVEWFQQZNYSHWXGZFDVDPDXKWGGEEALYHKYIWSZMEA9ZGZILNJQBXQMFNQRXOGUIPK9HACEELAFMNIB
+// Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9  
+```  
+
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
