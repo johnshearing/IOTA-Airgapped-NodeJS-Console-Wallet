@@ -523,8 +523,10 @@ iota
 * The monetary value is the same - it just looks different.  
 *  
 * In order to send IOTAs from an address you will need to provide the balance of that address to a script in coming steps.  
-* So for now, record your balance in the script named `a-create-address.js` where you already have a list of addresses.  
-* Do it as follows:  
+* So for now, record your balance in the script named `a-create-address.js`  
+* You already have a list of addresses for **seed a** at the bottom of this script.  
+* Just record the balance for the address at index 0 as shown below.  
+* Your balance may be different and you address will surely be different but the example below shows what to do.  
 ```  
 // Addresses for seed a
 // Address at index 0 - Balance is 10000000 IOTAs - DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHOHFDNLQWFYGWRFALSBXBQPACGMUA
