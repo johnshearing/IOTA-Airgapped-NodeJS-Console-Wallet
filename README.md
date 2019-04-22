@@ -569,7 +569,7 @@ iota
 * To make and sign the transaction bundle:  
   * Open the script named `50-sign-bundle-.js` using your favorite text editor.  
   * It should look as seen below:  
-  ```  
+```  
 //////////////////////////////////////
 // Sign Bundle Using Offline Computer
 //////////////////////////////////////
