@@ -569,24 +569,7 @@ iota
 * To make and sign the transaction bundle:  
   * Open the script named `50-sign-bundle-.js` using your favorite text editor.  
   * It should look as seen below:  
-  * Assign values to the variables as prompted in the script.  
-  * just paste the appropriate information into each **let** statement near the top of the script.  
-  * You will find all the information you need in the previous scripts that you have made.  
-  * Save the modified script under the recommended name of `a0-b0-a1.js`  
-    * You could of course name the script whatever you want but this name helps you remember what the script is for.  
-  * And finally run the saved script at the BASH console as we have done with the previous scripts.  
-    * Open the BASH console.  
-    * cd into the **Console-Wallet** directory,  
-    * And execute the folowing line of code:  
-    * `node a0-b0-a1.js`  
-  * The console will output an enormously long string of characters surounded by brackets like these **[]**   
-  * The output at the console is your signed transaction bundle.  
-  * Copy the 
-  
-
-
-
-```  
+  ```  
 //////////////////////////////////////
 // Sign Bundle Using Offline Computer
 //////////////////////////////////////
@@ -649,10 +632,21 @@ createPrepareTransfers()(seed, transfers, options)
   .catch((err) => {
     console.log(`Error: ${err}`);
   });
-
-
-
 ```  
+  * Assign values to the variables as prompted in the script.  
+  * just paste the appropriate information into each **let** statement near the top of the script.  
+  * You will find all the information you need in the previous scripts that you have made.  
+  * Save the modified script under the recommended name of `a0-b0-a1.js`  
+    * You could of course name the script whatever you want but this name helps you remember what the script is for.  
+  * And finally run the saved script at the BASH console as we have done with the previous scripts.  
+    * Open the BASH console.  
+    * cd into the **Console-Wallet** directory,  
+    * And execute the folowing line of code:  
+    * `node a0-b0-a1.js`  
+  * The console will output an enormously long string of characters surounded by brackets like these **[]**   
+  * The output at the console is your signed transaction bundle.  
+  * Copy the 
+  
 
 
 
