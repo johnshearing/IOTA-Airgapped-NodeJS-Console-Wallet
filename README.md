@@ -564,7 +564,7 @@ iota
 *  
 * Lets send a few IOTAs from the **address at index 0 for seed a (a0)** to the **address at index 0 for seed b (b0)** with any unspent IOTAs going to the address at **index 1 for seed a (a1)**.  
 * To make and sign the transaction bundle:  
-  * Open the script named `50-sign-bundle-.js` using your favorite text editor.  
+  * Open the script named `50-sign-bundle.js` using your favorite text editor.  
   * It should look as seen below:  
 ```  
 //////////////////////////////////////
@@ -633,7 +633,7 @@ createPrepareTransfers()(seed, transfers, options)
   * Assign values to the variables as prompted in the script.  
   * Just paste the appropriate information into each **let** statement near the top of the script.  
   * You will find all the information you need in the previous scripts that you have made.  
-  * Save the modified script as `a0-b0-a1.js`  
+  * Save the modified script as `a0-b0-a1-sign-bundle.js`  
     * You could of course name the script whatever you want but this name helps you remember what the script is for.  
   * And finally run the saved script at the BASH console as we have done with previous scripts.  
     * Open the BASH console.  
@@ -643,7 +643,43 @@ createPrepareTransfers()(seed, transfers, options)
   * The console will output an enormously long string of characters surounded by brackets like these **[]**   
   * **The output at the console is your signed transaction bundle.**  
   * Copy the output (the brackets and everything between them) onto the clipboard.  
-  * Now using your favorite text editor, 
+  * Now using your favorite text editor, open the file named `70-broadcast-bundle.js`  
+  * It should look as seen below:  
+```  
+//////////////////////////////////////
+// Broadcast Bundle Using Online Computer
+//////////////////////////////////////
+
+
+const iotaLibrary = require('@iota/core');
+
+const iota = iotaLibrary.composeAPI({
+  //Lookup healthy nodes at https://iota.dance/
+  //provider: 'https://nodes.devnet.thetangle.org:443'
+  //provider: 'https://nodes.thetangle.org:443'
+  provider: 'Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes'
+})
+
+const myTrytes = Paste-Signed-Transaction-Bundle-Here-Including-The-Surounding-Brackets
+
+// Create a wrapping function so we can use async/await
+const main = async () => {
+
+  try {
+    // Send bundle to node.
+    const response = await iota.sendTrytes(myTrytes, 3, 14);
+    console.log('Completed TXs');
+    response.map(tx => console.log(tx));
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+main()
+```  
+  * Paste your signed transaction bundle after the equal sign where it says `Paste-Signed-Transaction-Bundle-Here-Including-The-Surounding-Brackets`  
+  * Then save the script as `a0-b0-a1-broadcast-bundle.js`  
+  
   
 
 
