@@ -564,8 +564,7 @@ iota
 * If you are using only one computer for these exercizes then of course all three steps are preformed on that single computer.  
 *  
 * Lets send a few IOTAs from the **address at index 0 for seed a (a0)** to the **address at index 0 for seed b (b0)** with any unspent IOTAs going to the address at **index 1 for seed a (a1)**.  
-
-* Open the script named `50-sign-bundle.js` using your favorite text editor.  
+* Using your offline computer, open the script named `50-sign-bundle.js` with your favorite text editor.  
 * It should look as seen below:  
 ```  
 //////////////////////////////////////
@@ -684,29 +683,17 @@ main()
 * Paste your signed transaction bundle after the equal sign where it says `Paste-Signed-Transaction-Bundle-Here-Including-The-Surounding-Brackets`  
 * Then save the script as `a0-b0-a1-broadcast-bundle.js`  
 * Do not delete this script after running it. You may need to refer to it later.  
+* If you are using two computers then transfer this script to your online computer for broadcasting to the tangle.  
+* Finally run the saved script at the BASH console as we have done with previous scripts.  
+  * Open the BASH console.  
+  * cd into the **Console-Wallet** directory,  
+  * And execute the folowing line of code:  
+  * `node a0-b0-a1-sign-bundle.js`  
+* If everything went well, your bundle has been broadcasted and your IOTAs will have been moved according to the directions in the bundle.   
   
   
 
 
 
-#### This is as far as I have worked so far.  
-#### The stuff below is unorganized material for the tutorial.  
-* A short tutorial of how to encrypt a signed transaction bundle will go here.  
-* A short tutorial of how to pass the signed transaction bundle from the offline machine to the online machine will go here.  
-* A short tutorial of how to decrypt the bundle will go here.  
-* A short tutorial of how to broadcast the bundle will go here.  
-* A short tutorial of how to check your balances again will go here.  
-* A short tutorial of how to keep your records updated and an archive of all your scripts will go here.  
 
-
-
-
-Pay no attention to the stuff below. It's for things I have yet to address in the tutorial.  
-
-If you are using a PrivateKeyVault or really any Linux device, the following line sends a qr-code representation of **hello world** to the screen at the BASH console. You can put whatever message you want between the quotes to get a qr-code representation of that message.  
-`qrencode -t ANSIUTF8 "hello world"`  
-This is good for passing addresses (not seeds) out of the vault without the need to connect to other devices.    
-
-
-Lookup healthy nodes at https://iota.dance/	
 
