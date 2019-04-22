@@ -636,7 +636,9 @@ createPrepareTransfers()(seed, transfers, options)
   * You will find all the information you need in the previous scripts that you have made.  
   * Save the modified script as `a0-b0-a1-sign-bundle.js`  
     * You could of course name the script whatever you want but this name helps you remember what the script is for.  
-  * And finally run the saved script at the BASH console as we have done with previous scripts.  
+  * It would also be a good idea to put a description of what the script is doing in the comments at the top of the script.  
+  * Do not delete the script after you run it. You may need to refer to it later.  
+  * Finally run the saved script at the BASH console as we have done with previous scripts.  
     * Open the BASH console.  
     * cd into the **Console-Wallet** directory,  
     * And execute the folowing line of code:  
@@ -681,6 +683,7 @@ main()
 ```  
   * Paste your signed transaction bundle after the equal sign where it says `Paste-Signed-Transaction-Bundle-Here-Including-The-Surounding-Brackets`  
   * Then save the script as `a0-b0-a1-broadcast-bundle.js`  
+  * Do not delete this script after running it. You may need to refer to it later.  
   
   
 
@@ -688,8 +691,6 @@ main()
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
-* A short tutorial of how to sign a transaction bundle will go here.  
-* A discussion of why your should keep a copy of all the scripts you execute will go here.  
 * A short tutorial of how to encrypt a signed transaction bundle will go here.  
 * A short tutorial of how to pass the signed transaction bundle from the offline machine to the online machine will go here.  
 * A short tutorial of how to decrypt the bundle will go here.  
