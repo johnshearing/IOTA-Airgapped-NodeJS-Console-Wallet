@@ -556,13 +556,108 @@ iota
 * You did back up these files - right?  
 
 #### Make A Signed Transaction Bundle  
+* In order to spend your IOTAs you need to:  
+  * Make a signed transaction bundle on your offline computer,  
+  * Transfer the signed transaction bundle to your online computer, and finally,  
+  * Broadcast the signed transaction bundle to the Tangle using your online computer.  
+* If you are using only one computer for these exercizes then of course all three steps are preformed on that single computer.  
+*  
+* Lets send a few IOTAs:  
+  * from the **address at index 0 for seed a (a0)**  
+  * to the **address at index 0 for seed b (b0)**  
+  * with any unspent IOTAs going to the address at **index 1 for seed a (a1)**.  
+* To make and sign the transaction bundle:  
+  * Open the script named `50-sign-bundle-.js` using your favorite text editor.  
+  * It should look as seen below:  
+  * Assign values to the variables as prompted in the script.  
+  * just paste the appropriate information into each **let** statement near the top of the script.  
+  * You will find all the information you need in the previous scripts that you have made.  
+  * Save the modified script under the recommended name of `a0-b0-a1.js`  
+    * You could of course name the script whatever you want but this name helps you remember what the script is for.  
+  * And finally run the saved script at the BASH console as we have done with the previous scripts.  
+    * Open the BASH console.  
+    * cd into the **Console-Wallet** directory,  
+    * And execute the folowing line of code:  
+    * `node a0-b0-a1.js`  
+  * The console will output an enormously long string of characters surounded by brackets like these **[]**   
+  * The output at the console is your signed transaction bundle.  
+  * Copy the 
+  
+
+
+
+```  
+//////////////////////////////////////
+// Sign Bundle Using Offline Computer
+//////////////////////////////////////
+
+
+const { createPrepareTransfers } = require('@iota/core'); 
+const { asciiToTrytes } = require('@iota/converter');
+
+
+let seed = 'Paste-Your-Seed-Between-These-Quotes';
+let fromAddress = 'Paste-Your-Spending-Address-Between-These-Quotes';
+let fromAddressIndex = 0; //Substitute the zero with the index of your spending address.
+let fromAddressBalance = 0; //Substitute the zero with the amount of IOTAs in your spending address.
+let toAddress = 'Paste-The-Recipient-Address-Between-These-Quotes';
+let securityLevel = 2; //Substitute the 2 with the security level you chose when you made your spending address.
+let transferAmount = 0; //Substitute the zero with the amount of IOTAs you wish to spend.
+let remainderAddress = 'Paste-Your-Remainder-Address-Between-These-Quotes';
+let message = ''; // You can paste as message between the quotes if you want.
+  
+
+// Construct a transfers object
+let transfers = [{
+  'address': toAddress,
+  'message': asciiToTrytes(message),
+  'value': transferAmount,
+  'tag': 'SENDTO'
+}];
+
+// Add a remainder address if specified by the user
+if (remainderAddress) {
+  transfers.push({
+    'address': remainderAddress,
+    'message': asciiToTrytes(message),
+    'value': fromAddressBalance - transferAmount,
+    'tag': 'REMAINDER'
+  });
+}
+
+// Construct an options object that includes the input
+let options = {};
+if (transferAmount > 0) {
+  options = {
+    'inputs': [{
+      'keyIndex': fromAddressIndex,
+      'address': fromAddress,
+      'security': securityLevel,
+      'balance': fromAddressBalance
+    }]
+  };
+}
+
+// Sign the bundle
+createPrepareTransfers()(seed, transfers, options)
+  .then((bundleTrytes) => {
+    console.log("Success! Transaction bundle signed!");
+    
+    console.log(JSON.stringify(bundleTrytes));
+    
+  })
+  .catch((err) => {
+    console.log(`Error: ${err}`);
+  });
+
+
+
+```  
 
 
 
 #### This is as far as I have worked so far.  
 #### The stuff below is unorganized material for the tutorial.  
-
-* A short tutorial of how to make a transaction bundle will go here.  
 * A short tutorial of how to sign a transaction bundle will go here.  
 * A discussion of why your should keep a copy of all the scripts you execute will go here.  
 * A short tutorial of how to encrypt a signed transaction bundle will go here.  
