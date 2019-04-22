@@ -564,9 +564,9 @@ iota
 * If you are using only one computer for these exercizes then of course all three steps are preformed on that single computer.  
 *  
 * Lets send a few IOTAs from the **address at index 0 for seed a (a0)** to the **address at index 0 for seed b (b0)** with any unspent IOTAs going to the address at **index 1 for seed a (a1)**.  
-* To make and sign the transaction bundle:  
-  * Open the script named `50-sign-bundle.js` using your favorite text editor.  
-  * It should look as seen below:  
+
+* Open the script named `50-sign-bundle.js` using your favorite text editor.  
+* It should look as seen below:  
 ```  
 //////////////////////////////////////
 // Sign Bundle Using Offline Computer
@@ -631,24 +631,24 @@ createPrepareTransfers()(seed, transfers, options)
     console.log(`Error: ${err}`);
   });
 ```  
-  * Assign values to the variables as prompted in the script.  
-  * Just paste the appropriate information into each **let** statement near the top of the script.  
-  * You will find all the information you need in the previous scripts that you have made.  
-  * Save the modified script as `a0-b0-a1-sign-bundle.js`  
-    * You could of course name the script whatever you want but this name helps you remember what the script is for.  
-  * It would also be a good idea to put a description of what the script is doing in the comments at the top of the script.  
-  * Do not delete the script after you run it. You may need to refer to it later.  
-  * Finally run the saved script at the BASH console as we have done with previous scripts.  
-    * Open the BASH console.  
-    * cd into the **Console-Wallet** directory,  
-    * And execute the folowing line of code:  
-    * `node a0-b0-a1-sign-bundle.js`  
-  * The console will output an enormously long string of characters surounded by brackets like these **[]**   
-  * **The output at the console is your signed transaction bundle.**  
-  * Copy the output (the brackets and everything between them) onto the clipboard.  
-  * 
-  * Now using your favorite text editor, open the file named `70-broadcast-bundle.js`  
-  * It should look as seen below:  
+* Assign values to the variables as prompted in the script.  
+* Just paste the appropriate information into each **let** statement near the top of the script.  
+* You will find all the information you need in the previous scripts that you have made.  
+* Save the modified script as `a0-b0-a1-sign-bundle.js`  
+  * You could of course name the script whatever you want but this name helps you remember what the script is for.  
+* It would also be a good idea to put a description of what the script is doing in the comments at the top of the script.  
+* Do not delete the script after you run it. You may need to refer to it later.  
+* Finally run the saved script at the BASH console as we have done with previous scripts.  
+  * Open the BASH console.  
+  * cd into the **Console-Wallet** directory,  
+  * And execute the folowing line of code:  
+  * `node a0-b0-a1-sign-bundle.js`  
+* The console will output an enormously long string of characters surounded by brackets like these **[]**   
+* **The output at the console is your signed transaction bundle.**  
+* Copy the output (the brackets and everything between them) onto the clipboard.  
+* 
+* Now using your favorite text editor, open the file named `70-broadcast-bundle.js`  
+* It should look as seen below:  
 ```  
 //////////////////////////////////////
 // Broadcast Bundle Using Online Computer
@@ -681,9 +681,9 @@ const main = async () => {
 
 main()
 ```  
-  * Paste your signed transaction bundle after the equal sign where it says `Paste-Signed-Transaction-Bundle-Here-Including-The-Surounding-Brackets`  
-  * Then save the script as `a0-b0-a1-broadcast-bundle.js`  
-  * Do not delete this script after running it. You may need to refer to it later.  
+* Paste your signed transaction bundle after the equal sign where it says `Paste-Signed-Transaction-Bundle-Here-Including-The-Surounding-Brackets`  
+* Then save the script as `a0-b0-a1-broadcast-bundle.js`  
+* Do not delete this script after running it. You may need to refer to it later.  
   
   
 
