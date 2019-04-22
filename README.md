@@ -555,11 +555,12 @@ iota
 * Be very careful not to change the seed or any of the addresses or you will loose your IOTAs.  
 * You did back up these files - right?  
 
-#### Make A Signed Transaction Bundle  
+#### Make A Signed Transaction Bundle and Broadcast It To The Tangle
 * In order to spend your IOTAs you need to:  
   * Make a signed transaction bundle on your offline computer,  
   * Transfer the signed transaction bundle to your online computer, and finally,  
   * Broadcast the signed transaction bundle to the Tangle using your online computer.  
+  * This will move IOTAs from one address to another.  
 * If you are using only one computer for these exercizes then of course all three steps are preformed on that single computer.  
 *  
 * Lets send a few IOTAs from the **address at index 0 for seed a (a0)** to the **address at index 0 for seed b (b0)** with any unspent IOTAs going to the address at **index 1 for seed a (a1)**.  
@@ -639,10 +640,11 @@ createPrepareTransfers()(seed, transfers, options)
     * Open the BASH console.  
     * cd into the **Console-Wallet** directory,  
     * And execute the folowing line of code:  
-    * `node a0-b0-a1.js`  
+    * `node a0-b0-a1-sign-bundle.js`  
   * The console will output an enormously long string of characters surounded by brackets like these **[]**   
   * **The output at the console is your signed transaction bundle.**  
   * Copy the output (the brackets and everything between them) onto the clipboard.  
+  * 
   * Now using your favorite text editor, open the file named `70-broadcast-bundle.js`  
   * It should look as seen below:  
 ```  
