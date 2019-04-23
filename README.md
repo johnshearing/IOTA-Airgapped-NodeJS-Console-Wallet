@@ -696,7 +696,13 @@ main()
   * cd into the **Console-Wallet** directory,  
   * And execute the folowing line of code:  
   * `node a0-b0-a1-sign-bundle.js`  
-* If everything went well, your bundle has been broadcasted and your IOTAs will have been moved according to the directions in the bundle.   
+* If everything went well, your bundle has been broadcasted and your IOTAs will have been moved according to the directions in the bundle.  
+* Save the output produced by the bash console incase you need it for trouble shooting.  
+* Then check the balances of your accounts and be sure to update your address balance records.  
+
+#### Congratulations
+You now know how to move IOTAs using NodeJS at the Bash console.  
+
   
   
 
