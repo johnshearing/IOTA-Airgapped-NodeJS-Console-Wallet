@@ -57,7 +57,7 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 * The above method does not use a sudo random number generator.  
 * The code fragment `/dev/hwrng` is specifying that a special piece of hardware on the raspberry pi which reads truly random electrical events is used to generate the seed.  
 * No algorithm is being used.  
-* The raspberry pi is basically flipping a coin an recording the result of each flip.  
+* The raspberry pi is basically flipping a coin and recording the result of each flip.  
 * Be sure you understand the difference between a truly random string of characters and a pseudo random string.  
 * Use random processes to generate your seed.  
 * Do not use pseudo random processes to generate your seed.  
