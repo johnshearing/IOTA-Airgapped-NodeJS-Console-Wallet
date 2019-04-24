@@ -2,6 +2,7 @@
 ### Create and sign transaction bundles securely offline using an [airgapped computer](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md) then broadcast your signed transaction bundles to the Tangle using an online computer.  
 
 ## Use these instructions to move only small amounts of IOTA that you are prepared to loose.  
+## I will not be held responsible for your losses.  
 ## This tutorial is for instructional purposes only.  
 ## This tutorial is for developers only - not for the general public.  
 ## [The general public should go here](https://www.iota.org/get-started/buy-and-secure-iota)  
