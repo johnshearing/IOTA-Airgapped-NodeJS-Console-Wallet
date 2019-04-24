@@ -1,9 +1,11 @@
 # IOTA-Airgapped-NodeJS-Console-Wallet  
 ### Create and sign transaction bundles securely offline using an [airgapped computer](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md) then broadcast your signed transaction bundles to the Tangle using an online computer.  
 
-### This tutorial is for instructional purposes only.  
 ## Use these instructions to move only small amounts of IOTA that you are prepared to loose.  
-### The intention of this tutorial is to help you become familar with the NodeJS API for moving IOTAs between accounts.  
+## This tutorial is for instructional purposes only.  
+## This tutorial is for developers only - not for the general public.  
+## [The general public should go here](https://www.iota.org/get-started/buy-and-secure-iota)  
+### The intention of this tutorial is to help developers become familar with the NodeJS API for moving IOTAs between accounts.  
 ### You will be creating NodeJS scripts and running them from the BASH console.  
 The ultimate goal is to make two wallet applications that run in your browser.  
 An offline wallet application that creates and signs transaction bundles on a computer which never connects to the Internet nor to any other device and online wallet application that runs on an Internet connected computer that broadcasts the bundles to the Tangle. This tutorial starts the project by showing you how to control the underlying code and move IOTAs at the command line. This way, when you build your wallet along with me you will understand what's happening and you will know that your wallet is doing what you expect it to do. After the wallets are working we will be adding database functionality so that the two wallets can stay in sync without the need to connect your offline device with the online device. After that we build multi-signature capability into the wallets and finally we will be exploring how smart contracts can be used with the IOTA family of products.  
