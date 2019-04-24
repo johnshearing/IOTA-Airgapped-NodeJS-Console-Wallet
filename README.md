@@ -46,24 +46,30 @@ If you want to experiment with small amounts of IOTA then only one computer whic
   * Do not use online seed generators or your IOTAs will be stolen.  
   * Do not use pseudo-random number generators or your IOTAs will be stolen.  
   * Do not generate random numbers on any machine that connects to the Internet or connects to other devices.   
-  
-The following is my method for generating an IOTA seed  
-Run the following line on an airgapped raspberry pi at the BASH console (not the NodeJS console) to get a random seed for IOTA.  
-`sudo cat /dev/hwrng |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1`  
-This will produce an 81 character long string consisting of only UPPER CASE letters and the number **9**  
-Then change some output characters at random in case the generator has been compromised by criminals.  
-When changing characters, only use UPPER CASE letters and the number **9**, and do not change the amount of characters.  
-There must be exactly 81 characters which can be UPPER CASE letters and the number **9** is also allowed.  
-The above method does not use a sudo random generator.  
-The code fragment `/dev/hwrng` is specifying that a special piece of hardware on the raspberry pi which reads truly random electrical events is used to generate the seed.  
-
-The following commands executed at the bash console (not the NodeJS console) counts characters in the string surrounded by quotes.  
+*  
+* The following is my method for generating an IOTA seed:  
+  * Run the following line on an airgapped raspberry pi at the BASH console (not the NodeJS console) to get a random seed for IOTA.  
+  * `sudo cat /dev/hwrng |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1`  
+  * This will produce an 81 character long string consisting of only UPPER CASE letters and the number **9**  
+  * Then change some output characters at random in case the generator has been compromised by criminals.  
+  * When changing characters, only use UPPER CASE letters and the number **9**, and do not change the amount of characters.  
+  * There must be exactly 81 characters which can be UPPER CASE letters and the number **9** is also allowed.  
+* The above method does not use a sudo random number generator.  
+* The code fragment `/dev/hwrng` is specifying that a special piece of hardware on the raspberry pi which reads truly random electrical events is used to generate the seed.  
+* No algorithm is being used.  
+* The raspberry pi is basically flipping a coin an recording the result of each flip.  
+* Be sure you understand the difference between a truly random string of characters and a pseudo random string.  
+* Use random processes to generate your seed.  
+* Do not use pseudo random processes to generate your seed.  
+*  
+* The following commands executed at the bash console (not the NodeJS console) counts characters in the string surrounded by quotes.  
 ```  
 myvar="THISISMYSTRING9"  
 echo ${#myvar}  
 ```   
-In the example above the output will read **15** because there are 15 characters in "THISISMYSTRING9"
-Use the above commands to check that there are still 81 characters in your seed after you have substituted characters.  
+* In the example above the output will read **15** because there are 15 characters in "THISISMYSTRING9"
+* You can use the above commands to check that there are still 81 characters in your seed after you have substituted characters.  
+* Later as we proceed you will be using IOTA's NodeJS API to ensure that your seed is valid.  
 
 * Generate two seeds for this tutorial.  
 * The first seed we will call **seed a** and the second seed we will call **seed b**  
