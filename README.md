@@ -331,7 +331,7 @@ Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHO
 * Paste the addresses near the bottom so the script now looks similar to the following.  
 * Your seed and addresses will be different of course.  
 * The two back slashes at the begining of each address line tell NodeJS that these are comments and not code to be executed.  
-* **This script should only exist on your offline (isolated) computer because the script contains your seed.**  
+* **The script should only exist on your offline (isolated) computer because the script contains your seed.**  
 ```
 ///////////////////////////////
 // Create addresses for seed a
