@@ -327,7 +327,9 @@ Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHO
 
 #### Put Your Addresses In The Script That Made Them.  
 * Now paste your organized addresses into the script you used to create them.  
-* In other words, paste the addresses into script **a-create-address.js** near the bottom so the script now looks as follows.  
+* In other words, paste the addresses into script **a-create-address.js**  
+* Paste the addresses near the bottom so the script now looks similar to the following.  
+* Your seed and addresses will be different of course.  
 * The two back slashes at the begining of each address line tell NodeJS that these are comments and not code to be executed.  
 * **This script should only exist on your offline (isolated) computer because the script contains your seed.**  
 ```
