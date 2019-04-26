@@ -392,15 +392,15 @@ iota
 * Lets call this **address a0**  
 * First send a very small amount of IOTA to **address a0**  
 * Follow the directions on Binance to accomplish this.  
-* You could just leave your IOTAs in your Binance account.    
-* In that case, your IOTAs are in an address controlled by a seed which is in the posession of Binance.  
-* All you have is a password to your Binance account and a promise that you can have your IOTAs went you ask for them.  
-* The are risks as follows:  
-  * If Binance gets hacked you loose your IOTAs.  
-  * If Binance mismanages your account you loose your IOTAs.  
-  * If Binance steals your account you loose your IOTAs.  
-  * If a goverment forces Binance to confiscate your account you loose your IOTAs.  
-* Also, at the time of this writing, Binance charges .5 MIOTAs for each outgoing transaction whereas outgoing transactions are free when you send them from an account that you control.  
+* What if you just leave your IOTAs in your Binance account?    
+  * In that case, your IOTAs are in an address controlled by a seed which is in the posession of Binance.  
+  * All you have is a password to your Binance account and a promise that you can have your IOTAs went you ask for them.  
+  * The are risks as follows:  
+    * If Binance gets hacked you loose your IOTAs.  
+    * If Binance mismanages your account you loose your IOTAs.  
+    * If Binance steals your account you loose your IOTAs.  
+    * If a goverment forces Binance to confiscate your account you loose your IOTAs.  
+  * Also, at the time of this writing, Binance charges .5 MIOTAs for each outgoing transaction whereas outgoing transactions are free when you send them from an account that you control.  
 * Once your IOTAs are in an address that you control, you can start to do interesting things like:  
   * Buy and sell goods and services from humans and machines.  
   * Buy and sell computing power, and information on the Internet of Things,  
