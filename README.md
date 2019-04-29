@@ -552,7 +552,7 @@ iota
 * This should be the amount of IOTAs you sent to this address from Binance.  
 * You may be surprised to see 6 unexpected zeros at the end of your balance.  
 * That's because you bought and sent MIOTAs (Million IOTAs) from Binance while the NodeJS API works with individual IOTAs.  
-* In the same way 1 dollar is the same as 100 cents, 1 MIOTA is the same as 1000000 IOTAs.  
+* In the same way 1 dollar is equal to 100 cents, 1 MIOTA is equal to 1000000 IOTAs.  
 * The monetary value is the same - it just looks different.  
 *  
 * In order to send IOTAs from an address you will need to provide the balance of that address to a script in coming steps.  
