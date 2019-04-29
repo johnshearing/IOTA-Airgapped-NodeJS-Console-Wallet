@@ -492,7 +492,8 @@ iota
 * Lets see if the IOTAs you sent from your Binance account to address a0 was actually transfered to your account.  
 * Using your favorite text editor, open the script called `40-check-balance.js` in the **Console-Wallet** directory.  
 * The contents of the file will be as shown in the code block below.    
-* Paste the URL you copied from **https://iota.dance/** between the quote marks in the script where it says:  
+* There are two lines in this file that you must change. Don't get them confused.  
+* First paste the URL you copied from **https://iota.dance/** between the quote marks in the script where it says:  
 * `'Paste-The-URL-Of-A-Healthy-Node-Between-These-Quotes'`  
 ```  
 ///////////////////////////////
@@ -527,6 +528,7 @@ iota
   })
 
 ```  
+* Leave this file open in your text editor - you will come back to it in a minute.  
 * Using your favorite text editor again, open the file you used to create your addresses from **seed a**  
 * The file was named `a-create-address.js`  
 * It would be best to open this script in read only mode if your text editor offers this option.  
@@ -536,7 +538,7 @@ iota
 * That's the first generated address.  
 * Copy that first generated address onto your clipboard.  
 * Now close file `a-create-address.js` **without** saving any changes if you accidently changed the contents of the file.  
-* Paste the address you copied onto the clipboard between the quote marks in the open script `40-check-balance.js` where it says:  
+* Now paste the address you copied onto the clipboard between the quote marks in the open script `40-check-balance.js` where it says:  
 * `'Paste-Your-Address-Between-These-Quotes'`  
 * Now save the script.  
 *  
