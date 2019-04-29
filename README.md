@@ -714,6 +714,11 @@ main()
 #### Congratulations
 You now know how to move IOTAs using NodeJS at the Bash console.  
 
+#### Things To Remember From This Tutorial  
+* Don't spend twice from the same address.  
+* Your seeds are private. Do not let anyone see your seeds.  
+* Do not loose your seeds. If you loose your seeds then you can never recover your IOTAs.  
+
   
   
 
