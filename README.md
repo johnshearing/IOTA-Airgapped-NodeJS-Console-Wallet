@@ -7,7 +7,7 @@
 ## Use these instructions to move only small amounts of IOTA that you are prepared to loose.  
 ## I will not be held responsible for your losses.  
 ### Introduction   
-The intention of this tutorial is to help developers become familar with the NodeJS API for moving IOTAs between accounts. You will be creating NodeJS scripts and running them from the BASH console. The ultimate goal is to make two wallet applications that run in your browser. An offline wallet application that creates and signs transaction bundles on a computer which never connects to the Internet nor to any other device and online wallet application that runs on an Internet connected computer that broadcasts the bundles to the Tangle. This tutorial starts the project by showing you how to control the underlying code and move IOTAs at the command line. This way, when you build your wallet along with me you will understand what's happening and you will know that your wallet is doing what you expect it to do. After the wallets are working we will be adding database functionality so that the two wallets can stay in sync without the need to connect your offline device with the online device. After that we build multi-signature capability into the wallets and finally we will be exploring how smart contracts can be used with the IOTA family of products.  
+The intention of this tutorial is to help developers become familar with the NodeJS API for moving IOTAs between accounts. You will be creating NodeJS scripts and running them from the BASH console. The ultimate goal is to make two wallet applications that run in your browser. An offline wallet application that creates and signs transaction bundles on a computer which never connects to the Internet nor to any other device and an online wallet application that runs on an Internet connected computer that broadcasts the bundles to the Tangle. This tutorial starts the project by showing you how to control the underlying code and move IOTAs at the command line. This way, when you build your wallet along with me you will understand what's happening and you will know that your wallet is doing what you expect it to do. After the wallets are working we will be adding database functionality so that the two wallets can stay in sync without the need to connect your offline device with the online device. After that we build multi-signature capability into the wallets and finally we will be exploring how smart contracts can be used with the IOTA family of products.  
 
 Two computers are required if you want airgapped security to keep your seeds safe. One computer is airgapped. It never connects to the Internet nor to other devices. This airgapped computer should not have any WiFi or BlueTooth capability. So a raspberry pi 2 would be appropriate but a raspberry pi 3 would not. The other computer is connected to the Internet. That said about security, any computer that can run NodeJS (Linux,Mac,Windows) will work.  
 
@@ -738,11 +738,17 @@ main()
 
 #### Congratulations
 You now know how to move IOTAs using NodeJS at the Bash console.  
+Please put any questions, comments, in the issues section of this repository.  
 
 #### Things To Remember From This Tutorial  
 * Don't spend twice from the same address.  
 * Your seeds are private. Do not let anyone see your seeds.  
 * Do not loose your seeds. If you loose your seeds then you can never recover your IOTAs.  
+
+#### What's Next?  
+Soon I will be making a separate tutorial to build an offline and online wallet application that runs in the browser. That tutorial will build upon the concepts we covered in this tutorial. The next tutorial will be in it's own repository. Check back here for a link.  
+
+
 
   
   
