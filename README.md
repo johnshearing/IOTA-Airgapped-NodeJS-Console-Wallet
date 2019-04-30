@@ -91,7 +91,7 @@ echo ${#myvar}
     * If the message shows your spending address when decrypted then the Tangle computers are enabled to execute the transfer of IOTAs as specified in the signed transaction bundle.  
   * A second transaction is used to handle a larger signature if security level 2 is used.  
     * Everyone seems to use security level 2. More about security levels will be covered as we proceed.  
-  * A third unsigned transaction is used to specify the recipent's address and the amount to send.  
+  * A third unsigned transaction is used to specify the recipient's address and the amount to send.  
   * A fourth unsigned transaction is used to specify your new spending address where unspent IOTAs will be sent.  
 * Seeds do more than sign transaction bundles. 
 * Seeds are also used to make private keys and private keys are used to make spending addresses.  
@@ -100,18 +100,18 @@ echo ${#myvar}
 * Ultimately a seed, through the private keys it makes, can make and control an unlimited amount of addresses.  
 * It is not possible for any man or machine to move money out of an address without having the seed which was used to create it.  
 * Only the person in possession of the seed which was ultimately used to make an address is able to spend from that address.  
-* If the computers running the Tangle can decrypt your signed transaction bundle, and if the decrypted message resolves to the spending address which is specified in your signed transaction bundle, then this is mathematical proof that you are in possesion of the seed which was used to create the private key which was ultimately used to create that spending address. This is how the Tangle computers are activated by you to follow your spending instructions as specified in your signed transaction bundle.  
+* If the computers running the Tangle can decrypt your signed transaction bundle, and if the decrypted message resolves to the spending address which is specified in your signed transaction bundle, then this is mathematical proof that you are in possession of the seed which was used to create the private key which was ultimately used to create that spending address. This is how the Tangle computers are activated by you to follow your spending instructions as specified in your signed transaction bundle.  
 * **WOW! DID YOU GET THE SIGNIFICANTS THAT LAST STATEMENT?**.  
 * The Tangle computers know that you have the seed which controls the specified spending address without having to see the seed itself.  
 * The seed is still in your sole possession.   
-* You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they already have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed transaction bundle is decrypted and resolves to the specifed spending address. And the only way to make such a bundle is by having the seed. **And only you have the seed for your accounts**. So now, the only way criminals, or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of smart contracts and multi-signature wallets (to be covered in other tutorials) these forceful methods will cost more to implement then they will produce so they will not be used. Of course we still need to pay our taxes, but government now requires our cooperation in order to collect taxes which if exercised collectively gives citizens a level of control over their governments never before seen in human history.    
+* You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they already have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed transaction bundle is decrypted and resolves to the specified spending address. And the only way to make such a bundle is by having the seed. **And only you have the seed for your accounts**. So now, the only way criminals, or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of smart contracts and multi-signature wallets (to be covered in other tutorials) these forceful methods will cost more to implement then they will produce so they will not be used. Of course we still need to pay our taxes, but government now requires our cooperation in order to collect taxes which if exercised collectively gives citizens a level of control over their governments never before seen in human history.    
 * **Holy Cow! What just happened?**  
 * **For the first time in human history citizens can take full control of their own money.**  
 * **When they do, money will not be controlled by banks and it will not be tied to any government.**     
-* **When IOTA achives mass-adoption banks will no longer be able to [devalue our currency by issuing new money](https://www.investopedia.com/terms/f/fractionalreservebanking.asp).**  
+* **When IOTA achieves mass-adoption banks will no longer be able to [devalue our currency by issuing new money](https://www.investopedia.com/terms/f/fractionalreservebanking.asp).**  
 * **And governments will not be able to just [print money to finance wars](https://en.wikipedia.org/wiki/War_finance#Inflation) that it's people do not want.**  
-* **So with money no longer tied to a country, governments will have to compete for citizens (really their money) by providing the best places to live at the least cost. The new freedom to leave and take your money with you, will be a stablizing force causing opressive governments to change while keeping honest well run governments on the right track.** 
-* **Citizens are about to get a seat at the bargining table and the nonsense is about to end.**  
+* **So with money no longer tied to a country, governments will have to compete for citizens (really their money) by providing the best places to live at the least cost. The new freedom to leave and take your money with you, will be a stabilizing force causing oppressive governments to change while keeping honest well run governments on the right track.** 
+* **Citizens are about to get a seat at the bargaining table and the nonsense is about to end.**  
 * **We can bring on this change by helping to make IOTA a better service than banks, more secure, and more convenient to use.**  
 * **That's what we will need to do in order to start the mass migration to IOTA**  
 * **Let's get to work**  
@@ -154,7 +154,7 @@ Soon we are going to start doing things at the command line but first you will n
 * All this might seem inconvenient but the people who made IOTA had a very good reason for building the system this way.  
 * In order to make your addresses invulnerable to quantum computers the Winternitz One-Time Signature is used to create addresses.  
 * So when quantum computers become more capable and can calculate the private key for any given address on other distributed ledgers, your IOTA's will be safe.  
-* The cost for this protection is the inconvenience of having to inclued a transaction in your signed bundle which moves your remaining (unspent) balance to a new address.  
+* The cost for this protection is the inconvenience of having to included a transaction in your signed bundle which moves your remaining (unspent) balance to a new address.  
 
 #### Reference Materials  
 * The best IOTA Playlist ever [is found here](https://www.youtube.com/playlist?list=PLmL13yqb6OxdIf6CQMHf7hUcDZBbxHyza)  
@@ -189,10 +189,10 @@ Soon we are going to start doing things at the command line but first you will n
 #### Install NodeJS on your airgapped machine and your online machine as well.  
 * You are probably wondering, how am I supposed to install software on an airgapped machine that does not connect to the Internet?  
 * Well your airgapped machine is not airgapped until you say it's airgapped so for right now it's ok to connect to the Internet.  
-* When all the software is installed and you are ready to sign transactions, then you simply pull the plug on the Internet and never connnect to it again.  
+* When all the software is installed and you are ready to sign transactions, then you simply pull the plug on the Internet and never connect to it again.  
 * Then you will create new seeds and new addresses from behind the airgap and use these instead of the experimental ones you are playing with now.  
 * If you are using a PrivateKeyVault or a raspberry pi 2 then NodeJS installation instructions are [here](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm).  
-* Othewise download NodeJS for your system [here](https://nodejs.org/en/download/).  
+* Otherwise download NodeJS for your system [here](https://nodejs.org/en/download/).  
  
 #### Install iota.js  
 * [Check out the documentation - found here](https://github.com/iotaledger/iota.js/blob/next/api_reference.md)  
@@ -276,7 +276,7 @@ Now you still have the original script unchanged for future use and you have the
   * The first address generated by a seed is referred to as **address 0**  
   * The second address generated by a seed is referred to as **address 1**  
   * The third address generated by a seed is referred to as **address 2** and so on.  
-  * In this example we have specifed that the NodeJS script will start generating addresses at index 0.  
+  * In this example we have specified that the NodeJS script will start generating addresses at index 0.  
 * About **checksum**  
   * A checksum is 9 characters appended to an address.  
   * The checksum is used to ensure that:  
@@ -319,10 +319,10 @@ Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHO
 // Address at index 4 - UI9UUGM9QZGNSNCCIGUDQOMGRRZT9CNJXUORVNCVNBJLU9KYAYWNUQWLBLKKOXHCSHPXKOEVPAPFINAD9VUOPXREO9
 ```  
 #### Transfer Your Addresses but not the Seeds To Your Online Computer.  
-* If you are using only one computer for these exercizes then of course there is no need to transfer addresses.  
+* If you are using only one computer for these exercises then of course there is no need to transfer addresses.  
 * If you are using two computers for this exercise then you must find a safe way to transfer your addresses to your online computer.  
 * **Do not transfer your seeds to the online computer. Your seeds are secret. Keep your seeds on your offline computer only.**  
-* The [PrivateKeyVault](https://youtu.be/3MwJOj3t8cI) is built for the purpose of transfering selected documents between online and offline devices without exposing anything to online devices except for the document you intend to transfer.  
+* The [PrivateKeyVault](https://youtu.be/3MwJOj3t8cI) is built for the purpose of transferring selected documents between online and offline devices without exposing anything to online devices except for the document you intend to transfer.  
 * If you are not using a PrivateKeyVault, then there are other secure methods to make the transfer.  
 
 #### Put Your Addresses In The Script That Made Them.  
@@ -331,7 +331,7 @@ Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHO
 * Be super careful not to change your seed accidentally.  
 * Paste the addresses near the bottom so the script now looks similar to the following.  
 * Your seed and addresses will be different of course.  
-* The two back slashes at the begining of each address line tell NodeJS that these are comments and not code to be executed.  
+* The two back slashes at the beginning of each address line tell NodeJS that these are comments and not code to be executed.  
 * **The script should only exist on your offline (isolated) computer because the script contains your seed.**  
 ```
 ///////////////////////////////
@@ -489,7 +489,7 @@ iota
 * If the console output looks much like the above then you are able to connect with the Tangle through healthy node you found.  
 
 #### Check Your Balance at Address a0  
-* Lets see if the IOTAs you sent from your Binance account to address a0 was actually transfered to your account.  
+* Lets see if the IOTAs you sent from your Binance account to address a0 was actually transferred to your account.  
 * Using your favorite text editor, open the script called `40-check-balance.js` in the **Console-Wallet** directory.  
 * The contents of the file will be as shown in the code block below.    
 * There are two lines in this file that you must change. Don't get them confused.  
@@ -534,10 +534,10 @@ iota
 * It would be best to open this script in read only mode if your text editor offers this option.  
 * You don't want to change the contents of this file.  
 * You did back up that file - right?  
-* Copy the address generated by **seed a** at the 0 index postion onto the clipboard.  
+* Copy the address generated by **seed a** at the 0 index position onto the clipboard.  
 * That's the first generated address.  
 * Copy that first generated address onto your clipboard.  
-* Now close file `a-create-address.js` **without** saving any changes if you accidently changed the contents of the file.  
+* Now close file `a-create-address.js` **without** saving any changes if you accidentally changed the contents of the file.  
 * Now paste the address you copied onto the clipboard between the quote marks in the open script `40-check-balance.js` where it says:  
 * `'Paste-Your-Address-Between-These-Quotes'`  
 * Now save the script.  
@@ -579,7 +579,7 @@ iota
   * Transfer the signed transaction bundle to your online computer, and finally,  
   * Broadcast the signed transaction bundle to the Tangle using your online computer.  
   * This will move IOTAs from one address to another.  
-* If you are using only one computer for these exercizes then of course all three steps are preformed on that single computer.  
+* If you are using only one computer for these exercises then of course all three steps are preformed on that single computer.  
 *  
 * Lets send a few IOTAs from the **address at index 0 for seed a (a0)** to the **address at index 0 for seed b (b0)** with any unspent IOTAs going to the address at **index 1 for seed a (a1)**.  
 * Using your offline computer, open the script named `50-sign-bundle.js` with your favorite text editor.  
@@ -658,9 +658,9 @@ createPrepareTransfers()(seed, transfers, options)
 * Finally run the saved script at the BASH console as we have done with previous scripts.  
   * Open the BASH console.  
   * cd into the **Console-Wallet** directory,  
-  * And execute the folowing line of code:  
+  * And execute the following line of code:  
   * `node a0-b0-a1-sign-bundle.js`  
-* The console will output an enormously long string of characters surounded by brackets like these **[]**   
+* The console will output an enormously long string of characters surrounded by brackets like these **[]**   
 * **The output at the console is your signed transaction bundle.**  
 * Copy the output (the brackets and everything between them) onto the clipboard.  
 * 
@@ -708,7 +708,7 @@ main()
   * And execute the folowing line of code:  
   * `node a0-b0-a1-sign-bundle.js`  
 * If everything went well, your bundle has been broadcasted and your IOTAs will have been moved according to the directions in the bundle.  
-* Save the output produced by the bash console incase you need it for trouble shooting.  
+* Save the output produced by the bash console in case you need it for trouble shooting.  
 * Then check the balances of your accounts and be sure to update your address balance records.  
 
 #### Congratulations
