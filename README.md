@@ -21,6 +21,10 @@ If you want to see a full length video about how the open source PrivateKeyVault
 
 If you want to experiment with small amounts of IOTA then only one computer which is connected to the Internet is required. Any computer will do. Just remember that it is super easy for criminals to see what is on your Internet connected devices **so expect to have your IOTA stolen if you create your seeds on an Internet connected computer**. That said, any computer that can run NodeJS will work if you just want to experiment with small amounts.  
 
+### Contents
+* [Create Your Seeds for this experiment](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#create-your-seeds-for-this-experiment)  
+* 
+
 
 ### Create Your Seeds for this experiment  
 * IOTA seeds are strings of exactly 81 UPPER CASE letters.  
@@ -77,7 +81,7 @@ echo ${#myvar}
 * You can use my method shown above or something else which is truly random like the scrabble method also shown above.  
 * Paste your seeds into a text document on your airgapped machine for use later.  
 
-### The following are facts about IOTA that you will need to know:  
+### Facts about IOTA that you will need to know:  
 * Seeds are secret.  
 * They stay in the PrivateKeyVault (or other secure device) behind the airgap so that no one can see them.  
 * Seeds are used to sign transaction bundles.  
