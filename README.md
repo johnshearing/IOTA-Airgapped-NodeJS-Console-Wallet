@@ -23,7 +23,18 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 
 ### Contents
 * [Create Your Seeds for this experiment](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#create-your-seeds-for-this-experiment)  
-* [Facts about IOTA that you will need to know](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#facts-about-iota-that-you-will-need-to-know)
+* [Facts about Seeds, Transaction Bundles, and Addresses](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#facts-about-seeds-transaction-bundles-and-addresses)  
+* [Social Impact](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#social-impact)  
+* [A Word On Privacy]()  
+* []()  
+* []()  
+* []()  
+* []()  
+* []()  
+* []()  
+* []()  
+* []()  
+* []()  
 
 
 ### Create Your Seeds for this experiment  
@@ -122,7 +133,7 @@ echo ${#myvar}
 * **That's what we will need to do in order to start the mass migration to IOTA**  
 * **Let's get to work**  
 
-### A Word On Privacy  
+### IOTA Gives You Control Not Privacy    
 * The IOTA Tangle is a public ledger.  
 * Every Transaction on the IOTA Tangle is public information.  
 * [Every Transaction can viewed here.](https://thetangle.org/)  
@@ -131,7 +142,7 @@ echo ${#myvar}
 * It is a common misconception that IOTA can be used for money laundering and other illegal activities.  
 * This is not possible with IOTA because you can see where every IOTA is and how every IOTA got there.  
 * [The government uses distributed public ledgers like IOTA to catch criminals](https://youtu.be/507wn9VcSAE).  
-* Using cash, no one can see how much you have, where it came from, or where you spend it.    
+* When using cash, no one can see how much you have, where it came from, or where you spend it.    
 * The same is true of bank accounts especially the secret offshore accounts used by criminals and tax evaders.  
 * Cash is the currency of choice for the common criminal.  
 * Banks are used by sophisticated criminals and bankers themselves [to commit colossal crimes](https://theweek.com/articles/729052/brief-history-crime-corruption-malfeasance-american-banks).  
