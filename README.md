@@ -25,8 +25,8 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 * [Create Your Seeds for this experiment](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#create-your-seeds-for-this-experiment)  
 * [Facts about Seeds, Transaction Bundles, and Addresses](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#facts-about-seeds-transaction-bundles-and-addresses)  
 * [Social Impact](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#social-impact)  
-* [A Word On Privacy]()  
-* []()  
+* [IOTA Gives You Control Not PrivacyA Word On Privacy](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#iota-gives-you-control-not-privacy)  
+* [About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#about-addresses-safe-spending-and-iotas-defense-against-quantum-computers)  
 * []()  
 * []()  
 * []()  
@@ -173,7 +173,7 @@ Soon we are going to start doing things at the command line but first you will n
 * So when quantum computers become more capable and can calculate the private key for any given address on other distributed ledgers, your IOTA's will be safe.  
 * The cost for this protection is the inconvenience of having to included a transaction in your signed bundle which moves your remaining (unspent) balance to a new address.  
 
-#### Reference Materials  
+### Reference Materials  
 * The best IOTA Playlist ever [is found here](https://www.youtube.com/playlist?list=PLmL13yqb6OxdIf6CQMHf7hUcDZBbxHyza)  
 * [This web seminar](https://youtu.be/Z-NN0rRcwY0?t=178) was my first introduction to moving IOTA using NodeJS scripts.  
   * The code [is found here](https://github.com/iota-community/iota-workshop) if you want to follow along with the examples.  
