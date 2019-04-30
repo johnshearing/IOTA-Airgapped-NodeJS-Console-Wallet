@@ -26,7 +26,7 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 * [IOTA Gives You Control Not Privacy](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#iota-gives-you-control-not-privacy)  
 * [About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#about-addresses-safe-spending-and-iotas-defense-against-quantum-computers)  
 * [Reference Materials](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#reference-materials)  
-### Contents for [Part 2: How To Move IOTAs at the BASH Console Using NodeJS]()  
+### Contents for [Part 2: How To Move IOTAs at the BASH Console Using NodeJS](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#part-2-how-to-move-iotas-at-the-bash-console-using-nodejs)  
 * []()  
 * []()  
 * []()  
