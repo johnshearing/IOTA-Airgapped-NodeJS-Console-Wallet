@@ -19,14 +19,14 @@ If you want to see a full length video about how the open source PrivateKeyVault
 
 If you want to experiment with small amounts of IOTA then only one computer which is connected to the Internet is required. Any computer will do. Just remember that it is super easy for criminals to see what is on your Internet connected devices **so expect to have your IOTA stolen if you create your seeds on an Internet connected computer**. That said, any computer that can run NodeJS will work if you just want to experiment with small amounts.  
 
-### Contents for Part 1: Creating Seeds, and Information You Need To Know  
+### Contents for [Part 1: Creating Seeds, and Information You Need To Know](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#part-1-creating-seeds-and-information-you-need-to-know)  
 * [Create Your Seeds for this experiment](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#create-your-seeds-for-this-experiment)  
 * [Facts about Seeds, Transaction Bundles, and Addresses](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#facts-about-seeds-transaction-bundles-and-addresses)  
 * [Social Impact](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#social-impact)  
 * [IOTA Gives You Control Not Privacy](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#iota-gives-you-control-not-privacy)  
 * [About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#about-addresses-safe-spending-and-iotas-defense-against-quantum-computers)  
 * [Reference Materials](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#reference-materials)  
-### Contents for Part 2: How To Move IOTAs at the BASH Console Using NodeJS
+### Contents for [Part 2: How To Move IOTAs at the BASH Console Using NodeJS]()  
 * []()  
 * []()  
 * []()  
@@ -37,7 +37,7 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 
 ### Part 1: Creating Seeds, and Information You Need To Know  
 
-### Create Your Seeds for this experiment  
+#### Create Your Seeds for this experiment  
 * IOTA seeds are strings of exactly 81 UPPER CASE letters.  
 * The number **9** is also allowed.  
 * The seed must be created by a completely random method.  
@@ -92,7 +92,7 @@ echo ${#myvar}
 * You can use my method shown above or something else which is truly random like the scrabble method also shown above.  
 * Paste your seeds into a text document on your airgapped machine for use later.  
 
-### Facts about Seeds, Transaction Bundles, and Addresses
+#### Facts about Seeds, Transaction Bundles, and Addresses
 * Seeds are secret.  
 * They stay in the PrivateKeyVault (or other secure device) behind the airgap so that no one can see them.  
 * Seeds are used to sign transaction bundles.  
@@ -120,7 +120,7 @@ echo ${#myvar}
 * The Tangle computers know that you have the seed which controls the specified spending address without having to see the seed itself.  
 * The seed is still in your sole possession.   
 
-### Social Impact
+#### Social Impact
 * You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they already have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed transaction bundle is decrypted and resolves to the specified spending address. And the only way to make such a bundle is by having the seed. **And only you have the seed for your accounts**. So now, the only way criminals, or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of smart contracts and multi-signature wallets (to be covered in other tutorials) these forceful methods will cost more to implement then they will produce so they will not be used. Of course we still need to pay our taxes, but government now requires our cooperation in order to collect taxes which if exercised collectively gives citizens a level of control over their governments never before seen.    
 * **Holy Cow! What just happened?**  
 * **For the first time in human history citizens can take full control of their own money.**  
@@ -133,7 +133,7 @@ echo ${#myvar}
 * **That's what we will need to do in order to start the mass migration to IOTA**  
 * **Let's get to work**  
 
-### IOTA Gives You Control Not Privacy    
+#### IOTA Gives You Control Not Privacy    
 * The IOTA Tangle is a public ledger.  
 * Every Transaction on the IOTA Tangle is public information.  
 * [Every Transaction can viewed here.](https://thetangle.org/)  
@@ -151,7 +151,7 @@ echo ${#myvar}
 * It's because cryptography is used to protect the seeds you use to control your accounts.  
 * In any case, the purpose of IOTA is to give citizens full control of their money not to hide it the way you can with cash and offshore bank accounts.  
 
-### About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers
+#### About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
 * Addresses are public.  
 * Addresses are like bank account numbers.  
@@ -173,7 +173,7 @@ Soon we are going to start doing things at the command line but first you will n
 * So when quantum computers become more capable and can calculate the private key for any given address on other distributed ledgers, your IOTA's will be safe.  
 * The cost for this protection is the inconvenience of having to included a transaction in your signed bundle which moves your remaining (unspent) balance to a new address.  
 
-### Reference Materials  
+#### Reference Materials  
 * The best IOTA Playlist ever [is found here](https://www.youtube.com/playlist?list=PLmL13yqb6OxdIf6CQMHf7hUcDZBbxHyza)  
 * [This web seminar](https://youtu.be/Z-NN0rRcwY0?t=178) was my first introduction to moving IOTA using NodeJS scripts.  
   * The code [is found here](https://github.com/iota-community/iota-workshop) if you want to follow along with the examples.  
