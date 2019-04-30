@@ -21,13 +21,14 @@ If you want to see a full length video about how the open source PrivateKeyVault
 
 If you want to experiment with small amounts of IOTA then only one computer which is connected to the Internet is required. Any computer will do. Just remember that it is super easy for criminals to see what is on your Internet connected devices **so expect to have your IOTA stolen if you create your seeds on an Internet connected computer**. That said, any computer that can run NodeJS will work if you just want to experiment with small amounts.  
 
-### Contents
+### Contents Part 1: Creating Seeds, Introduction, and Information You Need To Know
 * [Create Your Seeds for this experiment](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#create-your-seeds-for-this-experiment)  
 * [Facts about Seeds, Transaction Bundles, and Addresses](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#facts-about-seeds-transaction-bundles-and-addresses)  
 * [Social Impact](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#social-impact)  
 * [IOTA Gives You Control Not PrivacyA Word On Privacy](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#iota-gives-you-control-not-privacy)  
 * [About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#about-addresses-safe-spending-and-iotas-defense-against-quantum-computers)  
-* []()  
+* [Reference Materials](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#reference-materials)  
+### Contents Part 2: How To Move IOTAs at the BASH Console Using NodeJS
 * []()  
 * []()  
 * []()  
