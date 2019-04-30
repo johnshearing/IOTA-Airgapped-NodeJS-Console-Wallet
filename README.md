@@ -39,13 +39,9 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 * [Send IOTAs to address a0](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#send-iotas-to-address-a0)  
 * [Find a Healthy Computer on the Tangle To Use For Checking the Balance of Your New Address](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#find-a-healthy-computer-on-the-tangle-to-use-for-checking-the-balance-of-your-new-address)  
 * [Check That You Can Connect to the Tangle](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#check-that-you-can-connect-to-the-tangle)  
-* []()  
-* []()  
-* []()  
-* []()  
-* []()  
-* []()  
-
+* [Check Your Balance at Address a0](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#check-your-balance-at-address-a0)  
+* [Make A Signed Transaction Bundle and Broadcast It To The Tangle](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#make-a-signed-transaction-bundle-and-broadcast-it-to-the-tangle)  
+* [Things To Remember From This Tutorial](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#things-to-remember-from-this-tutorial)  
 
 ### Part 1: Creating Seeds, and Information You Need To Know  
 
