@@ -23,7 +23,7 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 
 ### Contents
 * [Create Your Seeds for this experiment](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#create-your-seeds-for-this-experiment)  
-* 
+* [Facts about IOTA that you will need to know](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#facts-about-iota-that-you-will-need-to-know)
 
 
 ### Create Your Seeds for this experiment  
@@ -81,7 +81,7 @@ echo ${#myvar}
 * You can use my method shown above or something else which is truly random like the scrabble method also shown above.  
 * Paste your seeds into a text document on your airgapped machine for use later.  
 
-### Facts about IOTA that you will need to know:  
+### Facts about Seeds, Transaction Bundles, and Addresses
 * Seeds are secret.  
 * They stay in the PrivateKeyVault (or other secure device) behind the airgap so that no one can see them.  
 * Seeds are used to sign transaction bundles.  
@@ -108,6 +108,8 @@ echo ${#myvar}
 * **WOW! DID YOU GET THE SIGNIFICANTS THAT LAST STATEMENT?**.  
 * The Tangle computers know that you have the seed which controls the specified spending address without having to see the seed itself.  
 * The seed is still in your sole possession.   
+
+### Social Impact
 * You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they already have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed transaction bundle is decrypted and resolves to the specified spending address. And the only way to make such a bundle is by having the seed. **And only you have the seed for your accounts**. So now, the only way criminals, or government can get your money is if you give it to them. You can still be jailed or tortured until you reveal the seed but through the use of smart contracts and multi-signature wallets (to be covered in other tutorials) these forceful methods will cost more to implement then they will produce so they will not be used. Of course we still need to pay our taxes, but government now requires our cooperation in order to collect taxes which if exercised collectively gives citizens a level of control over their governments never before seen in human history.    
 * **Holy Cow! What just happened?**  
 * **For the first time in human history citizens can take full control of their own money.**  
