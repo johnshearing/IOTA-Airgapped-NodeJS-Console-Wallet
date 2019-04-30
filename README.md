@@ -1,12 +1,12 @@
 # IOTA-Airgapped-NodeJS-Console-Wallet  
 ### Create and sign transaction bundles securely offline using an [airgapped computer](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md) then broadcast your signed transaction bundles to the Tangle using an online computer.  
 
-## This tutorial is for instructional purposes only.  
-## I will not be held responsible for your losses.  
-## Use these instructions to move only small amounts of IOTA that you are prepared to loose.  
 ## This tutorial is for developers only - not for the general public.  
 ## [The general public should go here](https://www.iota.org/get-started/buy-and-secure-iota)   
-### Introduction  
+## This tutorial is for instructional purposes only.  
+## Use these instructions to move only small amounts of IOTA that you are prepared to loose.  
+## I will not be held responsible for your losses.  
+### Introduction   
 The intention of this tutorial is to help developers become familar with the NodeJS API for moving IOTAs between accounts. You will be creating NodeJS scripts and running them from the BASH console. The ultimate goal is to make two wallet applications that run in your browser. An offline wallet application that creates and signs transaction bundles on a computer which never connects to the Internet nor to any other device and online wallet application that runs on an Internet connected computer that broadcasts the bundles to the Tangle. This tutorial starts the project by showing you how to control the underlying code and move IOTAs at the command line. This way, when you build your wallet along with me you will understand what's happening and you will know that your wallet is doing what you expect it to do. After the wallets are working we will be adding database functionality so that the two wallets can stay in sync without the need to connect your offline device with the online device. After that we build multi-signature capability into the wallets and finally we will be exploring how smart contracts can be used with the IOTA family of products.  
 
 Two computers are required if you want airgapped security to keep your seeds safe. One computer is airgapped. It never connects to the Internet nor to other devices. This airgapped computer should not have any WiFi or BlueTooth capability. So a raspberry pi 2 would be appropriate but a raspberry pi 3 would not. The other computer is connected to the Internet. That said about security, any computer that can run NodeJS (Linux,Mac,Windows) will work.  
@@ -27,13 +27,25 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 * [About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#about-addresses-safe-spending-and-iotas-defense-against-quantum-computers)  
 * [Reference Materials](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#reference-materials)  
 ### Contents for [Part 2: How To Move IOTAs at the BASH Console Using NodeJS](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#part-2-how-to-move-iotas-at-the-bash-console-using-nodejs)  
+* [Install NodeJS on your airgapped machine and your online machine as well](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#install-nodejs-on-your-airgapped-machine-and-your-online-machine-as-well)  
+* [Install iota.js](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#install-iotajs)  
+* [Install the IOTA-Airgapped-NodeJS-Console-Wallet repository](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#install-the-iota-airgapped-nodejs-console-wallet-repository)  
+* [Move Your Seeds Into the Console Wallet directory](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#move-your-seeds-into-the-console-wallet-directory)  
+* [Make Addresses From Your Seeds To Store IOTAs](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#make-addresses-from-your-seeds-to-store-iotas)  
+* [Transfer Your Addresses but not the Seeds To Your Online Computer](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#transfer-your-addresses-but-not-the-seeds-to-your-online-computer)  
+* [Put Your Addresses In The Script That Made Them](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#put-your-addresses-in-the-script-that-made-them)  
+* [Make Addresses for Seed b](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#make-addresses-for-seed-b)  
+* [Buy Ethereum To Buy IOTAs](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#buy-ethereum-to-buy-iotas)  
+* [Send IOTAs to address a0](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#send-iotas-to-address-a0)  
+* [Find a Healthy Computer on the Tangle To Use For Checking the Balance of Your New Address](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#find-a-healthy-computer-on-the-tangle-to-use-for-checking-the-balance-of-your-new-address)  
+* [Check That You Can Connect to the Tangle](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#check-that-you-can-connect-to-the-tangle)  
 * []()  
 * []()  
 * []()  
 * []()  
 * []()  
 * []()  
-* []()  
+
 
 ### Part 1: Creating Seeds, and Information You Need To Know  
 
