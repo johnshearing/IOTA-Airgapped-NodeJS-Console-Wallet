@@ -233,7 +233,7 @@ Soon we are going to start doing things at the command line but first you will n
 * You will be using these scripts at the BASH console to securely store and spend your IOTAs.  
 
 #### Move Your Seeds Into the Console Wallet directory.  
-* If you have been following along then you already have two experimental seeds in a text file waiting to be used on your airgapped machine.  
+* If you have been following along from the very beginning then you already have two experimental seeds in a text file waiting to be used on your airgapped machine.  
 * Move the text file containing your experimental seeds into the **Console-Wallet** directory.  
 * Your seeds are very important. 
 * If you lose your seeds then you will lose all the IOTAs they control.  
