@@ -137,7 +137,7 @@ echo ${#myvar}
 * **When IOTA achieves mass-adoption banks will no longer be able to [devalue our currency by issuing new money](https://www.investopedia.com/terms/f/fractionalreservebanking.asp).**  
 * **And governments will not be able to just [print money to finance wars](https://en.wikipedia.org/wiki/War_finance#Inflation) that it's people do not want.**  
 * **So with money no longer tied to a country, governments will have to compete for citizens (really their money) by providing the best places to live at the least cost. The new freedom to leave and take your money with you, will be a stabilizing force causing oppressive governments to change while keeping honest well run governments on the right track.** 
-* **Citizens are about to get a seat at the bargaining table and the nonsense is about to end.**  
+* **Citizens are about to get a seat at the bargaining table along side big banks, big corporations, and big government**  
 * **We can bring on this change by helping to make IOTA a better service than banks, more secure, and more convenient to use.**  
 * **That's what we will need to do in order to start the mass migration to IOTA**  
 * **Let's get to work**  
