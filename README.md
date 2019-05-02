@@ -131,7 +131,7 @@ echo ${#myvar}
 
 #### Social Impact
 * You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they already have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed transaction bundle is decrypted and resolves to the specified spending address. And the only way to make such a bundle is by having the seed. **And only you have the seed for your accounts**.  
-* So now, the only way criminals or government can get your money is if you give it to them. You can still be tricked into providing your seed or you can be tortured until you reveal it, but with the added protection of smart contracts and multi-signature wallets (to be covered in other tutorials) force and trickery will not work. Furthermore, as will be discussed in the next section, the IOTA Tangle is a completely transparent public ledger. Everyone can see where each IOTA comes from and where it goes. So there is no point in stealing it because [criminals can not spend it without getting caught](https://youtu.be/507wn9VcSAE).   
+* So now, the only way criminals or government can get your money is if you give it to them. You can still be tricked into providing your seed or you can be tortured until you reveal it, but with the added protection of smart contracts and multi-signature wallets (to be covered in other tutorials) force and trickery will not work. Furthermore, as will be discussed in the next section, the IOTA Tangle is a completely transparent public ledger. Everyone can see where each IOTA comes from and where it goes. So there is no point in stealing it because (unlike cash) [criminals can not spend it without getting caught](https://youtu.be/507wn9VcSAE).   
 * Of course we still need to pay our taxes, but government now requires our cooperation in order to collect taxes which if exercised collectively gives citizens a level of control over their governments never before seen.    
 * **Holy Cow! What just happened?**  
 * **For the first time in human history citizens can take full control of their own money.**  
@@ -156,7 +156,7 @@ echo ${#myvar}
 * When using cash, no one can see how much you have, where it came from, or where you spend it.    
 * The same is true of bank accounts especially the secret offshore accounts used by criminals and tax evaders.  
 * Cash is the currency of choice for the common criminal.  
-* Banks are used by sophisticated criminals and bankers themselves [to commit colossal crimes](https://theweek.com/articles/729052/brief-history-crime-corruption-malfeasance-american-banks).  
+* Banks and shell companies are used by sophisticated criminals and even bankers themselves [to commit colossal crimes](https://theweek.com/articles/729052/brief-history-crime-corruption-malfeasance-american-banks).  
 * The original cryptocurrency (BitCoin) was invented [to end the misery banks cause humanity](https://bitcoinmagazine.com/articles/ten-years-later-reflection-bitcoins-genesis-and-satoshis-timing/)  
 * So why, you may be wondering, do they call it cryptocurrency if it's completely transparent.  
 * It's because cryptography is used to protect the seeds you use to control your accounts.  
