@@ -22,6 +22,7 @@ If you want to experiment with small amounts of IOTA then only one computer whic
 ### Contents for [Part 1: Creating Seeds, and Information You Need To Know](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#part-1-creating-seeds-and-information-you-need-to-know)  
 * [Create Your Seeds for this experiment](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#create-your-seeds-for-this-experiment)  
 * [Facts about Seeds, Transaction Bundles, and Addresses](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#facts-about-seeds-transaction-bundles-and-addresses)  
+* [Security](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet/blob/master/README.md#security)  
 * [Social Impact](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#social-impact)  
 * [IOTA Gives You Control Not Privacy](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#iota-gives-you-control-not-privacy)  
 * [About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet#about-addresses-safe-spending-and-iotas-defense-against-quantum-computers)  
