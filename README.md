@@ -206,6 +206,7 @@ Soon we are going to start doing things at the command line but first you will n
   * [This is a beginers JavaScript Tutorial by NetNinja](https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET&index=1)  
   * [Here NetNinja covers new features of Javascript](https://www.youtube.com/watch?v=0Mp2kwE8xY0&list=PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml)  
   * [Here NetNinja covers object oriented JavaScript](https://www.youtube.com/watch?v=4l3bTDlT6ZI&list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7)  
+  * [Here NetNinja covers Asynchronous JavaScript](https://youtu.be/YxWMxJONp7E)  
   * [I liked this JavaScript tutorial by Tony Alicea](https://youtu.be/Bv_5Zv5c-Ts) 
     * The first 3 hours are free. The rest is worth the money.  
 * The following are two great video playlists which show you how to install and use NodeJS:  
