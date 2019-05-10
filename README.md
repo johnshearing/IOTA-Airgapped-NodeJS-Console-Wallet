@@ -164,7 +164,7 @@ echo ${#myvar}
 * The original cryptocurrency (BitCoin) was invented [to end the misery banks cause humanity](https://bitcoinmagazine.com/articles/ten-years-later-reflection-bitcoins-genesis-and-satoshis-timing/)  
 * So why, you may be wondering, do they call it cryptocurrency if it's completely transparent.  
 * It's because cryptography is used to protect the seeds you use to control your accounts.  
-* In any case, the purpose of IOTA is to give citizens full control of their money not to hide it the way you can with cash and offshore bank accounts.  
+* In any case, the purpose of IOTA is to give citizens full control of their money not to hide it the way you can with [cash and offshore bank accounts and shell companies](https://books.google.com/books/about/Moneyland.html?id=ao5xDwAAQBAJ&printsec=frontcover&source=kp_read_button#v=onepage&q&f=false).  
 
 #### About Addresses, Safe Spending, and IOTA's Defense Against Quantum Computers
 Soon we are going to start doing things at the command line but first you will need to know some facts about addresses in order to keep your IOTAs safe from criminals.  
