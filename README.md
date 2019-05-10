@@ -209,9 +209,11 @@ Soon we are going to start doing things at the command line but first you will n
   * [Here NetNinja covers Asynchronous JavaScript](https://youtu.be/YxWMxJONp7E)  
   * [I liked this JavaScript tutorial by Tony Alicea](https://youtu.be/Bv_5Zv5c-Ts) 
     * The first 3 hours are free. The rest is worth the money.  
-* The following are two great video playlists which show you how to install and use NodeJS:  
+* Now you are ready to master NodeJS. The following video playlist will help:  
   * [Node JS Tutorial for Beginners by NetNinja](https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp)  
-* More advanced NodeJS topics are covered here.  
+* When making our wallet application, we will want to keep the dependencies on other software packages to a minimum for security reasons. The following course will help us get the most out of NodeJS with out relying on other software packages. If we can keep it simple then our code will be easier for others to audit. 
+  * [The Node.js Master Class](https://pirple.thinkific.com/courses/the-nodejs-master-class)  
+* I have not decided yet whether or not MongoDB will be used in our wallet application by the following playlist covers the topic.  
   * [MongoDB is covered by NetNinja here](https://www.youtube.com/watch?v=9OPP_1eAENg&list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u)  
 
 ### Part 2: How To Move IOTAs at the BASH Console Using NodeJS    
