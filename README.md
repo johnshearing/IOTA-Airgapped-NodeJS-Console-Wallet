@@ -753,7 +753,7 @@ Please put any questions, comments, in the issues section of this repository.
 * Do not loose your seeds. If you loose your seeds then you can never recover your IOTAs.  
 
 #### What's Next?  
-Soon I will be making a separate tutorial to build an offline and online wallet application that runs in the browser. That tutorial will build upon the concepts we covered in this tutorial. The next tutorial will be in it's own repository. Check back here for a link.  
+I am making a [separate tutorial](https://github.com/johnshearing/iotaAirgappedClientServerWallet) to build an offline and online wallet application that runs in the browser. It is a work in progress. That tutorial will build upon the concepts we covered in this tutorial. Please check back often to see how the project is coming along and feel free to make suggestions on the issues page as the work progresses.  
 
 
 
