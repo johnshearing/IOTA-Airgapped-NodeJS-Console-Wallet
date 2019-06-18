@@ -71,8 +71,8 @@ If you want to experiment with small amounts of IOTA then only one computer whic
   * Do not use online seed generators or your IOTAs will be stolen.  
   * Do not use pseudo-random number generators or your IOTAs will be stolen.  
   * Do not generate random numbers on any machine that connects to the Internet or connects to other devices.   
-*  
-* The following is my method for generating an IOTA seed:  
+#### Generating Seeds with a True Random Number Generator  
+* The following is my method for generating an IOTA seed using the [Private Key Vault](https://github.com/johnshearing/PrivateKeyVault) or any raspbery pi 2:  
   * Run the following line on an airgapped raspberry pi at the BASH console (not the NodeJS console) to get a random seed for IOTA.  
   * `sudo cat /dev/hwrng |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1`  
   * This will produce an 81 character long string consisting of only UPPER CASE letters and the number **9**  
