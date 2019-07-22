@@ -233,7 +233,7 @@ Soon we are going to start doing things at the command line but first you will n
 * To install:  
   * Make a new directory on each machine. Call it **iotajs**.  
   * At the bash console, cd into the directory.  
-  * Execute the following command and the bash console to create a package.json file.  
+  * Execute the following command at the bash console to create a package.json file.  
   * The package.json file is used to manage your project.  
   * `npm init`  Accept all the defaults.  
   * Next install the iota.js library by executing the following command at the bash console.  
