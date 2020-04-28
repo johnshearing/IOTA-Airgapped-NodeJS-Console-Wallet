@@ -209,7 +209,7 @@ Soon we are going to start doing things at the command line but first you will n
   * [This is a Beginner's JavaScript Tutorial by NetNinja](https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET&index=1)  
   * [Here NetNinja covers New Features of Javascript](https://www.youtube.com/watch?v=0Mp2kwE8xY0&list=PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml)  
   * [Here NetNinja covers Object Oriented JavaScript](https://www.youtube.com/watch?v=4l3bTDlT6ZI&list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7)  
-  * [Here ??? covers Functional Programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)  
+  * [Here Mattias Petter Johansson covers Functional Programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)  
   * [Here NetNinja covers Asynchronous JavaScript](https://youtu.be/YxWMxJONp7E)  
   * [I liked this JavaScript tutorial by Tony Alicea](https://youtu.be/Bv_5Zv5c-Ts) 
     * The first 3 hours are free. The rest is worth the money.  
