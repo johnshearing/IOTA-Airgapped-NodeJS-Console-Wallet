@@ -451,13 +451,11 @@ iota
 * Open the browser of your of your online computer.  
 * Using your online computer of course:
 * Paste the following URL into the browser's address field.  
-* `https://iota.dance/`  
+* [https://iota-nodes.net/](https://iota-nodes.net/)   
 * You will see a webpage listing the healthiest nodes near the top.  
 * Pick an node that:  
-  * Has a health index of **10**  
   * Has lots of neighbors  
   * Is using the latest version  
-  * Is on the most recent milestone  
   * Is not heavily loaded  
   * Allows proof of work  
   * And uses the Secure Socket Layer Protocol (https)  
