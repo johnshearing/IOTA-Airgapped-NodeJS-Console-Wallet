@@ -135,7 +135,7 @@ echo ${#myvar}
 * You don't have that control with your ATM card. When you do banking, you need to enter a pin number or a password which is known to the machine you are doing business with. So if criminals or government take control of that machine they can clear out your account because they already have your password. This is not possible with IOTA because the computers which run the Tangle can only move IOTA when a signed transaction bundle is decrypted and resolves to the specified spending address. And the only way to make such a bundle is by having the seed. **And only you have the seed for your accounts**.  
 
 #### Security  
-* So now, the only way criminals can get your money is if you give it to them. You can still be [tricked into providing your seed](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack) or you can be tortured until you reveal it. But with the added protection of smart contracts and multi-signature wallets (to be covered in coming tutorials) neither trickery nor force will not work. Furthermore, as will be discussed as we proceed, the IOTA Tangle is a completely transparent public ledger. Everyone can see where each IOTA comes from and where it goes. So there is no point in stealing it because (unlike cash, shell companies, and off shore accounts) [criminals can not spend IOTAs without getting caught](https://youtu.be/507wn9VcSAE). As an added precausion, one should make all spending addresses that carry a balance readily available to law enforcement. This way if you should go missing then it will be that much easier for police to track the movement of your IOTAs and find you. To be clear, I am recommending that your spending addresses **Not Your Seeds** be readily available to law enforcement should they be required.  
+* So now, the only way criminals can get your money is if you give it to them. You can still be [tricked into providing your seed](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack) or you can be tortured until you reveal it. But with the added protection of smart contracts and multi-signature wallets (to be covered in coming tutorials) neither trickery nor force will work. Furthermore, as will be discussed as we proceed, the IOTA Tangle is a completely transparent public ledger. Everyone can see where each IOTA comes from and where it goes. So there is no point in stealing it because (unlike cash, shell companies, and off shore accounts) [criminals can not spend IOTAs without getting caught](https://youtu.be/507wn9VcSAE). As an added precausion, one should make all spending addresses that carry a balance readily available to law enforcement. This way if you should go missing then it will be that much easier for police to track the movement of your IOTAs and find you. To be clear, I am recommending that your spending addresses **Not Your Seeds** be readily available to law enforcement should they be required.  
 
 #### Social Impact  
 * If you are the only one with access to your seeds then not even goverment can access your funds.  
@@ -344,7 +344,7 @@ Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHO
 ```  
 * The output shown above is 5 different addresses each of which is separated from the others with a comma.  
 * Using your favorite text editor, organize the addresses so they look as follows:  
-* The two back slashes at the beginning of each line are important. You will see why shortly.  
+* The two forward slashes at the beginning of each line are important. You will see why shortly.  
 * Save this document as `addresses-for-seed-a`
 ```  
 // Addresses for seed a
@@ -367,7 +367,7 @@ Your address is: DVZRJOKM9KQKRLLIQPQAWASCQGBHYJURXGOBAJPZNHHQAYCXTZFQZJTIBX9OQHO
 * Be super careful not to change your seed accidentally.  
 * Paste the addresses near the bottom so the script now looks similar to the following.  
 * Your seed and addresses will be different of course.  
-* The two back slashes at the beginning of each address line tell NodeJS that these are comments and not code to be executed.  
+* The two forward slashes at the beginning of each address line tell NodeJS that these are comments and not code to be executed.  
 * **The script should only exist on your offline (isolated) computer because the script contains your seed.**  
 ```
 ///////////////////////////////
