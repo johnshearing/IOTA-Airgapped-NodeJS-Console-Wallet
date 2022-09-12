@@ -218,7 +218,8 @@ Soon we are going to start doing things at the command line but first you will n
 * When making our wallet application, we will want to keep the dependencies on other software packages to a minimum for security reasons. The following course will help us get the most out of NodeJS with out relying on other software packages. If we can keep it simple then our code will be easier for others to audit. 
   * [The Node.js Master Class](https://pirple.thinkific.com/courses/the-nodejs-master-class)  
 * I have made my own JSON database from scratch for use in [our wallet application](https://github.com/johnshearing/IOTA-Secure-Airgapped-Accounting-and-Banking-System) but the following playlist covers MongoDB if you have a need for that.   
-  * [MongoDB is covered by NetNinja here](https://www.youtube.com/watch?v=9OPP_1eAENg&list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u)  
+  * [MongoDB is covered by NetNinja here](https://www.youtube.com/watch?v=9OPP_1eAENg&list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u)
+* React Projects to Build (with Source Code) [is found here](https://www.interviewbit.com/blog/react-projects/)  
 
 ### Part 2: How To Move IOTAs at the BASH Console Using NodeJS    
 
